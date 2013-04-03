@@ -1,6 +1,9 @@
-<%@ page import="javax.naming.InitialContext" %>
+<%@ page import="com.mcsm.hellapp.model.domain.DiscountStat" %>
 <%@ page import="com.mcsm.hellapp.model.service.HelloAppCatalog" %>
+<%@ page import="javax.naming.InitialContext" %>
 <%@ page import="javax.naming.NamingException" %>
+<%@ page import="java.util.Date" %>
+<%@ page import="java.util.List" %>
 <%--
   Created by IntelliJ IDEA.
   User: ancalled
@@ -19,6 +22,11 @@
     }
 
 
+    long discId = 1L;
+    Date fromDate = new Date();
+    Date toDate = new Date();
+    List<DiscountStat> stats = catalog.getDiscounts(discId, fromDate, toDate);
+
 %>
 <html>
 <head>
@@ -26,11 +34,24 @@
 </head>
 <body>
 
-    <ul>
-        <li>
+<%
+    if (stats != null) {
+%>
+<ul>
+    <%
+        for (DiscountStat stat : stats) {
+    %>
+    <li>
+         <%=stat.getWhenApllied()%>
+    </li>
+    <%
+        }
+    %>
+</ul>
 
-        </li>
-    </ul>
+<%
+    }
+%>
 
 </body>
 </html>
