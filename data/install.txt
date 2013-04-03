@@ -1,0 +1,4 @@
+create JBOSS_HOME/modules/com/mysql/main
+
+copy mysql-connector-java-5.1.23-bin.jar
+copy module.xml

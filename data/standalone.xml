@@ -1,0 +1,45 @@
+<?xml version='1.0' encoding='UTF-8'?>
+
+<server xmlns="urn:jboss:domain:1.2">
+
+    <!--. . .-->
+
+    <profile>
+      <!--. . .-->
+        <subsystem xmlns="urn:jboss:domain:datasources:1.0">
+            <datasources>
+                <!--. . .-->
+                <datasource jta="true" jndi-name="java:/HelloAppDS" pool-name="MySqlDS" enabled="true" use-java-context="true" use-ccm="true">
+                    <connection-url>jdbc:mysql://localhost:3306/helloapp</connection-url>
+                    <driver-class>com.mysql.jdbc.Driver</driver-class>
+                    <driver>mysql</driver>
+                    <transaction-isolation>TRANSACTION_READ_COMMITTED</transaction-isolation>
+                    <pool>
+                        <min-pool-size>100</min-pool-size>
+                        <max-pool-size>200</max-pool-size>
+                        <prefill>true</prefill>
+                        <use-strict-min>false</use-strict-min>
+                        <flush-strategy>FailingConnectionOnly</flush-strategy>
+                    </pool>
+                    <security>
+                        <user-name>root</user-name>
+                        <password>melkor</password>
+                    </security>
+                    <statement>
+                        <prepared-statement-cache-size>32</prepared-statement-cache-size>
+                    </statement>
+                </datasource>
+                <drivers>
+                    <!--. . .-->
+                    <driver name="mysql" module="com.mysql">
+                        <driver-class>com.mysql.jdbc.Driver</driver-class>
+                    </driver>
+                </drivers>
+            </datasources>
+        </subsystem>
+        <!--. . .-->
+    </profile>
+
+    <!--. . .-->
+
+</server>

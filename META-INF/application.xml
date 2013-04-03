@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application xmlns="http://java.sun.com/xml/ns/javaee"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_6.xsd"
+             version="6">
+
+    <module id="HelloAppServer-Web">
+        <web>
+            <web-uri>HelloAppServer.war</web-uri>
+            <context-root>/helloapp</context-root>
+        </web>
+    </module>
+
+    <module id="HelloAppServer-EJB">
+        <ejb>HelloAppServer.jar</ejb>
+    </module>
+</application>
