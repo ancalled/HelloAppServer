@@ -1,0 +1,17 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" build-on-make="true" name="HelloAppServer:javaEEApplication exploded">
+    <output-path>$PROJECT_DIR$/out/hello.ear</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="HelloAppServer/javaeeApplication/javaEEApplication" />
+      <element id="directory" name="HelloAppServer.jar">
+        <element id="artifact" artifact-name="HelloAppServer:EJB exploded" />
+      </element>
+      <element id="directory" name="HelloAppServer.war">
+        <element id="artifact" artifact-name="HelloAppServer:Web exploded" />
+      </element>
+      <element id="directory" name="lib">
+        <element id="library" level="project" name="gson" />
+      </element>
+    </root>
+  </artifact>
+</component>

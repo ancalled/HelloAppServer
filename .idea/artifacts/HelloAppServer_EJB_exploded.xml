@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ejb" build-on-make="true" name="HelloAppServer:EJB exploded">
+    <output-path>$PROJECT_DIR$/out/hello.jar</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="HelloAppServer/ejb/EJB" />
+      <element id="module-output" name="HelloAppServer" />
+      <element id="jpa-descriptors" facet="HelloAppServer/jpa/JPA" />
+    </root>
+  </artifact>
+</component>
