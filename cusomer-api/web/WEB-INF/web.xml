@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+           version="2.5">
+
+
+    <servlet>
+        <servlet-name>categoriesServlet</servlet-name>
+        <servlet-class>com.mcsm.hellapp.customer.view.CategoriesServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>catPlacesServlet</servlet-name>
+        <servlet-class>com.mcsm.hellapp.customer.view.CatPlacesServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>placeEventsServlet</servlet-name>
+        <servlet-class>com.mcsm.hellapp.customer.view.PlaceEventsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>discountsServlet</servlet-name>
+        <servlet-class>com.mcsm.hellapp.customer.view.DiscountsServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>applyDiscountServlet</servlet-name>
+        <servlet-class>com.mcsm.hellapp.customer.view.ApplyDiscountServlet</servlet-class>
+    </servlet>
+
+
+
+    <servlet-mapping>
+        <servlet-name>categoriesServlet</servlet-name>
+        <url-pattern>/cats</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>catPlacesServlet</servlet-name>
+        <url-pattern>/cat/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>placeEventsServlet</servlet-name>
+        <url-pattern>/place/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>discountsServlet</servlet-name>
+        <url-pattern>/discounts</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>applyDiscountServlet</servlet-name>
+        <url-pattern>/apply-campaign</url-pattern>
+    </servlet-mapping>
+
+</web-app>

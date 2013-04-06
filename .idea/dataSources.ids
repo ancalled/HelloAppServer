@@ -1,4 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?><component name="dataSourceStorage">
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
   <data-source source="LOCAL" name="HelloApp" product="MySQL" version="5.6.10" jdbc-version="4.0" driver-name="MySQL-AB JDBC Driver" driver-version="mysql-connector-java-5.1.23 ( Revision: ${bzr.revision-id} )" uuid="dd2415f6-962c-4914-b333-20c4946b9bc8">
     <extra-name-characters>#@</extra-name-characters>
     <identifier-quote-string>`</identifier-quote-string>
@@ -14,55 +15,77 @@
         <url>file://$PROJECT_DIR$/lib/mysql-connector-java-5.1.23-bin.jar</url>
       </library>
     </libraries>
-    <schema name="" catalog="helloapp" />
+    <schema name="" catalog="helloapp"/>
+    <table name="business_companies" schema="" catalog="helloapp" type="TABLE">
+      <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="name" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="FK8C48E0C940C43C50" table="business_users" schema="" catalog="helloapp" columns="company_id"/>
+      <exported-key name="FKFD77216340C43C50" table="campaigns" schema="" catalog="helloapp" columns="company_id"/>
+    </table>
+    <table name="business_users" schema="" catalog="helloapp" type="TABLE">
+      <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="email" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="pass" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="company_id" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK8C48E0C940C43C50" columns="company_id" ref-table="business_companies" ref-schema="" ref-catalog="helloapp" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="campaign_stats" schema="" catalog="helloapp" type="TABLE">
+      <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="whenApllied" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="campaign_id" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5"/>
+      <column name="user_id" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FKB22F1CB0A77FFCE4" columns="campaign_id" ref-table="campaigns" ref-schema="" ref-catalog="helloapp" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FKB22F1CB0FD9E404" columns="user_id" ref-table="users" ref-schema="" ref-catalog="helloapp" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+    </table>
+    <table name="campaigns" schema="" catalog="helloapp" type="TABLE">
+      <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="description" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="goodThrough" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="rate" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4"/>
+      <column name="startFrom" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="title" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="company_id" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FKFD77216340C43C50" columns="company_id" ref-table="business_companies" ref-schema="" ref-catalog="helloapp" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FKB22F1CB0A77FFCE4" table="campaign_stats" schema="" catalog="helloapp" columns="campaign_id"/>
+    </table>
     <table name="categories" schema="" catalog="helloapp" type="TABLE">
-      <column name="name" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12" />
-      <column name="title" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
-      <primary-key name="PRIMARY" columns="name" />
+      <column name="name" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <column name="title" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="name"/>
     </table>
     <table name="cities" schema="" catalog="helloapp" type="TABLE">
-      <column name="name" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12" />
-      <column name="title" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
-      <primary-key name="PRIMARY" columns="name" />
-    </table>
-    <table name="disc_stats" schema="" catalog="helloapp" type="TABLE">
-      <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
-      <column name="discountId" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
-      <column name="userId" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
-      <column name="whenApllied" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93" />
-      <primary-key name="PRIMARY" columns="id" />
-    </table>
-    <table name="discounts" schema="" catalog="helloapp" type="TABLE">
-      <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
-      <column name="goodThrough" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93" />
-      <column name="place" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
-      <column name="rate" sqlType="INT" length="10" precision="0" nullable="true" jdbcType="4" />
-      <column name="title" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
-      <primary-key name="PRIMARY" columns="id" />
+      <column name="name" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <column name="title" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="name"/>
     </table>
     <table name="events" schema="" catalog="helloapp" type="TABLE">
-      <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
-      <column name="description" sqlType="VARCHAR" length="300" precision="0" nullable="true" jdbcType="12" />
-      <column name="eventDate" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93" />
-      <column name="place" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
-      <column name="title" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
-      <primary-key name="PRIMARY" columns="id" />
+      <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="description" sqlType="VARCHAR" length="300" precision="0" nullable="true" jdbcType="12"/>
+      <column name="eventDate" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="place" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="title" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
     </table>
     <table name="hibernate_sequence" schema="" catalog="helloapp" type="TABLE">
-      <column name="next_val" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5" />
+      <column name="next_val" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5"/>
     </table>
     <table name="places" schema="" catalog="helloapp" type="TABLE">
-      <column name="name" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12" />
-      <column name="category" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
-      <column name="city" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
-      <column name="title" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
-      <primary-key name="PRIMARY" columns="name" />
+      <column name="name" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
+      <column name="category" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="city" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="title" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="name"/>
     </table>
     <table name="users" schema="" catalog="helloapp" type="TABLE">
-      <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5" />
-      <column name="name" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
-      <column name="pass" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12" />
-      <primary-key name="PRIMARY" columns="id" />
+      <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="name" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="pass" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="FKB22F1CB0FD9E404" table="campaign_stats" schema="" catalog="helloapp" columns="user_id"/>
     </table>
   </data-source>
 </component>

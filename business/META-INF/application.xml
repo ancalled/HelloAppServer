@@ -4,15 +4,15 @@
              xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_6.xsd"
              version="6">
 
-    <module id="customer-web">
+    <module id="business-web">
         <web>
-            <web-uri>customer.war</web-uri>
-            <context-root>/customer</context-root>
+            <web-uri>business.war</web-uri>
+            <context-root>/business</context-root>
         </web>
     </module>
 
-
-    <module id="helloapp">
-        <ejb>helloapp.jar</ejb>
+    <module id="business-ejb">
+        <ejb>business.jar</ejb>
     </module>
+
 </application>
