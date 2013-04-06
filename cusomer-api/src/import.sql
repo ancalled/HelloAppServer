@@ -29,8 +29,8 @@ INSERT INTO users(id, name, pass) VALUES (1, 'user1', '12345');
 INSERT INTO users(id, name, pass) VALUES (2, 'user2', '12345');
 INSERT INTO users(id, name, pass) VALUES (3, 'user3', '12345');
 
-# INSERT INTO campaign_stats(id, campaign_id, user_id, whenApllied) VALUES (1, 3, 1, '2013-04-05 13:15');
-# INSERT INTO campaign_stats(id, campaign_id, user_id, whenApllied) VALUES (2, 3, 2, '2013-04-06 20:56');
+INSERT INTO discount_stats(id, discount_id, user_id, whenApllied) VALUES (1, 3, 1, '2013-04-05 13:15');
+INSERT INTO discount_stats(id, discount_id, user_id, whenApllied) VALUES (2, 3, 2, '2013-04-06 20:56');
 
 
 

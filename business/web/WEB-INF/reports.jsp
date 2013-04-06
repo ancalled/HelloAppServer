@@ -31,7 +31,6 @@
                 <thead>
                 <tr>
                     <th>#</th>
-                    <th>Клиент</th>
                     <th>Скидка</th>
                     <th>Когда использована</th>
                 </tr>
@@ -40,7 +39,6 @@
                 <c:forEach items="${stats}" var="s">
                     <tr>
                         <td>${loop.index + 1}</td>
-                        <td>${s.user.name}</td>
                         <td>${s.campaign.title}</td>
                         <td>
                             <fmt:formatDate value="${s.whenApllied}" pattern="yyyy-MMM-dd hh:mm"/>

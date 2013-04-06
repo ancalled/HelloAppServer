@@ -20,8 +20,8 @@
       <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
       <column name="name" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="id"/>
-      <exported-key name="FK8C48E0C940C43C50" table="business_users" schema="" catalog="helloapp" columns="company_id"/>
-      <exported-key name="FKFD77216340C43C50" table="campaigns" schema="" catalog="helloapp" columns="company_id"/>
+      <exported-key name="FK8C48E0C942D6B528" table="business_users" schema="" catalog="helloapp" columns="company_id"/>
+      <exported-key name="FKFD77216342D6B528" table="campaigns" schema="" catalog="helloapp" columns="company_id"/>
     </table>
     <table name="business_users" schema="" catalog="helloapp" type="TABLE">
       <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
@@ -29,16 +29,7 @@
       <column name="pass" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
       <column name="company_id" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5"/>
       <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="FK8C48E0C940C43C50" columns="company_id" ref-table="business_companies" ref-schema="" ref-catalog="helloapp" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-    </table>
-    <table name="campaign_stats" schema="" catalog="helloapp" type="TABLE">
-      <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
-      <column name="whenApllied" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
-      <column name="campaign_id" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5"/>
-      <column name="user_id" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5"/>
-      <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="FKB22F1CB0A77FFCE4" columns="campaign_id" ref-table="campaigns" ref-schema="" ref-catalog="helloapp" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <foreign-key name="FKB22F1CB0FD9E404" columns="user_id" ref-table="users" ref-schema="" ref-catalog="helloapp" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FK8C48E0C942D6B528" columns="company_id" ref-table="business_companies" ref-schema="" ref-catalog="helloapp" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
     </table>
     <table name="campaigns" schema="" catalog="helloapp" type="TABLE">
       <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
@@ -49,8 +40,8 @@
       <column name="title" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
       <column name="company_id" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5"/>
       <primary-key name="PRIMARY" columns="id"/>
-      <foreign-key name="FKFD77216340C43C50" columns="company_id" ref-table="business_companies" ref-schema="" ref-catalog="helloapp" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
-      <exported-key name="FKB22F1CB0A77FFCE4" table="campaign_stats" schema="" catalog="helloapp" columns="campaign_id"/>
+      <foreign-key name="FKFD77216342D6B528" columns="company_id" ref-table="business_companies" ref-schema="" ref-catalog="helloapp" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <exported-key name="FKA78E8213EA3C30A" table="discount_stats" schema="" catalog="helloapp" columns="discount_id"/>
     </table>
     <table name="categories" schema="" catalog="helloapp" type="TABLE">
       <column name="name" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
@@ -61,6 +52,15 @@
       <column name="name" sqlType="VARCHAR" length="255" precision="0" nullable="false" jdbcType="12"/>
       <column name="title" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="name"/>
+    </table>
+    <table name="discount_stats" schema="" catalog="helloapp" type="TABLE">
+      <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="whenApllied" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <column name="discount_id" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5"/>
+      <column name="user_id" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FKA78E8213EA3C30A" columns="discount_id" ref-table="campaigns" ref-schema="" ref-catalog="helloapp" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FKA78E821725EB6CA" columns="user_id" ref-table="users" ref-schema="" ref-catalog="helloapp" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
     </table>
     <table name="events" schema="" catalog="helloapp" type="TABLE">
       <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
@@ -85,7 +85,7 @@
       <column name="name" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
       <column name="pass" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="id"/>
-      <exported-key name="FKB22F1CB0FD9E404" table="campaign_stats" schema="" catalog="helloapp" columns="user_id"/>
+      <exported-key name="FKA78E821725EB6CA" table="discount_stats" schema="" catalog="helloapp" columns="user_id"/>
     </table>
   </data-source>
 </component>

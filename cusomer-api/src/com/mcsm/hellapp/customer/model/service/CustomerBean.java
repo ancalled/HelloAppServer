@@ -29,17 +29,17 @@ public class CustomerBean implements CustomerService {
         User u = em.find(User.class, userId);
         Discount d = em.find(Discount.class, discountId);
 
-//        if (u != null && d != null) {
+        if (u != null && d != null) {
 //            //todo check user can apply this campaign
 //
-//            CampaignStat stat = new CampaignStat();
-//            stat.setUser(u);
-//            stat.setCampaign(d);
-//            stat.setWhenApllied(new Date());
-//            em.persist(stat);
-//
-//            return stat.getId();
-//        }
+            DiscountStat stat = new DiscountStat();
+            stat.setUser(u);
+            stat.setDiscount(d);
+            stat.setWhenApllied(new Date());
+            em.persist(stat);
+
+            return stat.getId();
+        }
 
         return null;
     }

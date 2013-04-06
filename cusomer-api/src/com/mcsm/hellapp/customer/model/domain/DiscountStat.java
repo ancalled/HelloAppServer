@@ -1,4 +1,4 @@
-package com.mcsm.hellapp.business.model.domain;
+package com.mcsm.hellapp.customer.model.domain;
 
 
 import javax.persistence.*;
@@ -7,15 +7,17 @@ import java.util.Date;
 
 @Entity
 @Table(name = "discount_stats")
-public class CampaignStat implements Serializable {
+public class DiscountStat implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
     @ManyToOne
-    @JoinColumn(name = "discount_id")
-    private Campaign campaign;
+    private User user;
+
+    @ManyToOne
+    private Discount discount;
 
     private Date whenApllied;
 
@@ -27,12 +29,20 @@ public class CampaignStat implements Serializable {
         this.id = id;
     }
 
-    public Campaign getCampaign() {
-        return campaign;
+    public Discount getDiscount() {
+        return discount;
     }
 
-    public void setCampaign(Campaign campaign) {
-        this.campaign = campaign;
+    public void setDiscount(Discount discount) {
+        this.discount = discount;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 
     public Date getWhenApllied() {
