@@ -6,18 +6,18 @@
            version="2.5">
 
 
-    <servlet>
-        <servlet-name>categoriesServlet</servlet-name>
-        <servlet-class>com.mcsm.hellapp.customer.view.CategoriesServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>catPlacesServlet</servlet-name>
-        <servlet-class>com.mcsm.hellapp.customer.view.CatPlacesServlet</servlet-class>
-    </servlet>
-    <servlet>
-        <servlet-name>placeEventsServlet</servlet-name>
-        <servlet-class>com.mcsm.hellapp.customer.view.PlaceEventsServlet</servlet-class>
-    </servlet>
+    <!--<servlet>-->
+        <!--<servlet-name>categoriesServlet</servlet-name>-->
+        <!--<servlet-class>com.mcsm.hellapp.customer.view.CategoriesServlet</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet>-->
+        <!--<servlet-name>catPlacesServlet</servlet-name>-->
+        <!--<servlet-class>com.mcsm.hellapp.customer.view.CatPlacesServlet</servlet-class>-->
+    <!--</servlet>-->
+    <!--<servlet>-->
+        <!--<servlet-name>placeEventsServlet</servlet-name>-->
+        <!--<servlet-class>com.mcsm.hellapp.customer.view.PlaceEventsServlet</servlet-class>-->
+    <!--</servlet>-->
     <servlet>
         <servlet-name>discountsServlet</servlet-name>
         <servlet-class>com.mcsm.hellapp.customer.view.DiscountsServlet</servlet-class>
@@ -29,18 +29,18 @@
 
 
 
-    <servlet-mapping>
-        <servlet-name>categoriesServlet</servlet-name>
-        <url-pattern>/cats</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>catPlacesServlet</servlet-name>
-        <url-pattern>/cat/*</url-pattern>
-    </servlet-mapping>
-    <servlet-mapping>
-        <servlet-name>placeEventsServlet</servlet-name>
-        <url-pattern>/place/*</url-pattern>
-    </servlet-mapping>
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>categoriesServlet</servlet-name>-->
+        <!--<url-pattern>/cats</url-pattern>-->
+    <!--</servlet-mapping>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>catPlacesServlet</servlet-name>-->
+        <!--<url-pattern>/cat/*</url-pattern>-->
+    <!--</servlet-mapping>-->
+    <!--<servlet-mapping>-->
+        <!--<servlet-name>placeEventsServlet</servlet-name>-->
+        <!--<url-pattern>/place/*</url-pattern>-->
+    <!--</servlet-mapping>-->
     <servlet-mapping>
         <servlet-name>discountsServlet</servlet-name>
         <url-pattern>/discounts</url-pattern>

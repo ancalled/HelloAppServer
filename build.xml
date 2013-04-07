@@ -1,0 +1,22 @@
+<project name="build">
+
+
+    <property name="project.home" value="."/>
+    <property name="out" value="${project.home}/out"/>
+    <property name="bin" value="${project.home}/out/bin"/>
+
+    <property name="xmx-heap" value="Xmx1024m"/>
+
+    <target name="make-distr">
+
+        <delete dir="${bin}"/>
+        <mkdir dir="${bin}"/>
+
+        <zip destfile="${bin}/hello-distr.zip">
+            <zipfileset dir="${out}/admin.ear" prefix="admin.ear"/>
+            <zipfileset dir="${out}/business.ear" prefix="business.ear"/>
+            <zipfileset dir="${out}/customer.ear" prefix="customer.ear"/>
+        </zip>
+    </target>
+
+</project>
