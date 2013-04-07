@@ -20,16 +20,16 @@ public interface CustomerService {
 //    ---------------------------------
 
 
-    List<Category> getAllCategories();
-
-    List<Place> getCatPlaces(String cat);
-
-    List<Event> getPlaceEvents(String place, Date from);
-
-    List<Event> getPlaceEvents(String place, Date from, Date to);
-
-    List<Place> getAllPlaces();
-
-    List<Place> getAllEvents();
+//    List<Category> getAllCategories();
+//
+//    List<Place> getCatPlaces(String cat);
+//
+//    List<Event> getPlaceEvents(String place, Date from);
+//
+//    List<Event> getPlaceEvents(String place, Date from, Date to);
+//
+//    List<Place> getAllPlaces();
+//
+//    List<Place> getAllEvents();
 
 }

@@ -3,7 +3,8 @@ package com.mcsm.hellapp.customer.model.domain;
 import javax.persistence.*;
 import java.io.Serializable;
 
-@Entity
+@Deprecated
+//@Entity
 @Table(name = "categories")
 public class Category implements Serializable {
 

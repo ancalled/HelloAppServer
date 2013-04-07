@@ -1,11 +1,10 @@
 package com.mcsm.hellapp.business.view;
 
 
+import com.mcsm.hellapp.business.model.domain.BusinessUser;
+import com.mcsm.hellapp.business.model.domain.Campaign;
+import com.mcsm.hellapp.business.model.domain.CampaignStat;
 import com.mcsm.hellapp.business.model.service.BusinessService;
-import com.mcsm.hellapp.business.view.mvc.Action;
-import com.mcsm.hellapp.business.view.mvc.AddCampaignAction;
-import com.mcsm.hellapp.business.view.mvc.CampaignsAction;
-import com.mcsm.hellapp.business.view.mvc.ReportAction;
 
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
@@ -15,6 +14,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
 public class DispatcherServlet extends HttpServlet {
 
@@ -41,19 +41,7 @@ public class DispatcherServlet extends HttpServlet {
         if (action != null) {
             String view = action.execute(req, resp);
 
-//        if (view.equals(req.getPathInfo().substring(1))) {
             req.getRequestDispatcher("/WEB-INF/" + view + ".jsp").forward(req, resp);
-//        } else {
-//            resp.sendRedirect(view);
-//        }
-
-//        long discId = 1L;
-////        Date fromDate = new Date();
-////        Date toDate = new Date();
-//        List<CampaignStat> stats = service.getStatsByDiscountId(discId);
-//
-//        req.setAttribute("stats", stats);
-//        req.getRequestDispatcher("/WEB-INF/admin/report.jsp").forward(req, resp); // Forward to JSP page to display them in a HTML table.
 
         } else {
             resp.sendRedirect("/404.html");
@@ -61,21 +49,82 @@ public class DispatcherServlet extends HttpServlet {
     }
 
 
+ // ------------------------------------------------------------------------------------------------
+
 
     public static class ActionFactory {
 
         public static Action getAction(HttpServletRequest req, BusinessService service) {
-            if ("/reports".equals(req.getPathInfo())) {
-                return new ReportAction(service);
+            String pth = req.getPathInfo();
 
-            } else if ("/campaigns".equals(req.getPathInfo())) {
-                return new CampaignsAction(service);
+            if ("/reports".equals(pth)) {
+                return new Action(service) {
 
-            } else if ("/add-campaign".equals(req.getPathInfo())) {
-                return new AddCampaignAction(service);
+                    @Override
+                    public String execute(HttpServletRequest req, HttpServletResponse resp) {
+                        BusinessUser user = (BusinessUser) req.getSession().getAttribute("user");
+
+                        if (user != null && user.getCompany() != null) {
+                            List<CampaignStat> stats = service.getStatsByCompany(user.getCompany().getId());
+
+                            req.setAttribute("stats", stats);
+                        }
+
+                        return "reports";
+                    }
+                };
+
+            } else if ("/campaigns".equals(pth)) {
+                return new Action(service) {
+
+                    @Override
+                    public String execute(HttpServletRequest req, HttpServletResponse resp) {
+
+                        BusinessUser user = (BusinessUser) req.getSession().getAttribute("user");
+
+                        if (user != null && user.getCompany() != null) {
+                            List<Campaign> campaigns = service.getDiscountsByCompany(user.getCompany().getId());
+
+                            req.setAttribute("campaigns", campaigns);
+                        }
+
+                        return "campaigns";
+                    }
+                };
+
+            } else if ("/add-campaign".equals(pth)) {
+                return new Action(service) {
+
+                    @Override
+                    public String execute(HttpServletRequest req, HttpServletResponse resp) {
+
+//        BusinessUser user = (BusinessUser) req.getSession().getAttribute("user");
+//
+//        if (user != null && user.getCompany() != null) {
+//            List<Campaign> campaigns = service.getDiscountsByCompany(user.getCompany().getId());
+//
+//            req.setAttribute("campaigns", campaigns);
+//        }
+
+                        return "add-campaign";
+                    }
+                };
             }
 
             return null;
         }
+    }
+
+    public abstract static class Action {
+
+        protected final BusinessService service;
+
+
+        protected Action(BusinessService service) {
+            this.service = service;
+        }
+
+        public abstract String execute(HttpServletRequest req, HttpServletResponse resp);
+
     }
 }

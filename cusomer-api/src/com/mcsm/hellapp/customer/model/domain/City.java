@@ -5,7 +5,8 @@ import javax.persistence.Id;
 import javax.persistence.Table;
 import java.io.Serializable;
 
-@Entity
+@Deprecated
+//@Entity
 @Table(name = "cities")
 public class City implements Serializable {
 

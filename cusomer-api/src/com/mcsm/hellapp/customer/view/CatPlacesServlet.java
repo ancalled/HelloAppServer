@@ -16,6 +16,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
+@Deprecated
 public class CatPlacesServlet extends HttpServlet {
 
     private CustomerService service;
@@ -36,23 +37,23 @@ public class CatPlacesServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
 
-        System.out.println("CatPlacesServlet.doGet");
-
-        String cat = req.getPathInfo().substring(1);
-
-        System.out.println("cat = " + cat);
-
-        List<Place> places = service.getCatPlaces(cat);
-
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
-
-        resp.setContentType("application/json");
-        resp.setCharacterEncoding("UTF-8");
-
-        PrintWriter out = resp.getWriter();
-        out.print(gson.toJson(places));
-
-        out.close();
+//        System.out.println("CatPlacesServlet.doGet");
+//
+//        String cat = req.getPathInfo().substring(1);
+//
+//        System.out.println("cat = " + cat);
+//
+//        List<Place> places = service.getCatPlaces(cat);
+//
+//        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+//
+//        resp.setContentType("application/json");
+//        resp.setCharacterEncoding("UTF-8");
+//
+//        PrintWriter out = resp.getWriter();
+//        out.print(gson.toJson(places));
+//
+//        out.close();
     }
 
 

@@ -17,6 +17,7 @@ import java.io.PrintWriter;
 import java.util.Date;
 import java.util.List;
 
+@Deprecated
 public class PlaceEventsServlet extends HttpServlet {
 
     private CustomerService catalog;
@@ -37,26 +38,26 @@ public class PlaceEventsServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
 
-        System.out.println("CatPlacesServlet.doGet");
-
-        String place = req.getPathInfo().substring(1);
-
-        System.out.println("place = " + place);
-
-        Date from = new Date();
-
-
-        List<Event> events = catalog.getPlaceEvents(place, from);
-
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
-
-        resp.setContentType("application/json");
-        resp.setCharacterEncoding("UTF-8");
-
-        PrintWriter out = resp.getWriter();
-        out.print(gson.toJson(events));
-
-        out.close();
+//        System.out.println("CatPlacesServlet.doGet");
+//
+//        String place = req.getPathInfo().substring(1);
+//
+//        System.out.println("place = " + place);
+//
+//        Date from = new Date();
+//
+//
+//        List<Event> events = catalog.getPlaceEvents(place, from);
+//
+//        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+//
+//        resp.setContentType("application/json");
+//        resp.setCharacterEncoding("UTF-8");
+//
+//        PrintWriter out = resp.getWriter();
+//        out.print(gson.toJson(events));
+//
+//        out.close();
     }
 
 

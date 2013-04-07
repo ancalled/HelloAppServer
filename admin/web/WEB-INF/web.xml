@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+           version="2.5">
+    <filter>
+        <filter-name>adminAuthFilter</filter-name>
+        <filter-class>com.mcsm.hellapp.admin.view.AdminAuthFilter</filter-class>
+    </filter>
+    <filter-mapping>
+        <filter-name>adminAuthFilter</filter-name>
+        <url-pattern>/cabinet/*</url-pattern>
+    </filter-mapping>
+
+
+    <servlet>
+        <servlet-name>authServlet</servlet-name>
+        <servlet-class>com.mcsm.hellapp.admin.view.AuthServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>dispatcherServlet</servlet-name>
+        <servlet-class>com.mcsm.hellapp.admin.view.DispatcherServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>authServlet</servlet-name>
+        <url-pattern>/auth</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>dispatcherServlet</servlet-name>
+        <url-pattern>/cabinet/*</url-pattern>
+    </servlet-mapping>
+
+
+</web-app>
+

@@ -16,6 +16,7 @@ import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
+@Deprecated
 public class CategoriesServlet extends HttpServlet {
 
     private CustomerService service;
@@ -36,18 +37,18 @@ public class CategoriesServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
 
-        List<Category> cats = service.getAllCategories();
-
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
-
-
-        resp.setContentType("application/json");
-        resp.setCharacterEncoding("UTF-8");
-
-        PrintWriter out = resp.getWriter();
-        out.print(gson.toJson(cats));
-
-        out.close();
+//        List<Category> cats = service.getAllCategories();
+//
+//        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+//
+//
+//        resp.setContentType("application/json");
+//        resp.setCharacterEncoding("UTF-8");
+//
+//        PrintWriter out = resp.getWriter();
+//        out.print(gson.toJson(cats));
+//
+//        out.close();
     }
 
 

@@ -47,52 +47,52 @@ public class CustomerBean implements CustomerService {
 
 //    -------------------------------------------------------------
 
-    @Override
-    public List<Category> getAllCategories() {
-        //noinspection unchecked
-        return em.createQuery("select c from Category c")
-                .getResultList();
-    }
-
-    @Override
-    public List<Place> getCatPlaces(String cat) {
-        //noinspection unchecked
-        return em.createQuery("select c from Place c where c.category = :cat")
-                .setParameter("cat", cat)
-                .getResultList();
-    }
-
-
-    @Override
-    public List<Event> getPlaceEvents(String place, Date from) {
-        //noinspection unchecked
-        return em.createQuery("select e from Event e where e.place = :place and e.eventDate > :from")
-                .setParameter("place", place)
-                .setParameter("from", from)
-                .getResultList();
-    }
-
-    @Override
-    public List<Event> getPlaceEvents(String place, Date from, Date to) {
-        //noinspection unchecked
-        return em.createQuery("select e from Event e where e.place = :place and e.eventDate between :from and :to")
-                .setParameter("place", place)
-                .setParameter("from", from)
-                .setParameter("to", to)
-                .getResultList();
-    }
-
-    @Override
-    public List<Place> getAllPlaces() {
-        //noinspection unchecked
-        return em.createQuery("select c from Place c")
-                .getResultList();
-    }
-
-    @Override
-    public List<Place> getAllEvents() {
-        //noinspection unchecked
-        return em.createQuery("select c from Event c")
-                .getResultList();
-    }
+//    @Override
+//    public List<Category> getAllCategories() {
+//        //noinspection unchecked
+//        return em.createQuery("select c from Category c")
+//                .getResultList();
+//    }
+//
+//    @Override
+//    public List<Place> getCatPlaces(String cat) {
+//        //noinspection unchecked
+//        return em.createQuery("select c from Place c where c.category = :cat")
+//                .setParameter("cat", cat)
+//                .getResultList();
+//    }
+//
+//
+//    @Override
+//    public List<Event> getPlaceEvents(String place, Date from) {
+//        //noinspection unchecked
+//        return em.createQuery("select e from Event e where e.place = :place and e.eventDate > :from")
+//                .setParameter("place", place)
+//                .setParameter("from", from)
+//                .getResultList();
+//    }
+//
+//    @Override
+//    public List<Event> getPlaceEvents(String place, Date from, Date to) {
+//        //noinspection unchecked
+//        return em.createQuery("select e from Event e where e.place = :place and e.eventDate between :from and :to")
+//                .setParameter("place", place)
+//                .setParameter("from", from)
+//                .setParameter("to", to)
+//                .getResultList();
+//    }
+//
+//    @Override
+//    public List<Place> getAllPlaces() {
+//        //noinspection unchecked
+//        return em.createQuery("select c from Place c")
+//                .getResultList();
+//    }
+//
+//    @Override
+//    public List<Place> getAllEvents() {
+//        //noinspection unchecked
+//        return em.createQuery("select c from Event c")
+//                .getResultList();
+//    }
 }

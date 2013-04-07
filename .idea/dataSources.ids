@@ -16,12 +16,19 @@
       </library>
     </libraries>
     <schema name="" catalog="helloapp"/>
+    <table name="admin_users" schema="" catalog="helloapp" type="TABLE">
+      <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="email" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="pass" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <primary-key name="PRIMARY" columns="id"/>
+    </table>
     <table name="business_companies" schema="" catalog="helloapp" type="TABLE">
       <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
       <column name="name" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="id"/>
       <exported-key name="FK8C48E0C942D6B528" table="business_users" schema="" catalog="helloapp" columns="company_id"/>
       <exported-key name="FKFD77216342D6B528" table="campaigns" schema="" catalog="helloapp" columns="company_id"/>
+      <exported-key name="FKFD772163F2A8964F" table="campaigns" schema="" catalog="helloapp" columns="company_id"/>
     </table>
     <table name="business_users" schema="" catalog="helloapp" type="TABLE">
       <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
@@ -41,6 +48,7 @@
       <column name="company_id" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5"/>
       <primary-key name="PRIMARY" columns="id"/>
       <foreign-key name="FKFD77216342D6B528" columns="company_id" ref-table="business_companies" ref-schema="" ref-catalog="helloapp" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
+      <foreign-key name="FKFD772163F2A8964F" columns="company_id" ref-table="business_companies" ref-schema="" ref-catalog="helloapp" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
       <exported-key name="FKA78E8213EA3C30A" table="discount_stats" schema="" catalog="helloapp" columns="discount_id"/>
     </table>
     <table name="categories" schema="" catalog="helloapp" type="TABLE">

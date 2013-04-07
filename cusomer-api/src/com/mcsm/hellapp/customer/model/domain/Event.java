@@ -4,7 +4,8 @@ import javax.persistence.*;
 import java.io.Serializable;
 import java.util.Date;
 
-@Entity
+@Deprecated
+//@Entity
 @Table(name = "events")
 public class Event implements Serializable {
 
