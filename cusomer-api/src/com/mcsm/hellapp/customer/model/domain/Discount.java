@@ -17,6 +17,10 @@ public class Discount implements Serializable {
     private Date startFrom;
     private Date goodThrough;
 
+    @ManyToOne
+    @JoinColumn(name = "company_id")
+    private Place place;
+
 
     public String getTitle() {
         return title;
@@ -69,5 +73,11 @@ public class Discount implements Serializable {
         this.goodThrough = goodThrough;
     }
 
+    public Place getPlace() {
+        return place;
+    }
 
+    public void setPlace(Place place) {
+        this.place = place;
+    }
 }
