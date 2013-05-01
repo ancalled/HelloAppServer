@@ -1,4 +1,4 @@
-package kz.helloapp.view.customer;
+package kz.helloapp.view.customer.api;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
@@ -6,34 +6,15 @@ import kz.helloapp.model.domain.Campaign;
 import kz.helloapp.model.domain.CampaignStat;
 import kz.helloapp.model.domain.CustomerUser;
 import kz.helloapp.model.domain.PartnerConfirmer;
-import kz.helloapp.model.service.CustomerService;
+import kz.helloapp.view.customer.CustomerServlet;
 
-import javax.naming.InitialContext;
-import javax.naming.NamingException;
-import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class ApplyCampaignServlet extends HttpServlet {
-
-    private CustomerService customerService;
-
-    @Override
-    public void init(ServletConfig config) throws ServletException {
-        super.init(config);
-
-        try {
-            InitialContext context = new InitialContext();
-            customerService = (CustomerService) context.lookup("java:app/helloapp.jar/customer-service");
-
-        } catch (NamingException e) {
-            e.printStackTrace();
-        }
-    }
+public class ApplyCampaignServlet extends CustomerServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
@@ -58,9 +39,9 @@ public class ApplyCampaignServlet extends HttpServlet {
         System.out.println("\tdiscountId = " + campId);
         System.out.println("\tconfirmerCode = " + confirmerCode);
 
-        PartnerConfirmer confirmer = customerService.getConfirmer(confirmerCode);
-        CustomerUser user = customerService.getUser(userId);
-        Campaign campaign = customerService.getCampaign(campId);
+        PartnerConfirmer confirmer = service.getConfirmer(confirmerCode);
+        CustomerUser user = service.getUser(userId);
+        Campaign campaign = service.getCampaign(campId);
 
 
         Status status;
@@ -79,7 +60,7 @@ public class ApplyCampaignServlet extends HttpServlet {
             stat.setUser(user);
             stat.setConfirmer(confirmer);
 
-            stat = customerService.saveCampaignStat(stat);
+            stat = service.saveCampaignStat(stat);
 
             if (stat != null) {
                 status = Status.OK;

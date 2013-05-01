@@ -1,36 +1,19 @@
-package kz.helloapp.view.customer;
+package kz.helloapp.view.customer.api;
 
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import kz.helloapp.model.domain.Campaign;
-import kz.helloapp.model.service.CustomerService;
+import kz.helloapp.view.customer.CustomerServlet;
 
-import javax.naming.InitialContext;
-import javax.naming.NamingException;
-import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
 
-public class CampaignsServlet extends HttpServlet {
+public class CampaignsServlet extends CustomerServlet {
 
-    private CustomerService service;
-
-    @Override
-    public void init(ServletConfig config) throws ServletException {
-        super.init(config);
-
-        try {
-            InitialContext context = new InitialContext();
-            service = (CustomerService) context.lookup("java:app/helloapp.jar/customer-service");
-        } catch (NamingException e) {
-            e.printStackTrace();
-        }
-    }
 
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)

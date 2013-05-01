@@ -16,23 +16,9 @@ import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 
-public class AddCampaignServlet extends HttpServlet {
+public class AddCampaignServlet extends PartnerServlet {
 
     public static final DateFormat DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd HH:mm");
-
-    private PartnerService service;
-
-    @Override
-    public void init(ServletConfig config) throws ServletException {
-        super.init(config);
-
-        try {
-            InitialContext context = new InitialContext();
-            service = (PartnerService) context.lookup("java:app/helloapp.jar/business-service");
-        } catch (NamingException e) {
-            e.printStackTrace();
-        }
-    }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
@@ -74,8 +60,6 @@ public class AddCampaignServlet extends HttpServlet {
                 service.addCampaign(c);
 
                 resp.sendRedirect(ctx + "cabinet/campaigns");
-
-                return;
             }
 
         }

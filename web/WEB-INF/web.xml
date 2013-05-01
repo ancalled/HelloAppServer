@@ -81,11 +81,11 @@
 
     <servlet>
         <servlet-name>customerCampaignsServlet</servlet-name>
-        <servlet-class>kz.helloapp.view.customer.CampaignsServlet</servlet-class>
+        <servlet-class>kz.helloapp.view.customer.api.CampaignsServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>customerApplyCampaignServlet</servlet-name>
-        <servlet-class>kz.helloapp.view.customer.ApplyCampaignServlet</servlet-class>
+        <servlet-class>kz.helloapp.view.customer.api.ApplyCampaignServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>

@@ -2,32 +2,14 @@ package kz.helloapp.view.admin;
 
 
 import kz.helloapp.model.domain.AdminUser;
-import kz.helloapp.model.service.AdminService;
 
-import javax.naming.InitialContext;
-import javax.naming.NamingException;
-import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
-import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class AuthServlet extends HttpServlet {
+public class AuthServlet extends AdminServlet {
 
-    private AdminService service;
-
-    @Override
-    public void init(ServletConfig config) throws ServletException {
-        super.init(config);
-
-        try {
-            InitialContext context = new InitialContext();
-            service = (AdminService) context.lookup("java:app/helloapp.jar/admin-service");
-        } catch (NamingException e) {
-            e.printStackTrace();
-        }
-    }
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)

@@ -13,21 +13,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
-public class AuthServlet extends HttpServlet {
-
-    private PartnerService service;
-
-    @Override
-    public void init(ServletConfig config) throws ServletException {
-        super.init(config);
-
-        try {
-            InitialContext context = new InitialContext();
-            service = (PartnerService) context.lookup("java:app/helloapp.jar/business-service");
-        } catch (NamingException e) {
-            e.printStackTrace();
-        }
-    }
+public class AuthServlet extends PartnerServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
