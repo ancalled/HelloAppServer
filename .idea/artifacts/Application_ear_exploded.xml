@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-ear" build-on-make="true" name="Application:ear exploded">
+    <output-path>$PROJECT_DIR$/out/helloapp.ear</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="Application/javaeeApplication/javaEEApplication" />
+      <element id="directory" name="helloapp.war">
+        <element id="artifact" artifact-name="Application:war exploded" />
+      </element>
+      <element id="directory" name="helloapp.jar">
+        <element id="artifact" artifact-name="Application:ejb exploded" />
+      </element>
+      <element id="directory" name="lib">
+        <element id="library" level="project" name="gson" />
+        <element id="library" level="project" name="zxing-core" />
+      </element>
+    </root>
+  </artifact>
+</component>
