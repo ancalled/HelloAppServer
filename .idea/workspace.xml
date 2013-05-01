@@ -2,105 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf00688a-9598-4ca4-ade7-c3e5b364264f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kz/helloapp/model/service/AdminBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kz/helloapp/model/service/AdminService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Application_ear_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Application_ejb_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/artifacts/Application_war_exploded.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kz/helloapp/view/customer/ApplyCampaignServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/META-INF/MANIFEST.MF" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kz/helloapp/model/domain/PartnerConfirmer.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kz/helloapp/model/service/PartnerService.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/QRGeneratorTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/customer/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/partner/index.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/views/partner/new-campaign.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/META-INF/persistence.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/zxing_core.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/admin_ear_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/admin_ejb_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/admin_war_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/business_ear_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/business_ejb_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/business_war_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/cusomer_api_ear_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/cusomer_api_ejb_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/artifacts/cusomer_api_war_exploded.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/META-INF/application.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/META-INF/persistence.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/src/com/mcsm/hellapp/admin/model/service/AdminBean.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/src/com/mcsm/hellapp/admin/model/service/AdminService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/admin/web/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/business/META-INF/application.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/business/META-INF/persistence.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/business/business.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/business/src/com/mcsm/hellapp/business/model/domain/BusinessCompany.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/business/src/com/mcsm/hellapp/business/model/domain/BusinessUser.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/business/src/com/mcsm/hellapp/business/model/domain/Campaign.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/business/src/com/mcsm/hellapp/business/model/domain/CampaignStat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/business/src/com/mcsm/hellapp/business/model/service/BusinessService.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/business/src/import.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/business/web/WEB-INF/add-campaign.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/business/web/WEB-INF/web.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/business/web/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cusomer-api/META-INF/application.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cusomer-api/META-INF/persistence.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cusomer-api/cusomer-api.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cusomer-api/src/com/mcsm/hellapp/customer/model/domain/Category.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cusomer-api/src/com/mcsm/hellapp/customer/model/domain/City.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cusomer-api/src/com/mcsm/hellapp/customer/model/domain/Discount.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cusomer-api/src/com/mcsm/hellapp/customer/model/domain/DiscountStat.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cusomer-api/src/com/mcsm/hellapp/customer/model/domain/Event.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cusomer-api/src/com/mcsm/hellapp/customer/model/domain/Place.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cusomer-api/src/com/mcsm/hellapp/customer/model/domain/User.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cusomer-api/src/com/mcsm/hellapp/customer/view/ApplyDiscountServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cusomer-api/src/com/mcsm/hellapp/customer/view/CatPlacesServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cusomer-api/src/com/mcsm/hellapp/customer/view/CategoriesServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cusomer-api/src/com/mcsm/hellapp/customer/view/PlaceEventsServlet.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cusomer-api/src/import.sql" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/cusomer-api/web/WEB-INF/web.xml" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/admin.iml" afterPath="$PROJECT_DIR$/Application.iml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/src/com/mcsm/hellapp/admin/model/domain/AdminUser.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/model/domain/AdminUser.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/src/com/mcsm/hellapp/admin/model/domain/BusinessCompany.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/model/domain/PartnerCompany.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/src/com/mcsm/hellapp/admin/model/domain/BusinessUser.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/model/domain/PartnerUser.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/src/com/mcsm/hellapp/admin/model/domain/Campaign.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/model/domain/Campaign.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/src/com/mcsm/hellapp/admin/model/domain/CampaignStat.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/model/domain/CampaignStat.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/src/com/mcsm/hellapp/admin/model/domain/CustomerUser.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/model/domain/CustomerUser.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/src/com/mcsm/hellapp/admin/view/AdminAuthFilter.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/view/admin/AdminAuthFilter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/src/com/mcsm/hellapp/admin/view/AuthServlet.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/view/admin/AuthServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/src/com/mcsm/hellapp/admin/view/DispatcherServlet.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/view/admin/DispatcherServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/src/import.sql" afterPath="$PROJECT_DIR$/src/import.sql" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/web/WEB-INF/header.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/views/admin/header.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/web/WEB-INF/partners.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/views/admin/partners.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/web/cabinet/index.html" afterPath="$PROJECT_DIR$/web/admin/index.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/web/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/web/css/bootstrap.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/web/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/web/js/bootstrap.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/admin/web/login.html" afterPath="$PROJECT_DIR$/web/login-admin.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/business/src/com/mcsm/hellapp/business/model/service/BusinessBean.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/model/service/PartnerBean.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/business/src/com/mcsm/hellapp/business/view/AddCampaignServlet.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/view/partner/AddCampaignServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/business/src/com/mcsm/hellapp/business/view/AuthServlet.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/view/partner/AuthServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/business/src/com/mcsm/hellapp/business/view/BusinessAuthFilter.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/view/partner/PartnerAuthFilter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/business/src/com/mcsm/hellapp/business/view/DispatcherServlet.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/view/partner/DispatcherServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/business/web/WEB-INF/campaigns.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/views/partner/campaigns.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/business/web/WEB-INF/header.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/views/partner/header.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/business/web/WEB-INF/reports.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/views/partner/reports.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/business/web/login.html" afterPath="$PROJECT_DIR$/web/login-partner.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cusomer-api/src/com/mcsm/hellapp/customer/model/service/CustomerBean.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/model/service/CustomerBean.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cusomer-api/src/com/mcsm/hellapp/customer/model/service/CustomerService.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/model/service/CustomerService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cusomer-api/src/com/mcsm/hellapp/customer/view/DiscountsServlet.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/view/customer/CampaignsServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cusomer-api/src/com/mcsm/hellapp/customer/view/ImageToBaseTool.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/view/customer/ImageToBaseTool.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cusomer-api/web/resources/icons/1.png" afterPath="$PROJECT_DIR$/web/partner/resources/icons/1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cusomer-api/web/resources/icons/2.png" afterPath="$PROJECT_DIR$/web/partner/resources/icons/2.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cusomer-api/web/resources/icons/3.png" afterPath="$PROJECT_DIR$/web/partner/resources/icons/3.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cusomer-api/web/resources/icons/4.png" afterPath="$PROJECT_DIR$/web/partner/resources/icons/4.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cusomer-api/web/resources/icons/5.png" afterPath="$PROJECT_DIR$/web/partner/resources/icons/5.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/cusomer-api/web/resources/icons/6.png" afterPath="$PROJECT_DIR$/web/partner/resources/icons/6.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/META-INF/application.xml" afterPath="$PROJECT_DIR$/META-INF/application.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/sqldialects.xml" afterPath="$PROJECT_DIR$/.idea/sqldialects.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.xml" afterPath="$PROJECT_DIR$/build.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HelloAppServer.iws" />
@@ -126,7 +28,7 @@
     <file path="/PlaceEventsServlet.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1363890794238" ignored="false" />
     <file path="/index.html" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367406536827" ignored="false" />
     <file path="/widget.js" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1364017606481" ignored="false" />
-    <file path="/Dummy.txt" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367404495243" ignored="false" />
+    <file path="/Dummy.txt" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367406797611" ignored="false" />
     <file path="$PROJECT_DIR$/../BGM/data/research/index.html" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1363939833501" ignored="false" />
     <file path="$PROJECT_DIR$/../BGM/src/kz/bgm/research/sony/SonyParser.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1364229473000" ignored="false" />
     <file path="$PROJECT_DIR$/../BGM/data/research/users.js" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1363939833502" ignored="false" />
@@ -226,7 +128,7 @@
     <file path="/AdminAuthFilter.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1365307645480" ignored="false" />
     <file path="/partners.jsp" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367406692138" ignored="false" />
     <file path="/CustomerUser.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1365310784618" ignored="false" />
-    <file path="/build.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1365313455727" ignored="false" />
+    <file path="/build.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367406860901" ignored="false" />
     <file path="$PROJECT_DIR$/../HelloAppAndroid/.idea/workspace.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367387392435" ignored="false" />
     <file path="$PROJECT_DIR$/../adt-bundle-mac-x86_64/sdk/tools/ant/build.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1365325633299" ignored="false" />
     <file path="$PROJECT_DIR$/../HelloAppAndroid/src/com/example/AndroidTest/HelloClient.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1365345620013" ignored="false" />
@@ -398,10 +300,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="partners.jsp" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="partners.jsp" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/admin/partners.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="57" column="22" selection-start="1343" selection-end="1343" vertical-scroll-proportion="0.80582523">
+            <state line="57" column="22" selection-start="1343" selection-end="1343" vertical-scroll-proportion="-20.75">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="build.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/build.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="66" selection-start="444" selection-end="444" vertical-scroll-proportion="0.3634895">
               <folding />
             </state>
           </provider>
@@ -443,7 +354,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/kz/helloapp/view/partner/AddCampaignServlet.java" />
         <option value="$PROJECT_DIR$/src/kz/helloapp/view/admin/DispatcherServlet.java" />
         <option value="$PROJECT_DIR$/src/kz/helloapp/view/admin/AdminAuthFilter.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
@@ -459,6 +369,7 @@
         <option value="$PROJECT_DIR$/web/WEB-INF/views/partner/new-campaign.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/partner/reports.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/admin/partners.jsp" />
+        <option value="$PROJECT_DIR$/build.xml" />
       </list>
     </option>
   </component>
@@ -1291,12 +1202,16 @@
       <created>1365333901746</created>
       <updated>1365333901746</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="поменял структуру проекта, собрал обратно все в один модуль: слишком много проблем с взаимодействием">
+      <created>1367406800425</created>
+      <updated>1367406800425</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="790" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1375,7 +1290,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Поправки на клиента" />
+    <option name="LAST_COMMIT_MESSAGE" value="поменял структуру проекта, собрал обратно все в один модуль: слишком много проблем с взаимодействием" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1395,6 +1310,7 @@
     <MESSAGE value="Новый модуль admin" />
     <MESSAGE value="build.xml" />
     <MESSAGE value="Поправки на клиента" />
+    <MESSAGE value="поменял структуру проекта, собрал обратно все в один модуль: слишком много проблем с взаимодействием" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1412,13 +1328,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/web/login-admin.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="43" selection-start="1386" selection-end="1386" vertical-scroll-proportion="-10.416667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/login-partner.html">
       <provider selected="true" editor-type-id="text-editor">
         <state line="47" column="44" selection-start="1389" selection-end="1389" vertical-scroll-proportion="-15.0">
@@ -1528,7 +1437,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/admin/partners.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="57" column="22" selection-start="1343" selection-end="1343" vertical-scroll-proportion="0.80582523">
+        <state line="57" column="22" selection-start="1343" selection-end="1343" vertical-scroll-proportion="-20.75">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="66" selection-start="444" selection-end="444" vertical-scroll-proportion="0.3634895">
           <folding />
         </state>
       </provider>

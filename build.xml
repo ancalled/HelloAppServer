@@ -13,9 +13,7 @@
         <mkdir dir="${bin}"/>
 
         <zip destfile="${bin}/hello-distr.zip">
-            <zipfileset dir="${out}/admin.ear" prefix="admin.ear"/>
-            <zipfileset dir="${out}/business.ear" prefix="business.ear"/>
-            <zipfileset dir="${out}/customer.ear" prefix="customer.ear"/>
+            <zipfileset dir="${out}/helloapp.ear" prefix="helloapp.ear"/>
         </zip>
     </target>
 
