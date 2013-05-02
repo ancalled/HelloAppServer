@@ -57,6 +57,10 @@
         <servlet-name>partnerAddCampaignServlet</servlet-name>
         <servlet-class>kz.helloapp.view.partner.AddCampaignServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>qrCodeServlet</servlet-name>
+        <servlet-class>kz.helloapp.view.partner.QRCodeServlet</servlet-class>
+    </servlet>
 
 
     <filter-mapping>
@@ -76,6 +80,10 @@
         <url-pattern>/partner/action/add-campaign</url-pattern>
     </servlet-mapping>
 
+    <servlet-mapping>
+        <servlet-name>qrCodeServlet</servlet-name>
+        <url-pattern>/partner/qrcode</url-pattern>
+    </servlet-mapping>
 
     <!-- Customer -->
 
@@ -88,6 +96,7 @@
         <servlet-class>kz.helloapp.view.customer.api.ApplyCampaignServlet</servlet-class>
     </servlet>
 
+
     <servlet-mapping>
         <servlet-name>customerCampaignsServlet</servlet-name>
         <url-pattern>/customer/api/campaigns</url-pattern>
@@ -96,7 +105,6 @@
         <servlet-name>customerApplyCampaignServlet</servlet-name>
         <url-pattern>/customer/api/apply-campaign</url-pattern>
     </servlet-mapping>
-
 
 
 

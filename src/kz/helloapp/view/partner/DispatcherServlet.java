@@ -3,6 +3,7 @@ package kz.helloapp.view.partner;
 
 import kz.helloapp.model.domain.Campaign;
 import kz.helloapp.model.domain.CampaignStat;
+import kz.helloapp.model.domain.PartnerConfirmer;
 import kz.helloapp.model.domain.PartnerUser;
 import kz.helloapp.model.service.PartnerService;
 
@@ -72,6 +73,48 @@ public class DispatcherServlet extends PartnerServlet {
                             }
 
                             return "campaigns";
+                        }
+                    };
+
+                case "/confirmers":
+                    return new Action(service) {
+
+                        @Override
+                        public String execute(HttpServletRequest req, HttpServletResponse resp) {
+
+                            PartnerUser user = (PartnerUser) req.getSession().getAttribute("user");
+
+                            if (user != null && user.getCompany() != null) {
+                                List<PartnerConfirmer> confirmers = service.getConfirmersByCompany(user.getCompany().getId());
+
+                                req.setAttribute("confirmers", confirmers);
+                            }
+
+                            return "confirmers";
+                        }
+                    };
+
+                case "/qrcode":
+                    return new Action(service) {
+
+                        @Override
+                        public String execute(HttpServletRequest req, HttpServletResponse resp) {
+
+                            PartnerUser user = (PartnerUser) req.getSession().getAttribute("user");
+
+                            if (user != null && user.getCompany() != null) {
+
+                                Long confId = Long.parseLong(req.getParameter("cid"));
+                                PartnerConfirmer confirmer = service.getConfirmer(confId);
+
+                                if (confirmer != null) {
+
+                                }
+
+//                                req.setAttribute("confirmers", confirmers);
+                            }
+
+                            return "confirmers";
                         }
                     };
 

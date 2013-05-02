@@ -11,7 +11,7 @@ import javax.persistence.PersistenceContext;
 import java.util.Date;
 import java.util.List;
 
-@Stateless(name = "business-service")
+@Stateless(name = "partner-service")
 @Local(PartnerService.class)
 public class PartnerBean implements PartnerService {
 
@@ -28,6 +28,14 @@ public class PartnerBean implements PartnerService {
     public List<Campaign> getCampaignsByCompany(long companyId) {
         //noinspection unchecked
         return em.createQuery("select s from Campaign s where s.company.id=:cid")
+                .setParameter("cid", companyId)
+                .getResultList();
+    }
+
+    @Override
+    public List<PartnerConfirmer> getConfirmersByCompany(long companyId) {
+        //noinspection unchecked
+        return em.createQuery("select s from PartnerConfirmer s where s.company.id=:cid")
                 .setParameter("cid", companyId)
                 .getResultList();
     }
@@ -85,11 +93,10 @@ public class PartnerBean implements PartnerService {
     @Override
     public PartnerConfirmer getConfirmer(long id) {
         try {
-            em.find(PartnerConfirmer.class, id);
+            return em.find(PartnerConfirmer.class, id);
         } catch (NoResultException e) {
             return null;
         }
-        return null;
     }
 
 

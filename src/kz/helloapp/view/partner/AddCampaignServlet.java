@@ -59,7 +59,7 @@ public class AddCampaignServlet extends PartnerServlet {
 
                 service.addCampaign(c);
 
-                resp.sendRedirect(ctx + "cabinet/campaigns");
+                resp.sendRedirect(ctx + "view/campaigns");
             }
 
         }

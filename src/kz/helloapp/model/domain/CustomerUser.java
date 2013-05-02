@@ -13,6 +13,8 @@ public class CustomerUser implements Serializable {
     private String name;
     private String pass;
 
+    @OneToOne
+    private AuthToken authToken;
 
     public String getName() {
         return name;
@@ -36,5 +38,13 @@ public class CustomerUser implements Serializable {
 
     public void setPass(String passs) {
         this.pass = passs;
+    }
+
+    public AuthToken getAuthToken() {
+        return authToken;
+    }
+
+    public void setAuthToken(AuthToken authToken) {
+        this.authToken = authToken;
     }
 }

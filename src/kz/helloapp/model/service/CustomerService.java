@@ -14,6 +14,10 @@ public interface CustomerService {
 
     CustomerUser getUser(long id);
 
+    CustomerUser getUser(String user);
+
+    CustomerUser setAuthToken(CustomerUser user, String token);
+
     Campaign getCampaign(long id);
 
 

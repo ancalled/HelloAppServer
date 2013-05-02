@@ -1,16 +1,14 @@
 package kz.helloapp.model.service;
 
 
-import kz.helloapp.model.domain.Campaign;
-import kz.helloapp.model.domain.CampaignStat;
-import kz.helloapp.model.domain.PartnerConfirmer;
-import kz.helloapp.model.domain.CustomerUser;
+import kz.helloapp.model.domain.*;
 
 import javax.ejb.Local;
 import javax.ejb.Stateless;
 import javax.persistence.EntityManager;
 import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
+import java.util.Date;
 import java.util.List;
 
 @Stateless(name = "customer-service")
@@ -48,6 +46,27 @@ public class CustomerBean implements CustomerService {
         } catch (NoResultException e) {
             return null;
         }
+    }
+
+    @Override
+    public CustomerUser getUser(String login) {
+        try {
+            return (CustomerUser) em.createQuery("select c from CustomerUser c where c.name = :login")
+                    .setParameter("login", login)
+                    .getSingleResult();
+        } catch (NoResultException e) {
+            return null;
+        }
+    }
+
+    @Override
+    public CustomerUser setAuthToken(CustomerUser user, String token) {
+        AuthToken t = new AuthToken();
+        t.setToken(token);
+        t.setWhenGenerated(new Date());
+        user.setAuthToken(t);
+
+        return em.merge(user);
     }
 
     @Override

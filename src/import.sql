@@ -11,12 +11,12 @@ INSERT INTO partner_companies(id, name) VALUES (6, 'Чимбулак');
 INSERT INTO partner_users(id, email, pass, company_id) VALUES (1, 'hotadmin@mail.ru', '123', 3);
 INSERT INTO partner_users(id, email, pass, company_id) VALUES (2, 'fowler_1973@bk.ru', '12345', 4);
 
-INSERT INTO partner_confirmers(id, company_id, code) VALUES (1, 1, '1001');
-INSERT INTO partner_confirmers(id, company_id, code) VALUES (2, 2, '1002');
-INSERT INTO partner_confirmers(id, company_id, code) VALUES (3, 3, '1003');
-INSERT INTO partner_confirmers(id, company_id, code) VALUES (4, 4, '1004');
-INSERT INTO partner_confirmers(id, company_id, code) VALUES (5, 5, '1005');
-INSERT INTO partner_confirmers(id, company_id, code) VALUES (6, 6, '1006');
+INSERT INTO partner_confirmers(id, name, company_id, code) VALUES (1, 'Confirmer 1', 1, '1001');
+INSERT INTO partner_confirmers(id, name, company_id, code) VALUES (2, 'Confirmer 2', 2, '1002');
+INSERT INTO partner_confirmers(id, name, company_id, code) VALUES (3, 'Confirmer 3', 3, '1003');
+INSERT INTO partner_confirmers(id, name, company_id, code) VALUES (4, 'Confirmer 4', 4, '1004');
+INSERT INTO partner_confirmers(id, name, company_id, code) VALUES (5, 'Confirmer 5', 5, '1005');
+INSERT INTO partner_confirmers(id, name, company_id, code) VALUES (6, 'Confirmer 6', 6, '1006');
 
 
 #------------------------------------------------------------------------------------------------------------------------

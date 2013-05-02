@@ -12,6 +12,8 @@ public interface PartnerService {
 
     List<Campaign> getCampaignsByCompany(long companyId);
 
+    List<PartnerConfirmer> getConfirmersByCompany(long companyId);
+
     List<CampaignStat> getStatsByCompany(long companyId);
 
     List<CampaignStat> getStatsByCampaignId(long campaignId);

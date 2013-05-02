@@ -21,6 +21,9 @@
                     <li class="${param.current == 'new-campaign' ? 'active' : ''}">
                         <a href="./new-campaign">Новая кампания</a>
                     </li>
+                    <li class="${param.current == 'confirmers' ? 'active' : ''}">
+                        <a href="./confirmers">Подтверждатели</a>
+                    </li>
                     <li class="">
                         <%--<form action="logout" method="post">--%>
                         <%--<button type="submit" class="btn btn-navbar">Выйти</button>--%>
