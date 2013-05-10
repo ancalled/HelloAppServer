@@ -14,13 +14,13 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
-public class ApplyCampaignServlet extends CustomerServlet {
+public class ApplyDiscountServlet extends CustomerServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
 
-        System.out.println("ApplyCampaignServlet.doPost");
+        System.out.println("ApplyDiscountServlet.doPost");
 
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
 
@@ -49,25 +49,32 @@ public class ApplyCampaignServlet extends CustomerServlet {
         Long appliedId = null;
 
         if (confirmer == null) {
-            status =  Status.NO_CONFIRMER_FOUND;
+            status = Status.NO_CONFIRMER_FOUND;
         } else if (user == null) {
-            status =  Status.NO_USER_FOUND;
+            status = Status.NO_USER_FOUND;
         } else if (campaign == null) {
-            status =  Status.NO_DISCOUNT_FOUND;
+            status = Status.NO_DISCOUNT_FOUND;
         } else {
 
-            CampaignStat stat = new CampaignStat();
-            stat.setCampaign(campaign);
-            stat.setUser(user);
-            stat.setConfirmer(confirmer);
+            if (confirmer.getCompany() != null &&
+                    campaign.getCompany() != null &&
+                    confirmer.getCompany().getId().equals(campaign.getCompany().getId())) {
 
-            stat = service.saveCampaignStat(stat);
+                CampaignStat stat = new CampaignStat();
+                stat.setCampaign(campaign);
+                stat.setUser(user);
+                stat.setConfirmer(confirmer);
 
-            if (stat != null) {
-                status = Status.OK;
-                appliedId = stat.getId();
+                stat = service.saveCampaignStat(stat);
+
+                if (stat != null) {
+                    status = Status.OK;
+                    appliedId = stat.getId();
+                } else {
+                    status = Status.COULD_NOT_APPLY;
+                }
             } else {
-                status = Status.COULD_NOT_APPLY;
+                status = Status.CONFIRMER_IS_NOT_OF_THIS_COMPANY;
             }
         }
 
@@ -77,7 +84,7 @@ public class ApplyCampaignServlet extends CustomerServlet {
 
 
     public static enum Status {
-        OK, NO_USER_FOUND, NO_DISCOUNT_FOUND, NO_CONFIRMER_FOUND, COULD_NOT_APPLY
+        OK, NO_USER_FOUND, NO_DISCOUNT_FOUND, NO_CONFIRMER_FOUND, CONFIRMER_IS_NOT_OF_THIS_COMPANY, COULD_NOT_APPLY
     }
 
     public static class Result {

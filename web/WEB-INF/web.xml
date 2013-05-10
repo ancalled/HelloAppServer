@@ -93,7 +93,7 @@
     </servlet>
     <servlet>
         <servlet-name>customerApplyCampaignServlet</servlet-name>
-        <servlet-class>kz.helloapp.view.customer.api.ApplyCampaignServlet</servlet-class>
+        <servlet-class>kz.helloapp.view.customer.api.ApplyDiscountServlet</servlet-class>
     </servlet>
 
 
