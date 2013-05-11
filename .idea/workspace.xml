@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BuildServerSettings">
-    <option name="LOGIN" value="" />
-    <option name="SERVER_URL" value="http://buildserver" />
-    <option name="PASSWORD" />
+    <option name="LOGIN" value="ancalled" />
+    <option name="SERVER_URL" value="http://teamcity.microcosmus.net" />
+    <option name="PASSWORD" value="dfdedfcfdfcbdfc7dfc9dfc3dfdedfd3dfc7dfcfdfc6dfc1dfc5dfd8" />
     <option name="REMEMBER_ME" value="true" />
     <option name="USE_IDEA_PROXY_SETTINGS" value="true" />
     <option name="TEST_STATUS_BUILD_TYPE_IDS" />
@@ -22,18 +22,41 @@
     <option name="SHOW_CLOSE_PROMPT" value="true" />
     <option name="TOOL_WINDOW_SELECTED_CONTENT_INDEX" value="0" />
     <option name="FILTER_BY_CURRENT_PROJECT" value="true" />
+    <treeState key="project">
+      <selectedPath>
+        <pathElement>
+          <option name="myNodeId" value="helperText" />
+          <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.LinkedTextDescriptor" />
+        </pathElement>
+      </selectedPath>
+    </treeState>
+    <treeState key="responsibilities">
+      <selectedPath>
+        <pathElement>
+          <option name="myNodeId" value="helperText" />
+          <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.LinkedTextDescriptor" />
+        </pathElement>
+      </selectedPath>
+    </treeState>
+    <treeState key="changes">
+      <selectedPath>
+        <pathElement>
+          <option name="myNodeId" value="helperText" />
+          <option name="myNodeType" value="jetbrains.buildServer.tree.descriptors.LinkedTextDescriptor" />
+        </pathElement>
+      </selectedPath>
+    </treeState>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf00688a-9598-4ca4-ade7-c3e5b364264f" name="Default" comment="Конфирмер и генератор qr-кодов">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/kz/helloapp/view/customer/api/ApplyCampaignServlet.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/kz/helloapp/view/customer/api/ApplyCampaignServlet.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/view/customer/api/ApplyDiscountServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+    <list default="true" id="cf00688a-9598-4ca4-ade7-c3e5b364264f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/QRGeneratorTest.java" afterPath="$PROJECT_DIR$/test/QRGeneratorTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/views/partner/confirmers.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/views/partner/confirmers.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HelloAppServer.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Category.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1363884999882" ignored="false" />
-    <file path="/fragment.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368182249439" ignored="false" />
+    <file path="/fragment.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368192863881" ignored="false" />
     <file path="/HelloAppCatalog.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1365262834030" ignored="false" />
     <file path="/HelloAppImpl.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1363877468722" ignored="false" />
     <file path="/HelloAppBean.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1365268055534" ignored="false" />
@@ -53,7 +76,7 @@
     <file path="/PlaceEventsServlet.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1363890794238" ignored="false" />
     <file path="/index.html" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367406536827" ignored="false" />
     <file path="/widget.js" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1364017606481" ignored="false" />
-    <file path="/Dummy.txt" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368191164009" ignored="false" />
+    <file path="/Dummy.txt" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368291456884" ignored="false" />
     <file path="$PROJECT_DIR$/../BGM/data/research/index.html" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1363939833501" ignored="false" />
     <file path="$PROJECT_DIR$/../BGM/src/kz/bgm/research/sony/SonyParser.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1364229473000" ignored="false" />
     <file path="$PROJECT_DIR$/../BGM/data/research/users.js" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1363939833502" ignored="false" />
@@ -94,12 +117,12 @@
     <file path="$PROJECT_DIR$/../AndroidTest/res/values/strings.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1364633528155" ignored="false" />
     <file path="$PROJECT_DIR$/../AndroidTest/src/com/example/AndroidTest/MainActivity.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1364645437181" ignored="false" />
     <file path="$PROJECT_DIR$/../AndroidTest/src/com/example/AndroidTest/DiscountActivity.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1364649289421" ignored="false" />
-    <file path="/DiscountActivity.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368176832734" ignored="false" />
+    <file path="/DiscountActivity.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368192438651" ignored="false" />
     <file path="/AndroidManifest.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368181941166" ignored="false" />
     <file path="$PROJECT_DIR$/../AndroidTest/gen/com/example/AndroidTest/R.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1364613627543" ignored="false" />
     <file path="/MainActivity.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368165318131" ignored="false" />
     <file path="/ImageToBaseTool.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367407258511" ignored="false" />
-    <file path="/strings.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368174492994" ignored="false" />
+    <file path="/strings.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368192421125" ignored="false" />
     <file path="$PROJECT_DIR$/../AndroidTest/res/drawable/textlines.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1364621081849" ignored="false" />
     <file path="/textlines.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1364621098957" ignored="false" />
     <file path="$PROJECT_DIR$/../AndroidTest/res/layout/discount_row.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1364644233271" ignored="false" />
@@ -154,7 +177,7 @@
     <file path="/partners.jsp" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367406692138" ignored="false" />
     <file path="/CustomerUser.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367414836384" ignored="false" />
     <file path="/build.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368182246039" ignored="false" />
-    <file path="$PROJECT_DIR$/../HelloAppAndroid/.idea/workspace.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368191165042" ignored="false" />
+    <file path="$PROJECT_DIR$/../HelloAppAndroid/.idea/workspace.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368192876103" ignored="false" />
     <file path="$PROJECT_DIR$/../adt-bundle-mac-x86_64/sdk/tools/ant/build.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1365325633299" ignored="false" />
     <file path="$PROJECT_DIR$/../HelloAppAndroid/src/com/example/AndroidTest/HelloClient.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1365345620013" ignored="false" />
     <file path="/new-campaign.jsp" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367406661711" ignored="false" />
@@ -167,13 +190,13 @@
     <file path="$PROJECT_DIR$/../HelloBurnAndroid/src/com/mcsm/helloburn/MainActivity.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1365467904076" ignored="false" />
     <file path="$PROJECT_DIR$/../HelloAppAndroid/gen/com/example/AndroidTest/BuildConfig.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367337320687" ignored="false" />
     <file path="/QRGeneratorTest.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1366517127872" ignored="false" />
-    <file path="$PROJECT_DIR$/../HelloAppAndroid/src/net/microcosmus/helloapp/DiscountActivity.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368181982615" ignored="false" />
+    <file path="$PROJECT_DIR$/../HelloAppAndroid/src/net/microcosmus/helloapp/DiscountActivity.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368192449920" ignored="false" />
     <file path="$PROJECT_DIR$/../HelloAppAndroid/src/net/microcosmus/helloapp/scanner/QRScannerActivity.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367546860877" ignored="false" />
     <file path="$PROJECT_DIR$/../HelloAppAndroid/src/net/microcosmus/helloapp/scanner/QRScannerActivity2.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1366531976917" ignored="false" />
     <file path="/QRScanner.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1366854186900" ignored="false" />
     <file path="$PROJECT_DIR$/../HelloAppAndroid/res/layout/scanner.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1366594081607" ignored="false" />
     <file path="$PROJECT_DIR$/../HelloAppAndroid/res/layout/discount.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368177683343" ignored="false" />
-    <file path="$PROJECT_DIR$/../HelloAppAndroid/res/values/strings.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368174762061" ignored="false" />
+    <file path="$PROJECT_DIR$/../HelloAppAndroid/res/values/strings.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368192423411" ignored="false" />
     <file path="/QRScannerActivity.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367546779022" ignored="false" />
     <file path="$PROJECT_DIR$/../HelloAppAndroid/src/net/microcosmus/helloapp/HelloClient.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368178305088" ignored="false" />
     <file path="$PROJECT_DIR$/../HelloAppAndroid/AndroidManifest.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368182571401" ignored="false" />
@@ -230,6 +253,7 @@
     <file path="$PROJECT_DIR$/../HelloAppAndroid/gen/net/microcosmus/helloapp/HelloApp/R.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368182571401" ignored="false" />
     <file path="$PROJECT_DIR$/../HelloAppAndroid/src/net/microcosmus/helloapp/FakeScannerActivity.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368182188161" ignored="false" />
     <file path="$PROJECT_DIR$/../HelloAppAndroid/src/net/microcosmus/helloapp/QRScannerActivity.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368182199025" ignored="false" />
+    <file path="$PROJECT_DIR$/../HelloAppAndroid/src/net/microcosmus/helloapp/domain/DiscountApplyResult.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368192107841" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,7 +273,23 @@
     <sortChildren value="false" />
   </component>
   <component name="DebuggerManager">
-    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
+    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint url="file://$PROJECT_DIR$/src/kz/helloapp/view/partner/AddCampaignServlet.java" line="29" class="kz.helloapp.view.partner.AddCampaignServlet" package="kz.helloapp.view.partner">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -286,23 +326,7 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </breakpoint_any>
-    <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint url="file://$PROJECT_DIR$/src/kz/helloapp/view/partner/AddCampaignServlet.java" line="29" class="kz.helloapp.view.partner.AddCampaignServlet" package="kz.helloapp.view.partner">
-        <option name="ENABLED" value="true" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="REMOVE_AFTER_HIT" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </line_breakpoints>
+    <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
   </component>
@@ -312,26 +336,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="web.xml" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-            <state />
-          </provider>
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="105" column="49" selection-start="3524" selection-end="3532" vertical-scroll-proportion="0.7222222">
-              <folding />
-            </state>
-          </provider>
-          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
             <state />
           </provider>
           <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
             <state />
           </provider>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="105" column="49" selection-start="3524" selection-end="3532" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
         </entry>
       </file>
       <file leaf-file-name="import.sql" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/import.sql">
+          <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state line="18" column="82" selection-start="1235" selection-end="1235" vertical-scroll-proportion="0.0">
               <folding />
@@ -378,7 +405,7 @@
       <file leaf-file-name="ApplyDiscountServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/api/ApplyDiscountServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="74" column="65" selection-start="2652" selection-end="2652" vertical-scroll-proportion="0.0">
+            <state line="87" column="6" selection-start="2860" selection-end="3010" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -387,16 +414,16 @@
       <file leaf-file-name="QRGeneratorTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/QRGeneratorTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="12" column="8" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
+            <state line="25" column="50" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="confirmers.jsp" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="confirmers.jsp" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/partner/confirmers.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="61" column="22" selection-start="1862" selection-end="1862" vertical-scroll-proportion="0.0">
+            <state line="61" column="22" selection-start="1854" selection-end="1854" vertical-scroll-proportion="0.59799">
               <folding />
             </state>
           </provider>
@@ -429,7 +456,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/kz/helloapp/model/service/CustomerBean.java" />
         <option value="$PROJECT_DIR$/src/kz/helloapp/view/customer/api/LoginPassAuthServlet.java" />
         <option value="$PROJECT_DIR$/src/kz/helloapp/view/partner/AddCampaignServlet.java" />
         <option value="$PROJECT_DIR$/src/kz/helloapp/view/partner/AddConfirmerServlet.java" />
@@ -441,10 +467,11 @@
         <option value="$PROJECT_DIR$/web/js/jquery.bpopup.min.js" />
         <option value="$PROJECT_DIR$/src/kz/helloapp/model/service/PartnerBean.java" />
         <option value="$PROJECT_DIR$/src/kz/helloapp/view/partner/QRCodeServlet.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/views/partner/confirmers.jsp" />
         <option value="$PROJECT_DIR$/src/kz/helloapp/view/customer/api/ApplyCampaignServlet.java" />
         <option value="$PROJECT_DIR$/src/kz/helloapp/view/customer/api/ApplyDiscountServlet.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/test/QRGeneratorTest.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/views/partner/confirmers.jsp" />
       </list>
     </option>
   </component>
@@ -1028,6 +1055,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="All">
           <PATH>
@@ -1048,20 +1076,19 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.20800781" />
     <property name="OverrideImplement.combined" value="false" />
+    <property name="project.structure.proportion" value="0.20800781" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/META-INF" />
     <property name="JdbcConsole.ResultInNewTab" value="false" />
-    <property name="Database.TableEditor.Splitter" value="0.9" />
     <property name="JdbcConsole.ResultToolbar" value="false" />
+    <property name="Database.TableEditor.Splitter" value="0.9" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
@@ -1076,13 +1103,13 @@
     <property name="project.structure.side.proportion" value="0.20522387" />
     <property name="JdbcConsole.Extract.ClosingQuote" value="'" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="JdbcConsole.EnableParameterPattern" value="false" />
     <property name="JdbcConsole.Extract.IncludeHeader" value="false" />
+    <property name="JdbcConsole.EnableParameterPattern" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="JdbcConsole.ParameterPattern" value="(\?\d*|\:\w+|\@\w+|\$\{[^$\{\}]*\}|\$\w+\$|\#\w+\#)" />
     <property name="JdbcConsole.ResultPageSize" value="1000" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -1107,7 +1134,7 @@
       <recent name="$PROJECT_DIR$/src/kz/helloapp/view/customer" />
     </key>
   </component>
-  <component name="RunManager" selected="JBoss Server.JBoss 7.1.1.Final">
+  <component name="RunManager" selected="Application.QRGeneratorTest">
     <configuration default="false" name="ImageToBaseTool" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1133,15 +1160,15 @@
     <configuration default="false" name="QRGeneratorTest" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <option name="MAIN_CLASS_NAME" value="QRGeneratorTest" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="VM_PARAMETERS" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ALTERNATIVE_JRE_PATH" value="" />
       <option name="ENABLE_SWING_INSPECTOR" value="false" />
       <option name="ENV_VARIABLES" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="business" />
+      <module name="Application" />
       <envs />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
@@ -1195,19 +1222,6 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -1234,6 +1248,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1370,8 +1397,8 @@
     </list>
     <recent_temporary>
       <list size="3">
-        <item index="0" class="java.lang.String" itemvalue="Application.HashUtil" />
-        <item index="1" class="java.lang.String" itemvalue="Application.QRGeneratorTest" />
+        <item index="0" class="java.lang.String" itemvalue="Application.QRGeneratorTest" />
+        <item index="1" class="java.lang.String" itemvalue="Application.HashUtil" />
         <item index="2" class="java.lang.String" itemvalue="Application.ImageToBaseTool" />
       </list>
     </recent_temporary>
@@ -1449,7 +1476,11 @@
       <created>1367458004927</created>
       <updated>1367458004928</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Проверка, что конфирмер принадлежит своей фирме">
+      <created>1368191496412</created>
+      <updated>1368191496412</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1457,36 +1488,36 @@
     <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.6149254" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.67164177" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23601148" sideWeight="0.21940298" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6358209" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.67164177" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6089552" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32985073" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.50744045" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6358209" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.3641791" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.67261904" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.78059703" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32738096" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6089552" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.50744045" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5014881" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.1522388" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="EJB" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="EJB" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.21940298" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.78059703" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JPA Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32738096" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32686567" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Colour Chooser" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -1534,7 +1565,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Конфирмер и генератор qr-кодов" />
+    <option name="LAST_COMMIT_MESSAGE" value="Проверка, что конфирмер принадлежит своей фирме" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1559,6 +1590,7 @@
     <MESSAGE value="Недастоющие библиотеки" />
     <MESSAGE value="Причесал структуру сервлетов" />
     <MESSAGE value="Конфирмер и генератор qr-кодов" />
+    <MESSAGE value="Проверка, что конфирмер принадлежит своей фирме" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1617,6 +1649,9 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/import.sql">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="82" selection-start="1235" selection-end="1235" vertical-scroll-proportion="0.0">
           <folding />
@@ -1637,16 +1672,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/QRGeneratorTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="8" selection-start="202" selection-end="202" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/partner/confirmers.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="22" selection-start="1862" selection-end="1862" vertical-scroll-proportion="0.0">
+        <state line="61" column="22" selection-start="1854" selection-end="1854" vertical-scroll-proportion="0.59799">
           <folding />
         </state>
       </provider>
@@ -1672,27 +1700,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/api/ApplyDiscountServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="74" column="65" selection-start="2652" selection-end="2652" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
         <state />
       </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="49" selection-start="3524" selection-end="3532" vertical-scroll-proportion="0.7222222">
-          <folding />
-        </state>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
       </provider>
       <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
         <state />
       </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="105" column="49" selection-start="3524" selection-end="3532" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/api/ApplyDiscountServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="87" column="6" selection-start="2860" selection-end="3010" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test/QRGeneratorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="50" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
   </component>

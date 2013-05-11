@@ -58,7 +58,7 @@
             <c:forEach items="${confirmers}" var="c">
                 <div id="qr-${c.id}" class="qr-preview">
                     <div>
-                        <%--<img src="/helloapp/partner/qrcode?cid=${c.id}" width="512" height="512" alt="${c.code}"/>--%>
+                        <img src="/helloapp/partner/qrcode?cid=${c.id}" width="512" height="512" alt="${c.code}"/>
                     </div>
                     <div>
 

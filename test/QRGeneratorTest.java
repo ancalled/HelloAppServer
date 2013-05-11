@@ -29,6 +29,6 @@ public class QRGeneratorTest {
     }
 
     public static void main(String[] args) {
-        generateToFile("Wakawaka", "./out/test.png");
+        generateToFile("4661", "./out/test.png");
     }
 }
