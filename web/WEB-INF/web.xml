@@ -43,8 +43,6 @@
         <filter-name>partnerAuthFilter</filter-name>
         <filter-class>kz.helloapp.view.partner.PartnerAuthFilter</filter-class>
     </filter>
-
-
     <servlet>
         <servlet-name>partnerDispatcher</servlet-name>
         <servlet-class>kz.helloapp.view.partner.DispatcherServlet</servlet-class>
@@ -67,6 +65,7 @@
         <filter-name>partnerAuthFilter</filter-name>
         <url-pattern>/partner/*</url-pattern>
     </filter-mapping>
+
     <servlet-mapping>
         <servlet-name>partnerDispatcher</servlet-name>
         <url-pattern>/partner/view/*</url-pattern>
@@ -87,6 +86,11 @@
 
     <!-- Customer -->
 
+    <filter>
+        <filter-name>apiVerifyFilter</filter-name>
+        <filter-class>kz.helloapp.view.customer.api.VerifyFilter</filter-class>
+    </filter>
+
     <servlet>
         <servlet-name>customerCampaignsServlet</servlet-name>
         <servlet-class>kz.helloapp.view.customer.api.CampaignsServlet</servlet-class>
@@ -95,6 +99,12 @@
         <servlet-name>customerApplyCampaignServlet</servlet-name>
         <servlet-class>kz.helloapp.view.customer.api.ApplyDiscountServlet</servlet-class>
     </servlet>
+
+
+    <filter-mapping>
+        <filter-name>apiVerifyFilter</filter-name>
+        <url-pattern>/customer/api/*</url-pattern>
+    </filter-mapping>
 
 
     <servlet-mapping>
