@@ -1,4 +1,4 @@
-
+package kz.helloapp.test;
 
 import net.glxn.qrgen.QRCode;
 import net.glxn.qrgen.image.ImageType;

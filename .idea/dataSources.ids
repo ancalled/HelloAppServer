@@ -22,6 +22,13 @@
       <column name="pass" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
       <primary-key name="PRIMARY" columns="id"/>
     </table>
+    <table name="auth_tokens" schema="" catalog="helloapp" type="TABLE">
+      <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
+      <column name="token" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="whenGenerated" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
+      <primary-key name="PRIMARY" columns="id"/>
+      <exported-key name="FK873092679CE0F395" table="customer_users" schema="" catalog="helloapp" columns="authToken_id"/>
+    </table>
     <table name="campaign_stats" schema="" catalog="helloapp" type="TABLE">
       <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
       <column name="whenApllied" sqlType="DATETIME" length="19" precision="0" nullable="true" jdbcType="93"/>
@@ -49,7 +56,9 @@
       <column name="id" sqlType="BIGINT" length="19" precision="0" nullable="false" jdbcType="-5"/>
       <column name="name" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
       <column name="pass" sqlType="VARCHAR" length="255" precision="0" nullable="true" jdbcType="12"/>
+      <column name="authToken_id" sqlType="BIGINT" length="19" precision="0" nullable="true" jdbcType="-5"/>
       <primary-key name="PRIMARY" columns="id"/>
+      <foreign-key name="FK873092679CE0F395" columns="authToken_id" ref-table="auth_tokens" ref-schema="" ref-catalog="helloapp" ref-columns="id" update-rule="3" delete-rule="3" deferrability="2"/>
       <exported-key name="FKB22F1CB077D4055D" table="campaign_stats" schema="" catalog="helloapp" columns="user_id"/>
     </table>
     <table name="hibernate_sequence" schema="" catalog="helloapp" type="TABLE">

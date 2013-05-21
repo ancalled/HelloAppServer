@@ -86,10 +86,10 @@
 
     <!-- Customer -->
 
-    <filter>
-        <filter-name>apiVerifyFilter</filter-name>
-        <filter-class>kz.helloapp.view.customer.api.VerifyFilter</filter-class>
-    </filter>
+    <!--<filter>-->
+        <!--<filter-name>apiVerifyFilter</filter-name>-->
+        <!--<filter-class>kz.helloapp.view.customer.api.VerifyFilter</filter-class>-->
+    <!--</filter>-->
 
     <servlet>
         <servlet-name>customerCampaignsServlet</servlet-name>
@@ -101,10 +101,10 @@
     </servlet>
 
 
-    <filter-mapping>
-        <filter-name>apiVerifyFilter</filter-name>
-        <url-pattern>/customer/api/*</url-pattern>
-    </filter-mapping>
+    <!--<filter-mapping>-->
+        <!--<filter-name>apiVerifyFilter</filter-name>-->
+        <!--<url-pattern>/customer/api/*</url-pattern>-->
+    <!--</filter-mapping>-->
 
 
     <servlet-mapping>

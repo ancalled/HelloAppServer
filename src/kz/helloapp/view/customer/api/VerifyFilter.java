@@ -9,6 +9,7 @@ import javax.naming.NamingException;
 import javax.servlet.*;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.xml.bind.DatatypeConverter;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
 import java.security.MessageDigest;
@@ -20,6 +21,7 @@ import java.util.List;
 public class VerifyFilter implements Filter {
 
     private CustomerService service;
+    private MessageDigest md;
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
@@ -29,6 +31,13 @@ public class VerifyFilter implements Filter {
         } catch (NamingException e) {
             e.printStackTrace();
         }
+
+        try {
+            md = MessageDigest.getInstance("MD5");
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
+
     }
 
     @Override
@@ -69,7 +78,7 @@ public class VerifyFilter implements Filter {
     }
 
 
-    public static String buildParamsHash(HttpServletRequest req, String token) {
+    private String buildParamsHash(HttpServletRequest req, String token) {
         //noinspection unchecked
         List<String> params = Collections.list(req.getParameterNames());
         params.remove("hash");
@@ -94,12 +103,10 @@ public class VerifyFilter implements Filter {
         return null;
     }
 
-    public static String calcHash(String data) throws NoSuchAlgorithmException, UnsupportedEncodingException {
-        MessageDigest md = MessageDigest.getInstance("MD5");
+    private String calcHash(String data) throws NoSuchAlgorithmException, UnsupportedEncodingException {
         byte[] bytes = data.getBytes("UTF-8");
         byte[] digest = md.digest(bytes);
-        return new String(digest, "UTF-8");
-
+        return DatatypeConverter.printBase64Binary(digest);
     }
 
 }

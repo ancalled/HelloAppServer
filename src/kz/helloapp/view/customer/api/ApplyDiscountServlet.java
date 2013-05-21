@@ -31,7 +31,6 @@ public class ApplyDiscountServlet extends CustomerServlet {
         String uidStr = req.getParameter("userId");
         String cmpIdStr = req.getParameter("campaignId");
         String confirmerCode = req.getParameter("confirmerCode");
-        String token = req.getParameter("token");
 
         long userId = Long.parseLong(uidStr);
         long campId = Long.parseLong(cmpIdStr);
