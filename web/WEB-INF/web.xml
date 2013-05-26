@@ -5,7 +5,7 @@
 		  http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
            version="3.0">
 
-    <!-- Admin -->
+    <!-- ====================== Admin ====================== -->
 
     <filter>
         <filter-name>adminAuthFilter</filter-name>
@@ -37,7 +37,7 @@
     </servlet-mapping>
 
 
-    <!-- Partner -->
+    <!-- ====================== Partner ====================== -->
 
     <filter>
         <filter-name>partnerAuthFilter</filter-name>
@@ -84,7 +84,15 @@
         <url-pattern>/partner/qrcode</url-pattern>
     </servlet-mapping>
 
-    <!-- Customer -->
+    <!-- ====================== Customer ====================== -->
+
+
+    <servlet>
+        <servlet-name>customerDispatcher</servlet-name>
+        <servlet-class>kz.helloapp.view.customer.DispatcherServlet</servlet-class>
+    </servlet>
+
+
 
     <!--<filter>-->
         <!--<filter-name>apiVerifyFilter</filter-name>-->
@@ -99,6 +107,14 @@
         <servlet-name>customerApplyCampaignServlet</servlet-name>
         <servlet-class>kz.helloapp.view.customer.api.ApplyDiscountServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>registerServlet</servlet-name>
+        <servlet-class>kz.helloapp.view.customer.RegisterServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>authServlet</servlet-name>
+        <servlet-class>kz.helloapp.view.customer.api.AuthServlet</servlet-class>
+    </servlet>
 
 
     <!--<filter-mapping>-->
@@ -107,6 +123,21 @@
     <!--</filter-mapping>-->
 
 
+    <servlet-mapping>
+        <servlet-name>customerDispatcher</servlet-name>
+        <url-pattern>/customer/view/*</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>registerServlet</servlet-name>
+        <url-pattern>/customer/action/register</url-pattern>
+    </servlet-mapping>
+
+
+
+    <servlet-mapping>
+        <servlet-name>authServlet</servlet-name>
+        <url-pattern>/customer/api/auth</url-pattern>
+    </servlet-mapping>
     <servlet-mapping>
         <servlet-name>customerCampaignsServlet</servlet-name>
         <url-pattern>/customer/api/campaigns</url-pattern>

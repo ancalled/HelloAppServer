@@ -21,9 +21,14 @@ public interface CustomerService {
     Campaign getCampaign(long id);
 
 
+    CustomerUser saveUser(CustomerUser user);
+
+
+
     PartnerConfirmer getConfirmer(String code);
 
     CampaignStat saveCampaignStat(CampaignStat stat);
+
 
 
 

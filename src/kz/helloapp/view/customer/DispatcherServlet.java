@@ -1,7 +1,6 @@
 package kz.helloapp.view.customer;
 
-import kz.helloapp.model.domain.PartnerCompany;
-import kz.helloapp.model.service.AdminService;
+import kz.helloapp.model.domain.CustomerUser;
 import kz.helloapp.model.service.CustomerService;
 
 import javax.naming.InitialContext;
@@ -12,7 +11,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
-import java.util.List;
 
 public class DispatcherServlet extends HttpServlet {
 
@@ -36,6 +34,7 @@ public class DispatcherServlet extends HttpServlet {
 
         Action action = ActionFactory.getAction(req, service);
         if (action != null) {
+
             String view = action.execute(req, resp);
 
             req.getRequestDispatcher("/WEB-INF/views/customer/" + view + ".jsp").forward(req, resp);
@@ -51,20 +50,37 @@ public class DispatcherServlet extends HttpServlet {
         public static Action getAction(HttpServletRequest req, CustomerService service) {
             String pth = req.getPathInfo();
 
-//            if ("/partners".equals(pth)) {
-//                return new Action(service) {
-//
-//                    @Override
-//                    public String execute(HttpServletRequest req, HttpServletResponse resp) {
-//                        List<PartnerCompany> partners = service.getPartnerCompanies();
-//
-//                        req.setAttribute("partners", partners);
-//
-//                        return "partners";
-//                    }
-//                };
-//
-//            }
+            if ("/register".equals(pth)) {
+                return new Action(service) {
+
+                    @Override
+                    public String execute(HttpServletRequest req, HttpServletResponse resp) {
+
+                        return "register";
+                    }
+                };
+            } else if ("/register-result".equals(pth)) {
+                return new Action(service) {
+
+                    @Override
+                    public String execute(HttpServletRequest req, HttpServletResponse resp) {
+                        String idStr = req.getParameter("id");
+
+                        if (idStr != null) {
+                            long id = Long.parseLong(idStr);
+
+                            CustomerUser user = service.getUser(id);
+
+                            if (user != null) {
+                                req.setAttribute("user", user);
+                            }
+                        }
+
+                        return "register-result";
+                    }
+                };
+            }
+
 
             return null;
         }

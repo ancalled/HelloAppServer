@@ -49,25 +49,34 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf00688a-9598-4ca4-ade7-c3e5b364264f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpclient/commons-codec-1.6.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpclient/commons-logging-1.1.1.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpclient/fluent-hc-4.2.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpclient/httpclient-4.2.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpclient/httpclient-cache-4.2.5.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpclient/httpcore-4.2.4.jar" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/lib/httpclient/httpmime-4.2.5.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kz/helloapp/view/customer/api/AuthServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kz/helloapp/view/customer/RegisterServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/views/customer/header.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/jquery.Jcrop.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/jquery.Jcrop.min.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/views/customer/register-result.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/views/customer/register.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/kz/helloapp/test/ApiTest.java" afterPath="$PROJECT_DIR$/test/kz/helloapp/test/ApiTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz/helloapp/view/customer/api/CampaignsServlet.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/view/customer/api/CampaignsServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz/helloapp/model/service/CustomerBean.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/model/service/CustomerBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz/helloapp/model/service/CustomerService.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/model/service/CustomerService.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz/helloapp/model/domain/CustomerUser.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/model/domain/CustomerUser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz/helloapp/view/customer/DispatcherServlet.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/view/customer/DispatcherServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/import.sql" afterPath="$PROJECT_DIR$/src/import.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/customer/index.html" afterPath="$PROJECT_DIR$/web/customer/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HelloAppServer.iws" />
     <ignored path=".idea/workspace.xml" />
     <file path="/Category.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1363884999882" ignored="false" />
-    <file path="/fragment.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368192863881" ignored="false" />
+    <file path="/fragment.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369548610138" ignored="false" />
     <file path="/HelloAppCatalog.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1365262834030" ignored="false" />
     <file path="/HelloAppImpl.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1363877468722" ignored="false" />
     <file path="/HelloAppBean.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1365268055534" ignored="false" />
     <file path="/persistence.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367404152816" ignored="false" />
     <file path="/CategoriesServlet.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1363882761146" ignored="false" />
-    <file path="/web.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368756359154" ignored="false" />
+    <file path="/web.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369553429411" ignored="false" />
     <file path="/import.sql" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368860414058" ignored="false" />
     <file path="/application.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367404255286" ignored="false" />
     <file path="/HelloApp" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1363941346888" ignored="false" />
@@ -81,7 +90,7 @@
     <file path="/PlaceEventsServlet.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1363890794238" ignored="false" />
     <file path="/index.html" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367406536827" ignored="false" />
     <file path="/widget.js" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1364017606481" ignored="false" />
-    <file path="/Dummy.txt" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369101096383" ignored="false" />
+    <file path="/Dummy.txt" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369545851758" ignored="false" />
     <file path="$PROJECT_DIR$/../BGM/data/research/index.html" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1363939833501" ignored="false" />
     <file path="$PROJECT_DIR$/../BGM/src/kz/bgm/research/sony/SonyParser.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1364229473000" ignored="false" />
     <file path="$PROJECT_DIR$/../BGM/data/research/users.js" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1363939833502" ignored="false" />
@@ -155,12 +164,12 @@
     <file path="/Action.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1365267876272" ignored="false" />
     <file path="/ActionFactory.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1365262912755" ignored="false" />
     <file path="/ReportAction.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1365307932099" ignored="false" />
-    <file path="/DispatcherServlet.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367422142138" ignored="false" />
+    <file path="/DispatcherServlet.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369549244696" ignored="false" />
     <file path="/kendou.html" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1365237473289" ignored="false" />
     <file path="/admin-login.html" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1365260234491" ignored="false" />
     <file path="/AdminAuthServlet.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1365260030165" ignored="false" />
     <file path="/BusinessUser.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367388982225" ignored="false" />
-    <file path="/AuthServlet.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367415258630" ignored="false" />
+    <file path="/AuthServlet.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369553272935" ignored="false" />
     <file path="/DiscountsAction.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1365262865237" ignored="false" />
     <file path="/discounts.jsp" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1365265234929" ignored="false" />
     <file path="/header.jsp" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367421339220" ignored="false" />
@@ -171,8 +180,8 @@
     <file path="/BusinessService.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367389173344" ignored="false" />
     <file path="/reports.jsp" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367406675594" ignored="false" />
     <file path="/campaigns.jsp" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367406390089" ignored="false" />
-    <file path="/CustomerService.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367414879486" ignored="false" />
-    <file path="/CustomerBean.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367414935781" ignored="false" />
+    <file path="/CustomerService.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369548967975" ignored="false" />
+    <file path="/CustomerBean.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369548991890" ignored="false" />
     <file path="/CampaignStat.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1365310869176" ignored="false" />
     <file path="/AdminService.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367389216588" ignored="false" />
     <file path="/AdminBean.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367389228272" ignored="false" />
@@ -180,7 +189,7 @@
     <file path="/login.html" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1365307380381" ignored="false" />
     <file path="/AdminAuthFilter.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1365307645480" ignored="false" />
     <file path="/partners.jsp" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367406692138" ignored="false" />
-    <file path="/CustomerUser.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368860072905" ignored="false" />
+    <file path="/CustomerUser.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369548916312" ignored="false" />
     <file path="/build.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368182246039" ignored="false" />
     <file path="$PROJECT_DIR$/../HelloAppAndroid/.idea/workspace.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368192876103" ignored="false" />
     <file path="$PROJECT_DIR$/../adt-bundle-mac-x86_64/sdk/tools/ant/build.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1365325633299" ignored="false" />
@@ -219,7 +228,7 @@
     <file path="/login-admin.html" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367405733233" ignored="false" />
     <file path="/CustomerServlet.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367407978591" ignored="false" />
     <file path="/ApplyCampaignServlet.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368191431710" ignored="false" />
-    <file path="/CampaignsServlet.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367407619047" ignored="false" />
+    <file path="/CampaignsServlet.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369588186122" ignored="false" />
     <file path="/PartnerServlet.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367407990731" ignored="false" />
     <file path="/AdminServlet.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367407954551" ignored="false" />
     <file path="/Consts.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367407918568" ignored="false" />
@@ -263,8 +272,11 @@
     <file path="/queries.sql" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368947408280" ignored="false" />
     <file path="db-console:/89446b08/5a112371-ec62-433a-a61b-f6ef82fb253a/" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369100725827" ignored="false" />
     <file path="/BGM Datasource" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368947302826" ignored="false" />
-    <file path="/ApiTest.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369070070674" ignored="false" />
+    <file path="/ApiTest.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369588432970" ignored="false" />
     <file path="/ApiClient.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369068512772" ignored="false" />
+    <file path="/register.jsp" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369549423289" ignored="false" />
+    <file path="/RegisterServlet.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369549268846" ignored="false" />
+    <file path="/register-result.jsp" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369549329626" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -337,7 +349,22 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/test/kz/helloapp/test/ApiTest.java" line="33" class="kz.helloapp.test.ApiTest" package="kz.helloapp.test">
+      <breakpoint url="file://$PROJECT_DIR$/test/kz/helloapp/test/ApiTest.java" line="42" class="kz.helloapp.test.ApiTest" package="kz.helloapp.test">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/DispatcherServlet.java" line="34" class="kz.helloapp.view.customer.DispatcherServlet" package="kz.helloapp.view.customer">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -365,7 +392,34 @@
       <file leaf-file-name="ApplyDiscountServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/api/ApplyDiscountServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="33" column="0" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0">
+            <state line="16" column="13" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApiTest.java" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/test/kz/helloapp/test/ApiTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="74" column="46" selection-start="2013" selection-end="2013" vertical-scroll-proportion="1.2802275">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ApiClient.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/test/kz/helloapp/test/ApiClient.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="25" selection-start="758" selection-end="758" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CampaignsServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/api/CampaignsServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="54" selection-start="800" selection-end="829" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -377,19 +431,69 @@
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="35" column="96" selection-start="2697" selection-end="2697" vertical-scroll-proportion="-19.444445">
+            <state line="28" column="135" selection-start="2260" selection-end="2260" vertical-scroll-proportion="-15.555555">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApiTest.java" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/test/kz/helloapp/test/ApiTest.java">
+      <file leaf-file-name="AuthServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/api/AuthServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="66" column="87" selection-start="1932" selection-end="1932" vertical-scroll-proportion="1.0129032">
+            <state line="30" column="19" selection-start="973" selection-end="973" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RegisterServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/RegisterServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="26" column="11" selection-start="498" selection-end="872" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomerService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kz/helloapp/model/service/CustomerService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="17" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+            <state />
+          </provider>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="138" column="39" selection-start="4647" selection-end="4647" vertical-scroll-proportion="-16.148148">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/META-INF/application.xml">
+          <provider editor-type-id="com.intellij.javaee.module.view.app.viewlets.ApplicationModuleGeneralEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -412,21 +516,21 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/kz/helloapp/view/partner/DispatcherServlet.java" />
-        <option value="$PROJECT_DIR$/web/js/jquery.bpopup.min.js" />
-        <option value="$PROJECT_DIR$/src/kz/helloapp/model/service/PartnerBean.java" />
-        <option value="$PROJECT_DIR$/src/kz/helloapp/view/partner/QRCodeServlet.java" />
-        <option value="$PROJECT_DIR$/src/kz/helloapp/view/customer/api/ApplyCampaignServlet.java" />
-        <option value="$PROJECT_DIR$/test/QRGeneratorTest.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/views/partner/confirmers.jsp" />
-        <option value="$PROJECT_DIR$/src/kz/helloapp/view/customer/api/VerifyFilter.java" />
-        <option value="$PROJECT_DIR$/src/kz/helloapp/model/domain/Campaign.java" />
-        <option value="$PROJECT_DIR$/src/kz/helloapp/model/domain/CustomerUser.java" />
-        <option value="$PROJECT_DIR$/src/kz/helloapp/model/domain/AuthToken.java" />
-        <option value="$PROJECT_DIR$/src/import.sql" />
-        <option value="$PROJECT_DIR$/test/kz/helloapp/test/ApiClient.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/kz/helloapp/view/customer/api/ApplyDiscountServlet.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/views/customer/header.jsp" />
+        <option value="$PROJECT_DIR$/web/customer/index.html" />
+        <option value="$PROJECT_DIR$/src/kz/helloapp/model/service/CustomerService.java" />
+        <option value="$PROJECT_DIR$/src/kz/helloapp/model/service/CustomerBean.java" />
+        <option value="$PROJECT_DIR$/src/kz/helloapp/view/customer/DispatcherServlet.java" />
+        <option value="$PROJECT_DIR$/src/kz/helloapp/view/customer/RegisterServlet.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/views/customer/register-result.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/views/customer/register.jsp" />
+        <option value="$PROJECT_DIR$/src/kz/helloapp/model/domain/CustomerUser.java" />
+        <option value="$PROJECT_DIR$/src/kz/helloapp/view/customer/AuthServlet.java" />
+        <option value="$PROJECT_DIR$/src/kz/helloapp/view/customer/api/AuthServlet.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/kz/helloapp/view/customer/api/CampaignsServlet.java" />
+        <option value="$PROJECT_DIR$/src/import.sql" />
         <option value="$PROJECT_DIR$/test/kz/helloapp/test/ApiTest.java" />
       </list>
     </option>
@@ -676,32 +780,6 @@
               <option name="myItemId" value="views" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HelloAppServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HelloAppServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -725,7 +803,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="admin" />
+              <option name="myItemId" value="customer" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -744,24 +822,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="partner" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HelloAppServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HelloAppServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -784,6 +844,42 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="camp-prev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HelloAppServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HelloAppServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="customer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HelloAppServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HelloAppServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1001,38 +1097,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HelloAppServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HelloAppServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HelloAppServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="HelloAppServer" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="lib" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="httpclient" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="Scope">
@@ -1058,7 +1122,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.20800781" />
     <property name="OverrideImplement.combined" value="false" />
     <property name="options.splitter.main.proportions" value="0.3" />
@@ -1099,11 +1163,11 @@
       <recent name="com.mcsm.hellapp.customer.model.domain" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/web/WEB-INF/views/customer" />
       <recent name="$PROJECT_DIR$/web/WEB-INF/views/partner" />
       <recent name="$PROJECT_DIR$/admin/web" />
       <recent name="$PROJECT_DIR$/admin/src/com/mcsm/hellapp/admin/model/domain" />
       <recent name="$PROJECT_DIR$/business" />
-      <recent name="$PROJECT_DIR$/business/META-INF" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/web" />
@@ -1507,12 +1571,16 @@
       <created>1369101098953</created>
       <updated>1369101098953</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Потерялись библиотеки apache">
+      <created>1369142744377</created>
+      <updated>1369142744377</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="22" width="1440" height="874" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JavaEE:App" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1526,13 +1594,13 @@
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.3641791" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.6710875" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5106101" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.35941646" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6405836" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6087533" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.50744045" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32891247" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32625994" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5014881" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.1522388" order="1" side_tool="true" content_ui="tabs" />
@@ -1592,7 +1660,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Тест API" />
+    <option name="LAST_COMMIT_MESSAGE" value="Потерялись библиотеки apache" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1621,6 +1689,7 @@
     <MESSAGE value="Раскоментил  qr" />
     <MESSAGE value="API-токен и проверка  API-запросов" />
     <MESSAGE value="Тест API" />
+    <MESSAGE value="Потерялись библиотеки apache" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1638,88 +1707,74 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test/kz/helloapp/test/QRGeneratorTest.java">
+    <entry file="file://$PROJECT_DIR$/web/customer/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="50" selection-start="583" selection-end="583" vertical-scroll-proportion="0.0">
+        <state line="9" column="83" selection-start="314" selection-end="314" vertical-scroll-proportion="-5.625">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/partner/confirmers.jsp">
+    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/model/service/CustomerBean.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="22" selection-start="1854" selection-end="1854" vertical-scroll-proportion="-0.625">
+        <state line="35" column="4" selection-start="796" selection-end="796" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/partner/PartnerAuthFilter.java">
+    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/DispatcherServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="34" selection-start="237" selection-end="1103" vertical-scroll-proportion="0.0">
+        <state line="72" column="25" selection-start="2316" selection-end="2316" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/CustomerServlet.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/customer/register-result.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="9" selection-start="529" selection-end="760" vertical-scroll-proportion="0.0">
+        <state line="25" column="0" selection-start="631" selection-end="631" vertical-scroll-proportion="-15.625">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/api/CampaignsServlet.java">
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/customer/register.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="43" selection-start="804" selection-end="888" vertical-scroll-proportion="0.0">
+        <state line="27" column="60" selection-start="733" selection-end="733" vertical-scroll-proportion="-4.9583335">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/kz/helloapp/model/domain/CustomerUser.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="332" selection-end="332" vertical-scroll-proportion="0.0">
+        <state line="12" column="0" selection-start="267" selection-end="267" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/model/domain/AdminUser.java">
+    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/RegisterServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="13" selection-start="143" selection-end="143" vertical-scroll-proportion="0.12802276">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/model/domain/CampaignStat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="13" selection-start="170" selection-end="170" vertical-scroll-proportion="0.14935988">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/model/domain/AuthToken.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="26" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/model/domain/Campaign.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="0" selection-start="151" selection-end="151" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/api/VerifyFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="19" selection-start="8" selection-end="19" vertical-scroll-proportion="0.0">
+        <state line="26" column="11" selection-start="498" selection-end="872" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/kz/helloapp/test/ApiClient.java">
+    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/model/service/CustomerService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="46" selection-start="825" selection-end="825" vertical-scroll-proportion="0.0">
+        <state line="9" column="17" selection-start="262" selection-end="262" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/api/ApplyDiscountServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="16" column="13" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/api/AuthServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="19" selection-start="973" selection-end="973" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1727,19 +1782,36 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
       <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
         <state />
       </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="61" selection-start="3369" selection-end="3369" vertical-scroll-proportion="-9.481482">
+        <state line="138" column="39" selection-start="4647" selection-end="4647" vertical-scroll-proportion="-16.148148">
           <folding />
         </state>
       </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
         <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/META-INF/application.xml">
+      <provider editor-type-id="com.intellij.javaee.module.view.app.viewlets.ApplicationModuleGeneralEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/api/CampaignsServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="54" selection-start="800" selection-end="829" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/import.sql">
@@ -1747,24 +1819,22 @@
         <state />
       </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="96" selection-start="2697" selection-end="2697" vertical-scroll-proportion="-19.444445">
+        <state line="28" column="135" selection-start="2260" selection-end="2260" vertical-scroll-proportion="-15.555555">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/api/ApplyDiscountServlet.java">
+    <entry file="file://$PROJECT_DIR$/test/kz/helloapp/test/ApiClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="1175" selection-end="1175" vertical-scroll-proportion="0.0">
+        <state line="26" column="25" selection-start="758" selection-end="758" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test/kz/helloapp/test/ApiTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="66" column="87" selection-start="1932" selection-end="1932" vertical-scroll-proportion="1.0129032">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="74" column="46" selection-start="2013" selection-end="2013" vertical-scroll-proportion="1.2802275">
+          <folding />
         </state>
       </provider>
     </entry>

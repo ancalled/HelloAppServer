@@ -2,8 +2,10 @@ package kz.helloapp.test;
 
 
 import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import kz.helloapp.model.domain.Campaign;
+import org.junit.Before;
 import org.junit.Test;
 
 import java.lang.reflect.Type;
@@ -22,6 +24,13 @@ public class ApiTest {
     public static final String TOKEN = "test_token";
 
 
+    private Gson gson;
+
+    @Before
+    public void init() {
+        gson = new GsonBuilder().setDateFormat("yyyy-MM-dd").create();
+    }
+
     @Test
     public void testApiCall() {
         testGetCampaigns();
@@ -39,7 +48,6 @@ public class ApiTest {
 
         System.out.println("json:\n" + json);
 
-        Gson gson = new Gson();
 
         Type type = new TypeToken<Collection<Campaign>>() {
         }.getType();
@@ -53,6 +61,7 @@ public class ApiTest {
         assertEquals("Скидон на влажный массаж", first.getTitle());
     }
 
+
     private void testActivateDiscount() {
         System.out.println("Activating discount...");
 
@@ -64,7 +73,8 @@ public class ApiTest {
         System.out.println("campaignId: " + campaignId);
         System.out.println("confirmerCode: " + confirmerCode);
 
-        String url = String.format("%s/apply-campaign?userId=%d&campaignId=%d&confirmerCode=%s", API_URL, userId, campaignId, confirmerCode);
+        String url = String.format("%s/apply-campaign?userId=%d&campaignId=%d&confirmerCode=%s",
+                API_URL, userId, campaignId, confirmerCode);
 
 
         String json = ApiClient.doPost(url);
@@ -73,7 +83,6 @@ public class ApiTest {
 
         assertNotNull(json);
 
-        Gson gson = new Gson();
         Result result = gson.fromJson(json, Result.class);
 
         assertNotNull(result);
@@ -84,4 +93,6 @@ public class ApiTest {
         assertEquals(Status.OK, result.getStatus());
 
     }
+
+
 }

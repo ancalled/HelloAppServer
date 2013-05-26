@@ -28,6 +28,13 @@ public class CustomerBean implements CustomerService {
 
 
     @Override
+    public CustomerUser saveUser(CustomerUser user) {
+        em.persist(user);
+        return user;
+    }
+
+
+    @Override
     public PartnerConfirmer getConfirmer(String code) {
         try {
             return (PartnerConfirmer) em.createQuery("select c from PartnerConfirmer c where c.code = :code")

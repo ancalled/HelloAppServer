@@ -23,7 +23,9 @@ public class CampaignsServlet extends CustomerServlet {
 
         List<Campaign> campaigns = service.getAllCampaigns();
 
-        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        Gson gson = new GsonBuilder().setPrettyPrinting()
+                .setDateFormat("yyyy-MM-dd")
+                .create();
 
         resp.setContentType("application/json");
         resp.setCharacterEncoding("UTF-8");
