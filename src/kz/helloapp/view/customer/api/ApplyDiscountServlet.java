@@ -39,51 +39,64 @@ public class ApplyDiscountServlet extends CustomerServlet {
         System.out.println("\tdiscountId = " + campId);
         System.out.println("\tconfirmerCode = " + confirmerCode);
 
-        PartnerConfirmer confirmer = service.getConfirmer(confirmerCode);
         CustomerUser user = service.getUser(userId);
         Campaign campaign = service.getCampaign(campId);
 
 
-        Status status;
-        Long appliedId = null;
+        if (campaign == null) {
+            error(out, Status.NO_DISCOUNT_FOUND);
+            return;
+        }
 
-        if (confirmer == null) {
-            status = Status.NO_CONFIRMER_FOUND;
-        } else if (user == null) {
-            status = Status.NO_USER_FOUND;
-        } else if (campaign == null) {
-            status = Status.NO_DISCOUNT_FOUND;
-        } else {
+        if (user == null) {
+            error(out, Status.NO_USER_FOUND);
+            return;
+        }
 
-            if (confirmer.getCompany() != null &&
-                    campaign.getCompany() != null &&
-                    confirmer.getCompany().getId().equals(campaign.getCompany().getId())) {
+        PartnerConfirmer confirmer = null;
+        if (campaign.isNeedConfirm()) {
+            confirmer = service.getConfirmer(confirmerCode);
+            if (confirmer == null) {
+                error(out, Status.NO_CONFIRMER_FOUND);
+                return;
+            }
 
-                CampaignStat stat = new CampaignStat();
-                stat.setCampaign(campaign);
-                stat.setUser(user);
-                stat.setConfirmer(confirmer);
-
-                stat = service.saveCampaignStat(stat);
-
-                if (stat != null) {
-                    status = Status.OK;
-                    appliedId = stat.getId();
-                } else {
-                    status = Status.COULD_NOT_APPLY;
-                }
-            } else {
-                status = Status.CONFIRMER_IS_NOT_OF_THIS_COMPANY;
+            if (confirmer.getCompany() != null && campaign.getCompany() != null &&
+                    !confirmer.getCompany().getId().equals(campaign.getCompany().getId())) {
+                error(out, Status.CONFIRMER_IS_NOT_OF_THIS_COMPANY);
+                return;
             }
         }
 
-        out.print(gson.toJson(new Result(status, appliedId)));
-        out.close();
+        CampaignStat stat = new CampaignStat();
+        stat.setCampaign(campaign);
+        stat.setUser(user);
+        if (campaign.isNeedConfirm()) {
+            stat.setConfirmer(confirmer);
+        }
+
+        stat = service.saveCampaignStat(stat);
+        if (stat == null) {
+            error(out, Status.COULD_NOT_APPLY);
+            return;
+        }
+
+        out.print(gson.toJson(new Result(Status.OK, stat.getId())));
+    }
+
+
+    private void error(PrintWriter out, Status status) {
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        out.print(gson.toJson(new Result(status, null)));
     }
 
 
     public static enum Status {
-        OK, NO_USER_FOUND, NO_DISCOUNT_FOUND, NO_CONFIRMER_FOUND, CONFIRMER_IS_NOT_OF_THIS_COMPANY, COULD_NOT_APPLY
+        OK, NO_USER_FOUND,
+        NO_DISCOUNT_FOUND,
+        NO_CONFIRMER_FOUND,
+        CONFIRMER_IS_NOT_OF_THIS_COMPANY,
+        COULD_NOT_APPLY
     }
 
     public static class Result {

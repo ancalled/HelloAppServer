@@ -59,8 +59,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf00688a-9598-4ca4-ade7-c3e5b364264f" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz/helloapp/model/domain/Campaign.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/model/domain/Campaign.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/import.sql" afterPath="$PROJECT_DIR$/src/import.sql" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz/helloapp/view/customer/api/ApplyDiscountServlet.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/view/customer/api/ApplyDiscountServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HelloAppServer.iws" />
@@ -86,7 +85,7 @@
     <file path="/PlaceEventsServlet.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1363890794238" ignored="false" />
     <file path="/index.html" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367406536827" ignored="false" />
     <file path="/widget.js" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1364017606481" ignored="false" />
-    <file path="/Dummy.txt" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369588485508" ignored="false" />
+    <file path="/Dummy.txt" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369591879788" ignored="false" />
     <file path="$PROJECT_DIR$/../BGM/data/research/index.html" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1363939833501" ignored="false" />
     <file path="$PROJECT_DIR$/../BGM/src/kz/bgm/research/sony/SonyParser.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1364229473000" ignored="false" />
     <file path="$PROJECT_DIR$/../BGM/data/research/users.js" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1363939833502" ignored="false" />
@@ -98,7 +97,7 @@
     <file path="/ActivateDiscountServlet.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1363978843125" ignored="false" />
     <file path="/User.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367381989006" ignored="false" />
     <file path="/DiscountStat.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367386720496" ignored="false" />
-    <file path="/ApplyDiscountServlet.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368191432536" ignored="false" />
+    <file path="/ApplyDiscountServlet.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369593039676" ignored="false" />
     <file path="/discounts.html" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1364019569388" ignored="false" />
     <file path="$PROJECT_DIR$/../BGM/src/kz/bgm/platform/parsers/ReportParser.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1364229473859" ignored="false" />
     <file path="$PROJECT_DIR$/../BGM/test/kz/bgm/platform/test/searchLucenTest.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1364229473859" ignored="false" />
@@ -387,10 +386,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ApplyDiscountServlet.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ApplyDiscountServlet.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/api/ApplyDiscountServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="13" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0">
+            <state line="69" column="0" selection-start="2344" selection-end="2344" vertical-scroll-proportion="1.177686">
               <folding />
             </state>
           </provider>
@@ -432,13 +431,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="import.sql" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="import.sql" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/import.sql">
           <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
             <state />
           </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="168" selection-start="2389" selection-end="2389" vertical-scroll-proportion="0.47511312">
+            <state line="28" column="168" selection-start="2389" selection-end="2389" vertical-scroll-proportion="-11.666667">
               <folding />
             </state>
           </provider>
@@ -512,7 +511,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/web/customer/index.html" />
         <option value="$PROJECT_DIR$/src/kz/helloapp/model/service/CustomerService.java" />
         <option value="$PROJECT_DIR$/src/kz/helloapp/model/service/CustomerBean.java" />
         <option value="$PROJECT_DIR$/src/kz/helloapp/view/customer/DispatcherServlet.java" />
@@ -528,6 +526,7 @@
         <option value="$PROJECT_DIR$/src/kz/helloapp/view/customer/api/SaveDiscountApplyStatServlet.java" />
         <option value="$PROJECT_DIR$/src/kz/helloapp/model/domain/Campaign.java" />
         <option value="$PROJECT_DIR$/src/import.sql" />
+        <option value="$PROJECT_DIR$/src/kz/helloapp/view/customer/api/ApplyDiscountServlet.java" />
       </list>
     </option>
   </component>
@@ -1575,7 +1574,11 @@
       <created>1369588487464</created>
       <updated>1369588487464</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary=" Добавил флаг needConfirm на компанию">
+      <created>1369591883428</created>
+      <updated>1369591883428</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1594,7 +1597,7 @@
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.3641791" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.6710875" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.6710875" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6405836" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1660,7 +1663,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Формат даты в запросе" />
+    <option name="LAST_COMMIT_MESSAGE" value=" Добавил флаг needConfirm на компанию" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1691,6 +1694,7 @@
     <MESSAGE value="Тест API" />
     <MESSAGE value="Потерялись библиотеки apache" />
     <MESSAGE value="Формат даты в запросе" />
+    <MESSAGE value=" Добавил флаг needConfirm на компанию" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1759,13 +1763,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/api/ApplyDiscountServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="13" selection-start="542" selection-end="542" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/api/AuthServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="19" selection-start="973" selection-end="973" vertical-scroll-proportion="0.0">
@@ -1822,6 +1819,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/import.sql">
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="168" selection-start="2389" selection-end="2389" vertical-scroll-proportion="-11.666667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/kz/helloapp/model/domain/Campaign.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="18" column="31" selection-start="443" selection-end="454" vertical-scroll-proportion="0.0">
@@ -1829,12 +1836,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/import.sql">
-      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
-        <state />
-      </provider>
+    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/api/ApplyDiscountServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="168" selection-start="2389" selection-end="2389" vertical-scroll-proportion="0.47511312">
+        <state line="69" column="0" selection-start="2344" selection-end="2344" vertical-scroll-proportion="1.177686">
           <folding />
         </state>
       </provider>
