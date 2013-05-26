@@ -16,6 +16,7 @@ public class Campaign implements Serializable {
     private Integer rate;
     private Date startFrom;
     private Date goodThrough;
+    private boolean needConfirm;
 
     @ManyToOne
     private PartnerCompany company;
@@ -79,5 +80,11 @@ public class Campaign implements Serializable {
         this.goodThrough = goodThrough;
     }
 
+    public boolean isNeedConfirm() {
+        return needConfirm;
+    }
 
+    public void setNeedConfirm(boolean needConfirm) {
+        this.needConfirm = needConfirm;
+    }
 }

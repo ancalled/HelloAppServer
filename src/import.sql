@@ -21,12 +21,12 @@ INSERT INTO partner_confirmers(id, name, company_id, code) VALUES (6, 'Confirmer
 
 #------------------------------------------------------------------------------------------------------------------------
 
-INSERT INTO campaigns(id, title, company_id, rate, startFrom, goodThrough) VALUES (1, 'Скидон на влажный массаж', 1, 20, '2013-06-01', '2013-07-01');
-INSERT INTO campaigns(id, title, company_id, rate, startFrom, goodThrough) VALUES (2, 'Скидки на кофеюшечку', 2, 10, '2013-04-01', '2013-08-15');
-INSERT INTO campaigns(id, title, company_id, rate, startFrom, goodThrough) VALUES (3, 'Слопай маффин!', 3, 10, '2013-02-01', '2013-07-25');
-INSERT INTO campaigns(id, title, company_id, rate, startFrom, goodThrough) VALUES (4, 'Абонимент на кулинарные курсы', 4, 10, '2013-05-01', '2013-05-29');
-INSERT INTO campaigns(id, title, company_id, rate, startFrom, goodThrough) VALUES (5, 'Недели винных погребов Кызыл-Орды', 5, 15, '2013-03-01', '2013-07-29');
-INSERT INTO campaigns(id, title, company_id, rate, startFrom, goodThrough) VALUES (6, 'Санные вечеринки в горах!', 6, 25, '2013-02-01', '2013-09-05');
+INSERT INTO campaigns(id, title, company_id, rate, startFrom, goodThrough, needConfirm) VALUES (1, 'Скидон на влажный массаж', 1, 20, '2013-06-01', '2013-07-01', true);
+INSERT INTO campaigns(id, title, company_id, rate, startFrom, goodThrough, needConfirm) VALUES (2, 'Скидки на кофеюшечку', 2, 10, '2013-04-01', '2013-08-15', true);
+INSERT INTO campaigns(id, title, company_id, rate, startFrom, goodThrough, needConfirm) VALUES (3, 'Слопай маффин!', 3, 10, '2013-02-01', '2013-07-25', true);
+INSERT INTO campaigns(id, title, company_id, rate, startFrom, goodThrough, needConfirm) VALUES (4, 'Абонимент на кулинарные курсы', 4, 10, '2013-05-01', '2013-05-29', true);
+INSERT INTO campaigns(id, title, company_id, rate, startFrom, goodThrough, needConfirm) VALUES (5, 'Недели винных погребов Кызыл-Орды', 5, 15, '2013-03-01', '2013-07-29', false);
+INSERT INTO campaigns(id, title, company_id, rate, startFrom, goodThrough, needConfirm) VALUES (6, 'Санные вечеринки в горах!', 6, 25, '2013-02-01', '2013-09-05', false);
 
 #------------------------------------------------------------------------------------------------------------------------
 
