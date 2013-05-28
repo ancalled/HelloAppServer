@@ -9,7 +9,10 @@ import org.junit.Before;
 import org.junit.Test;
 
 import java.lang.reflect.Type;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.Collection;
+import java.util.Date;
 import java.util.List;
 
 import static kz.helloapp.view.customer.api.ApplyDiscountServlet.Result;
@@ -21,14 +24,18 @@ public class ApiTest {
 
 
     public static final String API_URL = "http://localhost:8080/helloapp/customer/api";
-    public static final String TOKEN = "test_token";
-
+    public static final DateFormat TIMESTAMP_FORMAT = new SimpleDateFormat("yyyyMMddhhmmss");
 
     private Gson gson;
+
+    private long userId;
+    private String userToken;
 
     @Before
     public void init() {
         gson = new GsonBuilder().setDateFormat("yyyy-MM-dd").create();
+        userId = 2;
+        userToken = "test_token2";
     }
 
     @Test
@@ -39,15 +46,17 @@ public class ApiTest {
 
 
     private void testGetCampaigns() {
-//        String url = RequestBuilder.create(API_URL + "/campaigns", TOKEN).build();
-        String url = API_URL + "/campaigns";
+        String url = ApiClient.RequestBuilder.create(API_URL + "/campaigns", userToken)
+                .param("uid", Long.toString(userId))
+                .param("t", TIMESTAMP_FORMAT.format(new Date()))
+                .build();
+//        String url = API_URL + "/campaigns";
 
         String json = ApiClient.doGet(url);
 
         assertNotNull(json);
 
         System.out.println("json:\n" + json);
-
 
         Type type = new TypeToken<Collection<Campaign>>() {
         }.getType();
@@ -73,9 +82,15 @@ public class ApiTest {
         System.out.println("campaignId: " + campaignId);
         System.out.println("confirmerCode: " + confirmerCode);
 
-        String url = String.format("%s/apply-campaign?userId=%d&campaignId=%d&confirmerCode=%s",
-                API_URL, userId, campaignId, confirmerCode);
+//        String url = String.format("%s/apply-campaign?userId=%d&campaignId=%d&confirmerCode=%s",
+//                API_URL, userId, campaignId, confirmerCode);
 
+        String url = ApiClient.RequestBuilder.create(API_URL + "/apply-campaign", userToken)
+                .param("uid", Long.toString(userId))
+                .param("campaignId", Long.toString(campaignId))
+                .param("confirmerCode", confirmerCode)
+                .param("t", TIMESTAMP_FORMAT.format(new Date()))
+                .build();
 
         String json = ApiClient.doPost(url);
 

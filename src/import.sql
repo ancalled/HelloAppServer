@@ -35,9 +35,9 @@ INSERT into auth_tokens(id, token, whenGenerated) values (1, 'test_token1', '201
 INSERT into auth_tokens(id, token, whenGenerated) values (2, 'test_token2', '2013-05-18 12:35:00');
 INSERT into auth_tokens(id, token, whenGenerated) values (3, 'test_token3', '2013-05-18 12:36:00');
 
-# INSERT INTO customer_users(id, name, pass, authToken_id) VALUES (1, 'user1', '12345', 1);
-# INSERT INTO customer_users(id, name, pass, authToken_id) VALUES (2, 'user2', '12345', 2);
-# INSERT INTO customer_users(id, name, pass, authToken_id) VALUES (3, 'user3', '12345', 3);
+INSERT INTO customer_users(id, name, pass, authToken_id) VALUES (1, 'user1', '12345', 1);
+INSERT INTO customer_users(id, name, pass, authToken_id) VALUES (2, 'user2', '12345', 2);
+INSERT INTO customer_users(id, name, pass, authToken_id) VALUES (3, 'user3', '12345', 3);
 
 # INSERT INTO discount_stats(id, discount_id, user_id, whenApllied) VALUES (1, 3, 1, '2013-04-05 13:15');
 # INSERT INTO discount_stats(id, discount_id, user_id, whenApllied) VALUES (2, 3, 2, '2013-04-06 20:56');

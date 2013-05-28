@@ -28,7 +28,7 @@ public class ApplyDiscountServlet extends CustomerServlet {
         resp.setCharacterEncoding("UTF-8");
         PrintWriter out = resp.getWriter();
 
-        String uidStr = req.getParameter("userId");
+        String uidStr = req.getParameter("uid");
         String cmpIdStr = req.getParameter("campaignId");
         String confirmerCode = req.getParameter("confirmerCode");
 

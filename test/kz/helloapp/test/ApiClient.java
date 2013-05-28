@@ -99,19 +99,26 @@ public class ApiClient {
         }
 
         public String build() {
-            StringBuilder buf = new StringBuilder();
+            StringBuilder paramBuf = new StringBuilder();
+            int i = 0;
             for (String key: params.keySet()) {
-                buf.append(key).append("=").append(params.get(key));
+                paramBuf.append(key).append("=").append(params.get(key));
+                if (++i < params.size()) {
+                    paramBuf.append("&");
+                }
             }
+            String params = paramBuf.toString();
 
-            buf.append("h=").append(buildHash(buf.toString()));
-
-            return buf.toString();
+            StringBuilder urlBuf = new StringBuilder();
+            urlBuf.append(url).append("?");
+            urlBuf.append(params).append("&h=").append(buildHash(params));
+            return urlBuf.toString();
         }
 
-        private String buildHash(String url) {
+        private String buildHash(String params) {
             try {
-                return calcHash(url + "token=" + token);
+                String data = params + "&token=" + token;
+                return calcHash(data);
             } catch (NoSuchAlgorithmException | UnsupportedEncodingException e) {
                 e.printStackTrace();
             }

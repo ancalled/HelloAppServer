@@ -49,7 +49,7 @@ public class VerifyFilter implements Filter {
 
 
         String uidStr = req.getParameter("uid");
-        String hash = req.getParameter("hash");
+        String hash = req.getParameter("h");
 
         if (uidStr != null) {
             long uid = Long.parseLong(uidStr);
@@ -81,7 +81,7 @@ public class VerifyFilter implements Filter {
     private String buildParamsHash(HttpServletRequest req, String token) {
         //noinspection unchecked
         List<String> params = Collections.list(req.getParameterNames());
-        params.remove("hash");
+        params.remove("h");
 
         Collections.sort(params);
 
