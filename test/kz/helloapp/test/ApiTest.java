@@ -51,6 +51,7 @@ public class ApiTest {
                 .param("t", TIMESTAMP_FORMAT.format(new Date()))
                 .build();
 //        String url = API_URL + "/campaigns";
+        System.out.println("url = " + url);
 
         String json = ApiClient.doGet(url);
 
@@ -75,8 +76,8 @@ public class ApiTest {
         System.out.println("Activating discount...");
 
         long userId = 2L;
-        long campaignId = 5L;
-        String confirmerCode = "1005";
+        long campaignId = 2L;
+        String confirmerCode = "1002";
 
         System.out.println("userId: " + userId);
         System.out.println("campaignId: " + campaignId);
@@ -91,6 +92,8 @@ public class ApiTest {
                 .param("confirmerCode", confirmerCode)
                 .param("t", TIMESTAMP_FORMAT.format(new Date()))
                 .build();
+
+        System.out.println("url = " + url);
 
         String json = ApiClient.doPost(url);
 

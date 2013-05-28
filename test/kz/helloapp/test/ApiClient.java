@@ -11,6 +11,7 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
+import java.net.URLEncoder;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Map;
@@ -111,8 +112,18 @@ public class ApiClient {
 
             StringBuilder urlBuf = new StringBuilder();
             urlBuf.append(url).append("?");
-            urlBuf.append(params).append("&h=").append(buildHash(params));
+            String hash = buildHash(params);
+            urlBuf.append(params).append("&h=").append(encode(hash));
             return urlBuf.toString();
+        }
+
+        public static String encode(String text) {
+            try {
+                return URLEncoder.encode(text, "UTF-8");
+            } catch (UnsupportedEncodingException e) {
+                e.printStackTrace();
+            }
+            return null;
         }
 
         private String buildHash(String params) {

@@ -61,10 +61,7 @@
     <list default="true" id="cf00688a-9598-4ca4-ade7-c3e5b364264f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/kz/helloapp/test/ApiClient.java" afterPath="$PROJECT_DIR$/test/kz/helloapp/test/ApiClient.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/kz/helloapp/test/ApiTest.java" afterPath="$PROJECT_DIR$/test/kz/helloapp/test/ApiTest.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz/helloapp/view/customer/api/ApplyDiscountServlet.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/view/customer/api/ApplyDiscountServlet.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz/helloapp/view/customer/api/VerifyFilter.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/view/customer/api/VerifyFilter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/import.sql" afterPath="$PROJECT_DIR$/src/import.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="HelloAppServer.iws" />
@@ -90,7 +87,7 @@
     <file path="/PlaceEventsServlet.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1363890794238" ignored="false" />
     <file path="/index.html" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367406536827" ignored="false" />
     <file path="/widget.js" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1364017606481" ignored="false" />
-    <file path="/Dummy.txt" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369593126323" ignored="false" />
+    <file path="/Dummy.txt" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369706935194" ignored="false" />
     <file path="$PROJECT_DIR$/../BGM/data/research/index.html" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1363939833501" ignored="false" />
     <file path="$PROJECT_DIR$/../BGM/src/kz/bgm/research/sony/SonyParser.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1364229473000" ignored="false" />
     <file path="$PROJECT_DIR$/../BGM/data/research/users.js" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1363939833502" ignored="false" />
@@ -268,12 +265,12 @@
     <file path="$PROJECT_DIR$/../HelloAppAndroid/src/net/microcosmus/helloapp/FakeScannerActivity.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368182188161" ignored="false" />
     <file path="$PROJECT_DIR$/../HelloAppAndroid/src/net/microcosmus/helloapp/QRScannerActivity.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368182199025" ignored="false" />
     <file path="$PROJECT_DIR$/../HelloAppAndroid/src/net/microcosmus/helloapp/domain/DiscountApplyResult.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368192107841" ignored="false" />
-    <file path="/VerifyFilter.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368857171467" ignored="false" />
+    <file path="/VerifyFilter.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369754228843" ignored="false" />
     <file path="/queries.sql" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368947408280" ignored="false" />
     <file path="db-console:/89446b08/5a112371-ec62-433a-a61b-f6ef82fb253a/" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369100725827" ignored="false" />
     <file path="/BGM Datasource" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368947302826" ignored="false" />
-    <file path="/ApiTest.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369706578332" ignored="false" />
-    <file path="/ApiClient.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369706029733" ignored="false" />
+    <file path="/ApiTest.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369753811707" ignored="false" />
+    <file path="/ApiClient.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369754160677" ignored="false" />
     <file path="/register.jsp" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369549423289" ignored="false" />
     <file path="/RegisterServlet.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369549268846" ignored="false" />
     <file path="/register-result.jsp" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369549329626" ignored="false" />
@@ -366,7 +363,7 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
-      <breakpoint url="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/api/VerifyFilter.java" line="46" class="kz.helloapp.view.customer.api.VerifyFilter" package="kz.helloapp.view.customer.api">
+      <breakpoint url="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/api/VerifyFilter.java" line="47" class="kz.helloapp.view.customer.api.VerifyFilter" package="kz.helloapp.view.customer.api">
         <option name="ENABLED" value="true" />
         <option name="LOG_ENABLED" value="false" />
         <option name="LOG_EXPRESSION_ENABLED" value="false" />
@@ -396,6 +393,21 @@
         <option name="CONDITION" value="" />
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/api/ApplyDiscountServlet.java" line="22" class="kz.helloapp.view.customer.api.ApplyDiscountServlet" package="kz.helloapp.view.customer.api">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="REMOVE_AFTER_HIT" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
     </line_breakpoints>
     <breakpoint_rules />
     <ui_properties />
@@ -409,16 +421,16 @@
       <file leaf-file-name="ApplyDiscountServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/api/ApplyDiscountServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="45" selection-start="1044" selection-end="1044" vertical-scroll-proportion="0.0">
+            <state line="83" column="0" selection-start="2701" selection-end="2701" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ApiTest.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="ApiTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/kz/helloapp/test/ApiTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="100" column="0" selection-start="3043" selection-end="3043" vertical-scroll-proportion="0.3318182">
+            <state line="88" column="49" selection-start="2656" selection-end="2656" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -436,7 +448,7 @@
       <file leaf-file-name="ApiClient.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/kz/helloapp/test/ApiClient.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="114" column="0" selection-start="3423" selection-end="3423" vertical-scroll-proportion="0.0">
+            <state line="117" column="9" selection-start="3538" selection-end="3538" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -466,7 +478,7 @@
       <file leaf-file-name="AuthServlet.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/api/AuthServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="19" selection-start="973" selection-end="973" vertical-scroll-proportion="0.0">
+            <state line="37" column="63" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -492,10 +504,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="VerifyFilter.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="VerifyFilter.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/api/VerifyFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="0" selection-start="1378" selection-end="1378" vertical-scroll-proportion="0.0">
+            <state line="73" column="123" selection-start="2363" selection-end="2363" vertical-scroll-proportion="0.5547653">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -545,10 +557,10 @@
         <option value="$PROJECT_DIR$/src/kz/helloapp/model/domain/Campaign.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/src/import.sql" />
-        <option value="$PROJECT_DIR$/src/kz/helloapp/view/customer/api/VerifyFilter.java" />
-        <option value="$PROJECT_DIR$/test/kz/helloapp/test/ApiClient.java" />
-        <option value="$PROJECT_DIR$/test/kz/helloapp/test/ApiTest.java" />
         <option value="$PROJECT_DIR$/src/kz/helloapp/view/customer/api/ApplyDiscountServlet.java" />
+        <option value="$PROJECT_DIR$/test/kz/helloapp/test/ApiTest.java" />
+        <option value="$PROJECT_DIR$/test/kz/helloapp/test/ApiClient.java" />
+        <option value="$PROJECT_DIR$/src/kz/helloapp/view/customer/api/VerifyFilter.java" />
       </list>
     </option>
   </component>
@@ -1604,7 +1616,11 @@
       <created>1369593128644</created>
       <updated>1369593128644</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="API с токенами, тесты">
+      <created>1369706937840</created>
+      <updated>1369706937840</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1624,7 +1640,7 @@
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964131" sideWeight="0.35941646" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.6405836" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.6405836" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32625994" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1689,7 +1705,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="Исправил применение скидки для сулчая, когда не нужно подтверждение" />
+    <option name="LAST_COMMIT_MESSAGE" value="API с токенами, тесты" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1722,6 +1738,7 @@
     <MESSAGE value="Формат даты в запросе" />
     <MESSAGE value=" Добавил флаг needConfirm на компанию" />
     <MESSAGE value="Исправил применение скидки для сулчая, когда не нужно подтверждение" />
+    <MESSAGE value="API с токенами, тесты" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1783,15 +1800,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/api/AuthServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="19" selection-start="973" selection-end="973" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/META-INF/application.xml">
       <provider editor-type-id="com.intellij.javaee.module.view.app.viewlets.ApplicationModuleGeneralEditorProvider">
         <state />
@@ -1842,33 +1850,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/kz/helloapp/test/ApiClient.java">
+    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/api/ApplyDiscountServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="0" selection-start="3423" selection-end="3423" vertical-scroll-proportion="0.0">
+        <state line="83" column="0" selection-start="2701" selection-end="2701" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/api/VerifyFilter.java">
+    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/api/AuthServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="0" selection-start="1378" selection-end="1378" vertical-scroll-proportion="0.0">
+        <state line="37" column="63" selection-start="1207" selection-end="1207" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/api/ApplyDiscountServlet.java">
+    <entry file="file://$PROJECT_DIR$/test/kz/helloapp/test/ApiTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="45" selection-start="1044" selection-end="1044" vertical-scroll-proportion="0.0">
+        <state line="88" column="49" selection-start="2656" selection-end="2656" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/kz/helloapp/test/ApiTest.java">
+    <entry file="file://$PROJECT_DIR$/test/kz/helloapp/test/ApiClient.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="100" column="0" selection-start="3043" selection-end="3043" vertical-scroll-proportion="0.3318182">
+        <state line="117" column="9" selection-start="3538" selection-end="3538" vertical-scroll-proportion="0.0">
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/api/VerifyFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="73" column="123" selection-start="2363" selection-end="2363" vertical-scroll-proportion="0.5547653">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

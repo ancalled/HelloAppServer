@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.xml.bind.DatatypeConverter;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.net.URLDecoder;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.Collections;
@@ -49,7 +50,7 @@ public class VerifyFilter implements Filter {
 
 
         String uidStr = req.getParameter("uid");
-        String hash = req.getParameter("h");
+        String hash = decode(req.getParameter("h"));
 
         if (uidStr != null) {
             long uid = Long.parseLong(uidStr);
@@ -57,13 +58,12 @@ public class VerifyFilter implements Filter {
             if (user != null && user.getAuthToken() != null) {
                 String token = user.getAuthToken().getToken();
 
-
                 String checkHash = buildParamsHash(req, token);
-
+                System.out.println("checkHash = " + checkHash);
                 if (hash.equals(checkHash)) {
                     chain.doFilter(request, response);
+                    return;
                 }
-
             }
         }
 
@@ -109,4 +109,12 @@ public class VerifyFilter implements Filter {
         return DatatypeConverter.printBase64Binary(digest);
     }
 
+    private String decode(String text) {
+        try {
+            return URLDecoder.decode(text, "UTF-8");
+        } catch (UnsupportedEncodingException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
 }
