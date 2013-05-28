@@ -11,6 +11,7 @@ import org.apache.http.impl.client.DefaultHttpClient;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.io.UnsupportedEncodingException;
+import java.math.BigInteger;
 import java.net.URLEncoder;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -113,7 +114,7 @@ public class ApiClient {
             StringBuilder urlBuf = new StringBuilder();
             urlBuf.append(url).append("?");
             String hash = buildHash(params);
-            urlBuf.append(params).append("&h=").append(encode(hash));
+            urlBuf.append(params).append("&h=").append(hash);
             return urlBuf.toString();
         }
 
@@ -141,7 +142,16 @@ public class ApiClient {
             MessageDigest md = MessageDigest.getInstance("MD5");
             byte[] bytes = data.getBytes("UTF-8");
             byte[] digest = md.digest(bytes);
-            return Base64.encodeBase64String(digest);
+            return toHex(digest);
+//            return Base64.encodeBase64String(digest);
+        }
+
+        public String toHex(String arg) {
+            return toHex(arg.getBytes());
+        }
+
+        public String toHex(byte[] bytes) {
+            return String.format("%040x", new BigInteger(bytes));
         }
 
         public static RequestBuilder create(String scheme, String host, int port, String contextPath, String token) {

@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServletResponse;
 import javax.xml.bind.DatatypeConverter;
 import java.io.IOException;
 import java.io.UnsupportedEncodingException;
+import java.math.BigInteger;
 import java.net.URLDecoder;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
@@ -50,7 +51,14 @@ public class VerifyFilter implements Filter {
 
 
         String uidStr = req.getParameter("uid");
-        String hash = decode(req.getParameter("h"));
+        String hash = req.getParameter("h");
+
+        //todo test stuff!
+        String ingoreVerify = req.getParameter("ignore");
+        if ("ok".equals(ingoreVerify)) {
+            chain.doFilter(request, response);
+            return;
+        }
 
         if (uidStr != null) {
             long uid = Long.parseLong(uidStr);
@@ -58,11 +66,12 @@ public class VerifyFilter implements Filter {
             if (user != null && user.getAuthToken() != null) {
                 String token = user.getAuthToken().getToken();
 
-                String checkHash = buildParamsHash(req, token);
-                System.out.println("checkHash = " + checkHash);
-                if (hash.equals(checkHash)) {
+                String expected = buildParamsHash(req, token);
+                if (hash.equals(expected)) {
                     chain.doFilter(request, response);
                     return;
+                } else {
+                    System.err.println("Wrong hash code! Expected: '" + expected + "', but got: '" + hash + "'");
                 }
             }
         }
@@ -106,7 +115,12 @@ public class VerifyFilter implements Filter {
     private String calcHash(String data) throws NoSuchAlgorithmException, UnsupportedEncodingException {
         byte[] bytes = data.getBytes("UTF-8");
         byte[] digest = md.digest(bytes);
-        return DatatypeConverter.printBase64Binary(digest);
+        return toHex(digest);
+//        return DatatypeConverter.printBase64Binary(digest);
+    }
+
+    public String toHex(byte[] bytes) {
+        return String.format("%040x", new BigInteger(bytes));
     }
 
     private String decode(String text) {
