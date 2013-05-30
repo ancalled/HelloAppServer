@@ -1,22 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="740171730">
-    <data-source source="LOCAL" name="HelloApp" product="MySQL" version="5.6.10" jdbc-version="4.0" driver-name="MySQL-AB JDBC Driver" driver-version="mysql-connector-java-5.1.23 ( Revision: ${bzr.revision-id} )" uuid="dd2415f6-962c-4914-b333-20c4946b9bc8">
-      <extra-name-characters>#@</extra-name-characters>
-      <identifier-quote-string>`</identifier-quote-string>
-      <synchronize>true</synchronize>
-      <jdbc-driver>com.mysql.jdbc.Driver</jdbc-driver>
-      <jdbc-url>jdbc:mysql://localhost:3306/helloapp</jdbc-url>
-      <user-name>root</user-name>
-      <user-password>dfc7dfcfdfc6dfc1dfc5dfd8</user-password>
-      <schema-pattern>helloapp.*</schema-pattern>
-      <default-schemas>helloapp.*</default-schemas>
-      <libraries>
-        <library>
-          <url>file://$PROJECT_DIR$/lib/mysql-connector-java-5.1.23-bin.jar</url>
-        </library>
-      </libraries>
-    </data-source>
-  </component>
+  <component name="DataSourceManagerImpl" compressed="false" hash="3489917832" />
 </project>
 

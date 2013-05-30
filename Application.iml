@@ -49,13 +49,18 @@
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" scope="PROVIDED" name="JPA 2.0" level="project" />
-    <orderEntry type="library" scope="PROVIDED" name="Java EE 5-Java EE 5" level="project" />
     <orderEntry type="library" name="zxing-core" level="project" />
     <orderEntry type="library" scope="PROVIDED" name="jboss-jstl-api_1.2_spec-1.0.2.Final" level="project" />
     <orderEntry type="library" name="gson" level="project" />
     <orderEntry type="library" scope="TEST" name="httpclient-4.2.5" level="project" />
     <orderEntry type="library" scope="TEST" name="junit" level="project" />
     <orderEntry type="library" scope="TEST" name="json-simple-1.1.1" level="project" />
+    <orderEntry type="library" name="mysql-connector-java-5.1.23-bin" level="project" />
+    <orderEntry type="library" name="httpclient-4.2.5" level="project" />
+    <orderEntry type="library" scope="TEST" name="commons-fileupload-1" level="project" />
+    <orderEntry type="library" name="commons-fileupload-1" level="project" />
+    <orderEntry type="library" name="commons-io-2.4-javadoc" level="project" />
+    <orderEntry type="library" name="javaee-api-6.0" level="project" />
   </component>
 </module>
 

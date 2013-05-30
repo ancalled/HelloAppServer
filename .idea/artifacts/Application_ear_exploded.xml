@@ -12,6 +12,9 @@
       <element id="directory" name="lib">
         <element id="library" level="project" name="gson" />
         <element id="library" level="project" name="zxing-core" />
+        <element id="library" level="project" name="mysql-connector-java-5.1.23-bin" />
+        <element id="library" level="project" name="httpclient-4.2.5" />
+        <element id="library" level="project" name="commons-fileupload-1" />
       </element>
     </root>
   </artifact>

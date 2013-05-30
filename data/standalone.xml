@@ -23,7 +23,7 @@
                     </pool>
                     <security>
                         <user-name>root</user-name>
-                        <password>melkor</password>
+                        <password>root</password>
                     </security>
                     <statement>
                         <prepared-statement-cache-size>32</prepared-statement-cache-size>

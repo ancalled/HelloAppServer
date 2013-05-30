@@ -25,7 +25,7 @@
 
         <div class="span10">
 
-            <form action="/helloapp/partner/action/add-campaign" method="post">
+            <form action="/helloapp/partner/action/add-campaign" method="post"enctype="multipart/form-data">
 
                 <div class="control-group info">
                     <label class="control-label" for="title">Название</label>
@@ -51,9 +51,13 @@
                     </div>
                 </div>
                 <div class="control-group info">
-                    <label class="control-label" for="icon">Изображение</label>
+                    <label class="control-label" for="icon" >Изображение</label>
+
                     <div class="controls">
-                        <input name="icon" type="file" id="icon">
+                       <span>
+                           <input name="icon" type="file" id="icon" onchange="handleFiles(this.files)">
+                        <div id="preview"></div>
+                           </span>
                         <span class="help-inline"></span>
                     </div>
                 </div>
@@ -91,6 +95,28 @@
     </footer>
 </div>
 
+
+<script>
+    function handleFiles(files) {
+        for (var i = 0; i < files.length; i++) {
+            var file = files[i];
+            var imageType = /image.*/;
+
+//            if (!file.type.match(imageType)) {
+//                continue;
+//            }
+            var img = document.createElement("img");
+            img.classList.add("obj");
+            img.file = file;
+
+            $('#preview').html(img);
+
+            var reader = new FileReader();
+            reader.onload = (function(aImg) { return function(e) { aImg.src = e.target.result; }; })(img);
+            reader.readAsDataURL(file);
+        }
+    }
+</script>
 
 <script src="http://code.jquery.com/jquery.js"></script>
 <script src="/helloapp/js/bootstrap.min.js"></script>

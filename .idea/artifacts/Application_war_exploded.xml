@@ -3,7 +3,11 @@
     <output-path>$PROJECT_DIR$/out/artifacts/Application_war_exploded</output-path>
     <root id="root">
       <element id="javaee-facet-resources" facet="Application/web/Web" />
-      <element id="directory" name="WEB-INF" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="commons-io-2.4-javadoc" />
+        </element>
+      </element>
     </root>
   </artifact>
 </component>
