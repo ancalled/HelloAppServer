@@ -1,0 +1,44 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Новая кампания</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <!-- Bootstrap -->
+    <link href="/helloapp/css/bootstrap.min.css" rel="stylesheet" media="screen">
+</head>
+<body>
+
+<h2>Загружаем файло</h2>
+
+<input type="file" id="input">
+
+
+
+
+<script>
+    var selected_file = document.getElementById('input').files[0];
+
+    var inputElement = document.getElementById("input");
+    inputElement.addEventListener("change", handleFiles, false);
+    function handleFiles() {
+      var fileList = this.files;
+        alert(fileList.length);
+        for (var i = 0, numFiles = fileList.length; i < numFiles; i++) {
+          var file = fileList[i];
+          alert(file.name);
+          alert(file.size);
+          alert(file.type);
+
+         document.appendChild()
+        }
+    }
+
+</script>
+
+
+<script src="http://code.jquery.com/jquery.js"></script>
+<script src="/helloapp/js/bootstrap.min.js"></script>
+</body>
+</html>
