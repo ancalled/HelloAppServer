@@ -1,5 +1,5 @@
 <component name="libraryTable">
-  <library name="javaee-api-6.0">
+  <library name="Java EE 6">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/lib/javaee-api-6.0.jar!/" />
     </CLASSES>
