@@ -88,6 +88,9 @@
         </div>
     </div>
 
+    <c:import url="messanger.jsp" >
+        <c:param name="mess" value="${param.mess}" />
+    </c:import>
     <hr/>
 
     <footer>
