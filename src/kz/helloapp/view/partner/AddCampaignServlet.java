@@ -19,6 +19,7 @@ public class AddCampaignServlet extends PartnerServlet {
 
     public static final DateFormat DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd HH:mm");
     public static final String userDir = System.getProperty("user.dir");
+    //todo оредилиться с папкой
     public static final String IMAGE_DIR = "F:\\Projects\\HelloAppServer\\web\\images\\camp-prev";
 
     @Override
@@ -36,7 +37,7 @@ public class AddCampaignServlet extends PartnerServlet {
             items = new ServletFileUpload(new DiskFileItemFactory()).parseRequest(req);
 
             if (items == null || items.isEmpty()) {
-                resp.sendRedirect(ctx + "view/campaigns");
+                resp.sendRedirect(ctx + "partner/view/new-campaign?mess=no-attr");
                 return;
             }
 
@@ -70,8 +71,10 @@ public class AddCampaignServlet extends PartnerServlet {
             }
         } catch (Exception e) {
             e.printStackTrace();
+            resp.sendRedirect(ctx + "partner/view/new-campaign?mess=file-err");
+            return;
         }
-        resp.sendRedirect(ctx + "view/campaigns");
+        resp.sendRedirect(ctx + "partner/view/campaigns?mess=comp-added");
     }
 
     private String getParameter(HttpServletRequest req, List<FileItem> items,
