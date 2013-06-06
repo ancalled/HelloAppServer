@@ -28,7 +28,7 @@ public class AuthServlet extends AdminServlet {
 
                 req.getSession().setAttribute("user", user);
 
-                resp.sendRedirect(ctx + "/view/admin/partners");
+                resp.sendRedirect(ctx + "admin/view/partners");
                 return;
             }
         }

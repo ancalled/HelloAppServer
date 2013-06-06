@@ -7,6 +7,11 @@
 
     <!-- ====================== Admin ====================== -->
 
+    <servlet>
+        <servlet-name>addPartnerServlet</servlet-name>
+        <servlet-class>kz.helloapp.view.admin.AddPartnerServlet</servlet-class>
+    </servlet>
+
     <filter>
         <filter-name>adminAuthFilter</filter-name>
         <filter-class>kz.helloapp.view.admin.AdminAuthFilter</filter-class>
@@ -37,7 +42,22 @@
     </servlet-mapping>
 
 
+    <servlet-mapping>
+        <servlet-name>addPartnerServlet</servlet-name>
+        <url-pattern>/admin/action/add-partner</url-pattern>
+    </servlet-mapping>
+
     <!-- ====================== Partner ====================== -->
+
+    <servlet-mapping>
+        <servlet-name>removeCampaignServlet</servlet-name>
+        <url-pattern>/partner/action/remove-camp</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>removeCampaignServlet</servlet-name>
+        <servlet-class>kz.helloapp.view.partner.RemoveCampaignServlet</servlet-class>
+    </servlet>
 
     <filter>
         <filter-name>partnerAuthFilter</filter-name>
@@ -115,6 +135,11 @@
         <servlet-name>authServlet</servlet-name>
         <servlet-class>kz.helloapp.view.customer.api.AuthServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>logoutServlet</servlet-name>
+        <servlet-class>kz.helloapp.view.LogoutServlet</servlet-class>
+    </servlet>
+
 
 
     <filter-mapping>
@@ -145,6 +170,10 @@
     <servlet-mapping>
         <servlet-name>customerApplyCampaignServlet</servlet-name>
         <url-pattern>/customer/api/apply-campaign</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>logoutServlet</servlet-name>
+        <url-pattern>/logout</url-pattern>
     </servlet-mapping>
 
 

@@ -35,7 +35,7 @@
                 </tr>
                 </thead>
                 <tbody>
-                <c:forEach items="${partners}" var="p">
+                <c:forEach items="${partners}" var="p" varStatus="loop">
                     <tr>
                         <td>${loop.index + 1}</td>
                         <td>${p.name}</td>

@@ -20,7 +20,7 @@ public class AddCampaignServlet extends PartnerServlet {
     public static final DateFormat DATE_FORMAT = new SimpleDateFormat("yyyy-MM-dd HH:mm");
     public static final String userDir = System.getProperty("user.dir");
     //todo оредилиться с папкой
-    public static final String IMAGE_DIR = "F:\\Projects\\HelloAppServer\\web\\images\\camp-prev";
+    public static final String IMAGE_DIR = "F:/Projects/HelloAppServer/web/img/camp-prev";
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
@@ -74,7 +74,7 @@ public class AddCampaignServlet extends PartnerServlet {
             resp.sendRedirect(ctx + "partner/view/new-campaign?mess=file-err");
             return;
         }
-        resp.sendRedirect(ctx + "partner/view/campaigns?mess=comp-added");
+        resp.sendRedirect(ctx + "partner/view/campaigns?mess=camp-added");
     }
 
     private String getParameter(HttpServletRequest req, List<FileItem> items,
@@ -98,7 +98,7 @@ public class AddCampaignServlet extends PartnerServlet {
                           PartnerUser user) throws Exception {
         for (FileItem item : items) {
             if (!item.isFormField()) {
-                File file = new File(IMAGE_DIR + "\\" + user.getId());
+                File file = new File(IMAGE_DIR + "\\" + item.getName());
                 item.write(file);
             }
         }

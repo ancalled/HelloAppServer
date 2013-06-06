@@ -9,6 +9,7 @@
 <head>
     <title>Новая кампания</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv='Content-Type' content='text/html; charset=utf-8'>
     <!-- Bootstrap -->
     <link href="/helloapp/css/bootstrap.min.css" rel="stylesheet" media="screen">
 </head>
@@ -61,6 +62,9 @@
                         <span class="help-inline"></span>
                     </div>
                 </div>
+                <c:import url="messanger.jsp" >
+                    <c:param name="mess" value="${param.mess}" />
+                </c:import>
                 <div class="control-group info">
                     <label class="control-label" for="from">Начало кампании</label>
                     <div class="controls">
@@ -88,9 +92,6 @@
         </div>
     </div>
 
-    <c:import url="messanger.jsp" >
-        <c:param name="mess" value="${param.mess}" />
-    </c:import>
     <hr/>
 
     <footer>

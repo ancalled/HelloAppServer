@@ -24,6 +24,7 @@ public interface PartnerService {
 
     PartnerCompany getPartnerCompany(long id);
 
+    Campaign removeCampaign(long id);
 
     PartnerConfirmer addConfirmer(PartnerConfirmer confirmer);
 

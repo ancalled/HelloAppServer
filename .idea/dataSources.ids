@@ -8,6 +8,7 @@
     <user-password>dfd8dfc5dfc5dfde</user-password>
     <schema-pattern>helloapp.*</schema-pattern>
     <default-schemas>helloapp.*</default-schemas>
+    <default-dialect>MySQL</default-dialect>
     <libraries>
       <library>
         <url>file://$PROJECT_DIR$/lib/mysql-connector-java-5.1.23-bin.jar</url>

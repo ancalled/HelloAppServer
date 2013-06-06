@@ -56,9 +56,9 @@
     <orderEntry type="library" scope="TEST" name="junit" level="project" />
     <orderEntry type="library" scope="TEST" name="json-simple-1.1.1" level="project" />
     <orderEntry type="library" name="httpclient-4.2.5" level="project" />
-    <orderEntry type="library" name="commons-fileupload-1.3" level="project" />
+    <orderEntry type="library" name="javaee-api-6.0" level="project" />
+    <orderEntry type="library" name="commons-fileupload-1" level="project" />
     <orderEntry type="library" name="commons-io-2.4" level="project" />
-    <orderEntry type="library" name="Java EE 6" level="project" />
   </component>
 </module>
 

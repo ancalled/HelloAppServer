@@ -83,6 +83,19 @@ public class PartnerBean implements PartnerService {
         return em.find(PartnerCompany.class, id);
     }
 
+    @Override
+    public Campaign removeCampaign(long cid) {
+        Campaign camp = (Campaign) em.createQuery("select c from Campaign c where c.id=:cid")
+                .setParameter("cid", cid)
+                .getSingleResult();
+        if (camp != null) {
+            em.createQuery("delete from Campaign c where c.id=:cid")
+                    .setParameter("cid", cid)
+                    .executeUpdate();
+        }
+        return camp;
+    }
+
 
     @Override
     public PartnerConfirmer addConfirmer(PartnerConfirmer confirmer) {
@@ -98,7 +111,6 @@ public class PartnerBean implements PartnerService {
             return null;
         }
     }
-
 
 
 }

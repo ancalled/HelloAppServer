@@ -28,7 +28,7 @@
                         <%--<form action="logout" method="post">--%>
                         <%--<button type="submit" class="btn btn-navbar">Выйти</button>--%>
                         <%--</form>--%>
-                        <a href="./logout">Выход</a>
+                        <a href="/helloapp/logout">Выход</a>
                     </li>
                 </ul>
             </div>

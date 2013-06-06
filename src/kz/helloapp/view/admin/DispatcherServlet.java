@@ -32,18 +32,28 @@ public class DispatcherServlet extends AdminServlet {
         public static Action getAction(HttpServletRequest req, AdminService service) {
             String pth = req.getPathInfo();
 
-            if ("/partners".equals(pth)) {
-                return new Action(service) {
+            switch (pth) {
+                case "/partners":
+                    return new Action(service) {
 
-                    @Override
-                    public String execute(HttpServletRequest req, HttpServletResponse resp) {
-                        List<PartnerCompany> partners = service.getPartnerCompanies();
+                        @Override
+                        public String execute(HttpServletRequest req, HttpServletResponse resp) {
+                            List<PartnerCompany> partners = service.getPartnerCompanies();
 
-                        req.setAttribute("partners", partners);
+                            req.setAttribute("partners", partners);
 
-                        return "partners";
-                    }
-                };
+                            return "partners";
+                        }
+                    };
+                case "/new-partner":
+                    return new Action(service) {
+
+                        @Override
+                        public String execute(HttpServletRequest req, HttpServletResponse resp) {
+
+                            return "new-partner";
+                        }
+                    };
             }
 
             return null;
