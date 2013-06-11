@@ -7,6 +7,17 @@
 
     <!-- ====================== Admin ====================== -->
 
+
+    <servlet>
+        <servlet-name>rmCampServlet</servlet-name>
+        <servlet-class>kz.helloapp.view.admin.RemoveCampaignServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>rmCampServlet</servlet-name>
+        <url-pattern>/admin/action/remove-camp</url-pattern>
+    </servlet-mapping>
+
     <servlet>
         <servlet-name>addPartnerServlet</servlet-name>
         <servlet-class>kz.helloapp.view.admin.AddPartnerServlet</servlet-class>

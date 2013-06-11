@@ -1,8 +1,6 @@
 package kz.helloapp.model.service;
 
-import kz.helloapp.model.domain.AdminUser;
-import kz.helloapp.model.domain.PartnerCompany;
-import kz.helloapp.model.domain.PartnerUser;
+import kz.helloapp.model.domain.*;
 
 import java.util.List;
 
@@ -19,7 +17,16 @@ public interface AdminService {
 
     List<PartnerUser> getPartnerUsers();
 
+    List<PartnerUser> getPartnerUsers(long partnerId);
+
     List<PartnerUser> getCampaignStats();
 
     PartnerCompany removePartner(long partnerId);
+
+    List<Campaign>getCampaigns();
+
+    PartnerConfirmer getConfirmer(long id);
+
+    List<PartnerConfirmer> getConfirmers(long partnerId);
+
 }

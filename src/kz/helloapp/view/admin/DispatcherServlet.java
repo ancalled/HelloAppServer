@@ -1,6 +1,9 @@
 package kz.helloapp.view.admin;
 
+import kz.helloapp.model.domain.Campaign;
 import kz.helloapp.model.domain.PartnerCompany;
+import kz.helloapp.model.domain.PartnerConfirmer;
+import kz.helloapp.model.domain.PartnerUser;
 import kz.helloapp.model.service.AdminService;
 
 import javax.servlet.ServletException;
@@ -52,6 +55,35 @@ public class DispatcherServlet extends AdminServlet {
                         public String execute(HttpServletRequest req, HttpServletResponse resp) {
 
                             return "new-partner";
+                        }
+                    };
+                case "/campaigns":
+                    return new Action(service) {
+
+                        @Override
+                        public String execute(HttpServletRequest req, HttpServletResponse resp) {
+
+                            List<Campaign> campaigns = service.getCampaigns();
+                            req.setAttribute("campaigns", campaigns);
+
+                            return "campaigns";
+                        }
+                    };
+                case "/partner-details":
+                    return new Action(service) {
+
+                        @Override
+                        public String execute(HttpServletRequest req, HttpServletResponse resp) {
+
+                            String partnerIdStr = req.getParameter("pid");
+                            long partnerId = Long.parseLong(partnerIdStr);
+
+                            List<PartnerUser> userList = service.getPartnerUsers(partnerId);
+                            List<PartnerConfirmer> confirmerList = service.getConfirmers(partnerId);
+
+                            req.setAttribute("users", userList);
+                            req.setAttribute("confirmers", confirmerList);
+                            return "partner-details";
                         }
                     };
             }

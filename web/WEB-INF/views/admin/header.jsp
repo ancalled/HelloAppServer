@@ -14,9 +14,6 @@
                     <li class="${param.current == 'partners' ? 'active' : ''}">
                         <a href="./partners">Партнеры</a>
                     </li>
-                    <li class="${param.current == 'new-parnter' ? 'active' : ''}">
-                        <a href="./new-partner">Новый партнер</a>
-                    </li>
                     <li class="${param.current == 'campaigns' ? 'active' : ''}">
                         <a href="./campaigns">Кампании</a>
                     </li>

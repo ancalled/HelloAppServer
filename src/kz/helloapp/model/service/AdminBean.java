@@ -1,8 +1,6 @@
 package kz.helloapp.model.service;
 
-import kz.helloapp.model.domain.AdminUser;
-import kz.helloapp.model.domain.PartnerCompany;
-import kz.helloapp.model.domain.PartnerUser;
+import kz.helloapp.model.domain.*;
 
 import javax.ejb.Local;
 import javax.ejb.Stateless;
@@ -57,6 +55,14 @@ public class AdminBean implements AdminService {
     }
 
     @Override
+    public List<PartnerUser> getPartnerUsers(long partnerId) {
+        //noinspection unchecked
+        return em.createQuery("select u from PartnerUser u where u.company.id =:id")
+                .setParameter("id", partnerId)
+                .getResultList();
+    }
+
+    @Override
     public List<PartnerUser> getCampaignStats() {
         //noinspection unchecked
         return em.createQuery("select s from CampaignStat s")
@@ -81,5 +87,30 @@ public class AdminBean implements AdminService {
         }
     }
 
+    @Override
+    public List<Campaign> getCampaigns() {
+        //noinspection unchecked
+        return em.createQuery("select c from Campaign c")
+                .getResultList();
+    }
 
+    @Override
+    public List<PartnerConfirmer> getConfirmers(long partnerId) {
+        //noinspection unchecked
+        return em.createQuery("select c from PartnerConfirmer c where c.company.id =:id")
+                .setParameter("id", partnerId)
+                .getResultList();
+    }
+
+    @Override
+    public PartnerConfirmer getConfirmer(long cinfId) {
+        try {
+            //noinspection unchecked
+            return (PartnerConfirmer) em.createQuery("select c from PartnerConfirmer c where c.id =:id")
+                    .setParameter("id", cinfId)
+                    .getSingleResult();
+        } catch (NoResultException e) {
+            return null;
+        }
+    }
 }
