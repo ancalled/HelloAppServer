@@ -62,4 +62,24 @@ public class AdminBean implements AdminService {
         return em.createQuery("select s from CampaignStat s")
                 .getResultList();
     }
+
+    @Override
+    public PartnerCompany removePartner(long partnerId) {
+        try {
+            PartnerCompany pc = (PartnerCompany) em.
+                    createQuery("select p from PartnerCompany p where p.id = :id")
+                    .setParameter("id", partnerId)
+                    .getSingleResult();
+
+            em.createQuery("delete from PartnerCompany p where p.id = :id")
+                    .setParameter("id", partnerId)
+                    .executeUpdate();
+
+            return pc;
+        } catch (NoResultException e) {
+            return null;
+        }
+    }
+
+
 }

@@ -47,6 +47,17 @@
         <url-pattern>/admin/action/add-partner</url-pattern>
     </servlet-mapping>
 
+
+    <servlet-mapping>
+        <servlet-name>partnerServlet</servlet-name>
+        <url-pattern>/admin/action/remove-partner</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>partnerServlet</servlet-name>
+        <servlet-class>kz.helloapp.view.admin.RemovePartnerServlet</servlet-class>
+    </servlet>
+
     <!-- ====================== Partner ====================== -->
 
     <servlet-mapping>

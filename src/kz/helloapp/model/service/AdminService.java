@@ -20,4 +20,6 @@ public interface AdminService {
     List<PartnerUser> getPartnerUsers();
 
     List<PartnerUser> getCampaignStats();
+
+    PartnerCompany removePartner(long partnerId);
 }

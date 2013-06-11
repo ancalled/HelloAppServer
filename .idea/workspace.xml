@@ -55,49 +55,15 @@
     </treeState>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf00688a-9598-4ca4-ade7-c3e5b364264f" name="Default" comment="загрузка картинки  в папку + preview">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/glyphicons-halflings-white.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/img/glyphicons-halflings.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kz/helloapp/view/admin/AddPartnerServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/test/kz/helloapp/test/db/CampaignTest.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kz/helloapp/view/LogoutServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kz/helloapp/view/partner/RemoveCampaignServlet.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/bootstrap-datetimepicker.min.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/bootstrap-datetimepicker.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/css/bootstrap.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/commons_io_2_4.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/views/admin/new-partner.jsp" />
-      <change type="DELETED" beforePath="F:\Projects\HelloAppServer\.idea\libraries\Java_EE_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="F:\Projects\HelloAppServer\.idea\libraries\commons_fileupload_1_3.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz/helloapp/view/partner/AddCampaignServlet.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/view/partner/AddCampaignServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Application.iml" afterPath="$PROJECT_DIR$/Application.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/Application_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/Application_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz/helloapp/view/admin/AuthServlet.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/view/admin/AuthServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz/helloapp/model/domain/Campaign.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/model/domain/Campaign.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz/helloapp/view/admin/DispatcherServlet.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/view/admin/DispatcherServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz/helloapp/model/service/PartnerBean.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/model/service/PartnerBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz/helloapp/model/domain/PartnerCompany.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/model/domain/PartnerCompany.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz/helloapp/model/service/PartnerService.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/model/service/PartnerService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/ant.xml" afterPath="$PROJECT_DIR$/.idea/ant.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/views/partner/campaigns.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/views/partner/campaigns.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/views/admin/header.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/views/admin/header.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/views/partner/header.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/views/partner/header.jsp" />
+    <list default="true" id="cf00688a-9598-4ca4-ade7-c3e5b364264f" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/kz/helloapp/view/admin/RemovePartnerServlet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/web/WEB-INF/views/admin/messanger.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz/helloapp/model/service/AdminBean.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/model/service/AdminBean.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz/helloapp/model/service/AdminService.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/model/service/AdminService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/import.sql" afterPath="$PROJECT_DIR$/src/import.sql" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/views/partner/messanger.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/views/partner/messanger.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/views/partner/new-campaign.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/views/partner/new-campaign.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/views/admin/partners.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/views/admin/partners.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/views/partner/reports.jsp" afterPath="$PROJECT_DIR$/web/WEB-INF/views/partner/reports.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MOVED" beforePath="F:\Projects\HelloAppServer\web\images\camp-prev\1.png" afterPath="$PROJECT_DIR$/web/img/camp-prev/1.png" />
-      <change type="MOVED" beforePath="F:\Projects\HelloAppServer\web\images\camp-prev\2.png" afterPath="$PROJECT_DIR$/web/img/camp-prev/2.png" />
-      <change type="MOVED" beforePath="F:\Projects\HelloAppServer\web\images\camp-prev\3.png" afterPath="$PROJECT_DIR$/web/img/camp-prev/3.png" />
-      <change type="MOVED" beforePath="F:\Projects\HelloAppServer\web\images\camp-prev\4.png" afterPath="$PROJECT_DIR$/web/img/camp-prev/4.png" />
-      <change type="MOVED" beforePath="F:\Projects\HelloAppServer\web\images\camp-prev\5.png" afterPath="$PROJECT_DIR$/web/img/camp-prev/5.png" />
-      <change type="MOVED" beforePath="F:\Projects\HelloAppServer\web\images\camp-prev\6.png" afterPath="$PROJECT_DIR$/web/img/camp-prev/6.png" />
     </list>
     <ignored path="HelloAppServer.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -108,7 +74,7 @@
     <file path="/HelloAppBean.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1365268055534" ignored="false" />
     <file path="/persistence.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367404152816" ignored="false" />
     <file path="/CategoriesServlet.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1363882761146" ignored="false" />
-    <file path="/web.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1370547016333" ignored="false" />
+    <file path="/web.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1370965504307" ignored="false" />
     <file path="/import.sql" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369591854931" ignored="false" />
     <file path="/application.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367404255286" ignored="false" />
     <file path="/HelloApp" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369938856448" ignored="false" />
@@ -122,7 +88,7 @@
     <file path="/PlaceEventsServlet.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1363890794238" ignored="false" />
     <file path="/index.html" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367406536827" ignored="false" />
     <file path="/widget.js" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1364017606481" ignored="false" />
-    <file path="/Dummy.txt" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1370538954697" ignored="false" />
+    <file path="/Dummy.txt" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1370961603729" ignored="false" />
     <file path="$PROJECT_DIR$/../BGM/data/research/index.html" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1363939833501" ignored="false" />
     <file path="$PROJECT_DIR$/../BGM/src/kz/bgm/research/sony/SonyParser.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1364229473000" ignored="false" />
     <file path="$PROJECT_DIR$/../BGM/data/research/users.js" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1363939833502" ignored="false" />
@@ -215,12 +181,12 @@
     <file path="/CustomerService.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369548967975" ignored="false" />
     <file path="/CustomerBean.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369548991890" ignored="false" />
     <file path="/CampaignStat.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1365310869176" ignored="false" />
-    <file path="/AdminService.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367389216588" ignored="false" />
-    <file path="/AdminBean.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367389228272" ignored="false" />
+    <file path="/AdminService.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1370963346371" ignored="false" />
+    <file path="/AdminBean.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1370965859838" ignored="false" />
     <file path="/AuthServler.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1365307219131" ignored="false" />
     <file path="/login.html" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1365307380381" ignored="false" />
     <file path="/AdminAuthFilter.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1365307645480" ignored="false" />
-    <file path="/partners.jsp" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1370547496744" ignored="false" />
+    <file path="/partners.jsp" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1370966101700" ignored="false" />
     <file path="/CustomerUser.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369548916312" ignored="false" />
     <file path="/build.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368182246039" ignored="false" />
     <file path="$PROJECT_DIR$/../HelloAppAndroid/.idea/workspace.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368192876103" ignored="false" />
@@ -313,7 +279,7 @@
     <file path="/Campaign.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1370458998689" ignored="false" />
     <file path="/CampaingTest.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1370456800666" ignored="false" />
     <file path="/CampaignTest.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1370456801454" ignored="false" />
-    <file path="/messanger.jsp" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1370543880675" ignored="false" />
+    <file path="/messanger.jsp" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1370966201872" ignored="false" />
     <file path="dbtable:/3ba8888c/dd2415f6-962c-4914-b333-20c4946b9bc8/helloapp..admin_users" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1370538708710" ignored="false" />
     <file path="$USER_HOME$/Documents/GitHub/BGM/web/WEB-INF/views/admin/customers.jsp" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1370539645821" ignored="false" />
     <file path="/RemoveCampaingServlet.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1370542197408" ignored="false" />
@@ -321,6 +287,7 @@
     <file path="/LogoutServlet.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1370545268618" ignored="false" />
     <file path="/AddPartnerServlet.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1370546697688" ignored="false" />
     <file path="/new-partner.jsp" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1370546344572" ignored="false" />
+    <file path="/RemovePartnerServlet.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1370965162873" ignored="false" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -340,40 +307,6 @@
     <sortChildren value="false" />
   </component>
   <component name="DebuggerManager">
-    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
-      <breakpoint>
-        <option name="NOTIFY_CAUGHT" value="true" />
-        <option name="NOTIFY_UNCAUGHT" value="true" />
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-      <breakpoint>
-        <option name="NOTIFY_CAUGHT" value="true" />
-        <option name="NOTIFY_UNCAUGHT" value="true" />
-        <option name="ENABLED" value="false" />
-        <option name="LOG_ENABLED" value="false" />
-        <option name="LOG_EXPRESSION_ENABLED" value="false" />
-        <option name="SUSPEND_POLICY" value="SuspendAll" />
-        <option name="SUSPEND" value="true" />
-        <option name="COUNT_FILTER_ENABLED" value="false" />
-        <option name="COUNT_FILTER" value="0" />
-        <option name="CONDITION_ENABLED" value="true" />
-        <option name="CLASS_FILTERS_ENABLED" value="false" />
-        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
-        <option name="CONDITION" value="" />
-        <option name="LOG_MESSAGE" value="" />
-      </breakpoint>
-    </breakpoint_any>
     <breakpoint_rules default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <line_breakpoints default_suspend_policy="SuspendAll" default_condition_enabled="true">
       <breakpoint url="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/DispatcherServlet.java" line="34" class="kz.helloapp.view.customer.DispatcherServlet" package="kz.helloapp.view.customer">
@@ -433,6 +366,40 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </line_breakpoints>
+    <breakpoint_any default_suspend_policy="SuspendAll" default_condition_enabled="true">
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint>
+        <option name="NOTIFY_CAUGHT" value="true" />
+        <option name="NOTIFY_UNCAUGHT" value="true" />
+        <option name="ENABLED" value="false" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="SUSPEND" value="true" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="true" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </breakpoint_any>
     <ui_properties default_suspend_policy="SuspendAll" default_condition_enabled="true" />
     <breakpoint_rules />
     <ui_properties />
@@ -443,10 +410,86 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="header.jsp" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/admin/header.jsp">
+      <file leaf-file-name="RemovePartnerServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/admin/RemovePartnerServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="26" column="49" selection-start="1348" selection-end="1348" vertical-scroll-proportion="0.8449848">
+            <state line="24" column="85" selection-start="828" selection-end="835" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="messanger.jsp" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/admin/messanger.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="5" column="58" selection-start="311" selection-end="311" vertical-scroll-proportion="0.33464566">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="partners.jsp" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/admin/partners.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="56" column="51" selection-start="1589" selection-end="1589" vertical-scroll-proportion="-5.1923075">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="52" column="49" selection-start="1743" selection-end="1743" vertical-scroll-proportion="-5.16">
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+            <state />
+          </provider>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RemoveCampaignServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/partner/RemoveCampaignServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="22" column="102" selection-start="727" selection-end="799" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminServlet.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/admin/AdminServlet.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="13" column="19" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminService.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kz/helloapp/model/service/AdminService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="23" column="0" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="AdminBean.java" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/kz/helloapp/model/service/AdminBean.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="75" column="36" selection-start="2219" selection-end="2219" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -471,22 +514,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/src/kz/helloapp/model/service/PartnerBean.java" />
-        <option value="$PROJECT_DIR$/src/kz/helloapp/view/partner/RemoveCampaignServlet.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/views/partner/messanger.jsp" />
         <option value="$PROJECT_DIR$/src/kz/helloapp/view/LogoutServlet.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/partner/header.jsp" />
         <option value="$PROJECT_DIR$/src/kz/helloapp/view/admin/AuthServlet.java" />
-        <option value="$PROJECT_DIR$/src/kz/helloapp/model/service/AdminBean.java" />
         <option value="$PROJECT_DIR$/src/kz/helloapp/model/domain/PartnerCompany.java" />
         <option value="$PROJECT_DIR$/src/kz/helloapp/view/admin/AddPartnerServlet.java" />
         <option value="$PROJECT_DIR$/src/kz/helloapp/view/admin/DispatcherServlet.java" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/src/import.sql" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/admin/new-partner.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/partner/campaigns.jsp" />
-        <option value="$PROJECT_DIR$/web/WEB-INF/views/admin/partners.jsp" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/admin/header.jsp" />
+        <option value="$PROJECT_DIR$/src/import.sql" />
+        <option value="$PROJECT_DIR$/src/kz/helloapp/model/service/AdminService.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/kz/helloapp/model/service/AdminBean.java" />
+        <option value="$PROJECT_DIR$/src/kz/helloapp/view/admin/RemovePartnerServlet.java" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/views/admin/partners.jsp" />
+        <option value="$PROJECT_DIR$/web/WEB-INF/views/admin/messanger.jsp" />
       </list>
     </option>
   </component>
@@ -665,27 +708,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope">
-        <subPane subId="All">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT USER_OBJECT="admin">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -894,6 +916,32 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="customer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HelloAppServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="HelloAppServer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helloapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="view" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="admin" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -952,19 +1000,40 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="All">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT USER_OBJECT="admin">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.20800781" />
     <property name="OverrideImplement.combined" value="false" />
+    <property name="project.structure.proportion" value="0.20800781" />
     <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="MemberChooser.sorted" value="false" />
     <property name="recentsLimit" value="5" />
+    <property name="MemberChooser.sorted" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/lib/commons-io-2.4.jar!/" />
     <property name="JdbcConsole.ResultInNewTab" value="false" />
-    <property name="Database.TableEditor.Splitter" value="0.9" />
     <property name="JdbcConsole.ResultToolbar" value="false" />
+    <property name="Database.TableEditor.Splitter" value="0.9" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="FullScreen" value="false" />
@@ -979,13 +1048,13 @@
     <property name="project.structure.side.proportion" value="0.29770118" />
     <property name="JdbcConsole.Extract.ClosingQuote" value="'" />
     <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="JdbcConsole.EnableParameterPattern" value="false" />
     <property name="JdbcConsole.Extract.IncludeHeader" value="false" />
+    <property name="JdbcConsole.EnableParameterPattern" value="false" />
     <property name="restartRequiresConfirmation" value="true" />
     <property name="JdbcConsole.ParameterPattern" value="(\?\d*|\:\w+|\@\w+|\$\{[^$\{\}]*\}|\$\w+\$|\#\w+\#)" />
     <property name="JdbcConsole.ResultPageSize" value="1000" />
-    <property name="options.searchVisible" value="true" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -1132,19 +1201,6 @@
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <method />
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method />
-    </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="" />
@@ -1171,6 +1227,19 @@
       <envs />
       <properties />
       <listeners />
+      <method />
+    </configuration>
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -1427,14 +1496,17 @@
       <created>1369754495637</created>
       <updated>1369754495637</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="добавил возможность удаление компаний коррекция ссылок хедера , выход,(админа и партнера) , добавление партнера">
+      <created>1370547661416</created>
+      <updated>1370547661416</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52478635" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.808547" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Persistence" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.6149254" order="2" side_tool="true" content_ui="tabs" />
@@ -1442,14 +1514,14 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.19469696" sideWeight="0.5589744" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.67164177" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.44102564" sideWeight="0.4969697" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.44102564" sideWeight="0.4969697" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TeamCity" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32891247" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.23712121" sideWeight="0.22393163" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2974359" sideWeight="0.5128788" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21196581" sideWeight="0.5159091" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32478634" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32478634" sideWeight="0.4969697" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.5014881" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964131" sideWeight="0.1522388" order="1" side_tool="true" content_ui="tabs" />
@@ -1457,11 +1529,12 @@
       <window_info id="EJB" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25833333" sideWeight="0.43247864" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32820514" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23712121" sideWeight="0.6512821" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34871796" sideWeight="0.48181817" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23712121" sideWeight="0.5589744" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.36239317" sideWeight="0.47878787" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32998565" sideWeight="0.3641791" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.52478635" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JPA Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3283582" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1508,7 +1581,7 @@
     <option name="MAXIMUM_HISTORY_ROWS" value="1000" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value=" Добил тест api" />
+    <option name="LAST_COMMIT_MESSAGE" value="добавил возможность удаление компаний коррекция ссылок хедера , выход,(админа и партнера) , добавление партнера" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1542,6 +1615,7 @@
     <MESSAGE value="Исправил применение скидки для сулчая, когда не нужно подтверждение" />
     <MESSAGE value="API с токенами, тесты" />
     <MESSAGE value=" Добил тест api" />
+    <MESSAGE value="добавил возможность удаление компаний коррекция ссылок хедера , выход,(админа и партнера) , добавление партнера" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1564,117 +1638,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/model/service/AdminBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="48" selection-start="956" selection-end="956" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/model/domain/PartnerCompany.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="19" selection-start="218" selection-end="218" vertical-scroll-proportion="0.51428574">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/Consts.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="31" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/partner/PartnerServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="9" selection-start="315" selection-end="315" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/admin/DispatcherServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="23" selection-start="1750" selection-end="1750" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="21" selection-start="1555" selection-end="1580" vertical-scroll-proportion="-2.56">
-          <folding />
-        </state>
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/partner/new-campaign.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="84" column="86" selection-start="3372" selection-end="3436" vertical-scroll-proportion="4.2834644">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/admin/AdminServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="13" selection-start="314" selection-end="314" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/partner/RemoveCampaignServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="43" selection-start="489" selection-end="525" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/import.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/admin/new-partner.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="75" selection-start="826" selection-end="826" vertical-scroll-proportion="-1.4230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/admin/AddPartnerServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="0" selection-start="653" selection-end="653" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/partner/campaigns.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="42" column="71" selection-start="1323" selection-end="1323" vertical-scroll-proportion="-1.9615384">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/admin/partners.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="36" selection-start="1017" selection-end="1017" vertical-scroll-proportion="-3.9230769">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/partner/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="49" selection-start="1547" selection-end="1563" vertical-scroll-proportion="0.18545455">
@@ -1684,7 +1647,121 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/admin/header.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="49" selection-start="1348" selection-end="1348" vertical-scroll-proportion="0.8449848">
+        <state line="26" column="49" selection-start="1348" selection-end="1348" vertical-scroll-proportion="-11.115385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/import.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="47" column="18" selection-start="3381" selection-end="3381" vertical-scroll-proportion="-26.16">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.persistence.database.editor.CsvTableFileEditorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/model/domain/PartnerCompany.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="19" selection-start="218" selection-end="218" vertical-scroll-proportion="0.35172415">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/model/service/PartnerBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="86" column="24" selection-start="2756" selection-end="2760" vertical-scroll-proportion="-5.16">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/lib/javax.persistence.jar!/javax/persistence/Query.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="21" selection-start="230" selection-end="230" vertical-scroll-proportion="0.3537234">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/admin/AdminServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="19" selection-start="369" selection-end="369" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/partner/RemoveCampaignServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="102" selection-start="727" selection-end="799" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="49" selection-start="1743" selection-end="1743" vertical-scroll-proportion="-5.16">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/model/service/AdminService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="23" column="0" selection-start="512" selection-end="512" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/model/service/AdminBean.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="75" column="36" selection-start="2219" selection-end="2219" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/partner/messanger.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="625" vertical-scroll-proportion="-0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/partner/campaigns.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="20" selection-start="2171" selection-end="2329" vertical-scroll-proportion="0.33464566">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/admin/partners.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="56" column="51" selection-start="1589" selection-end="1589" vertical-scroll-proportion="-5.1923075">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/admin/RemovePartnerServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="85" selection-start="828" selection-end="835" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/WEB-INF/views/admin/messanger.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="58" selection-start="311" selection-end="311" vertical-scroll-proportion="0.33464566">
           <folding />
         </state>
       </provider>
