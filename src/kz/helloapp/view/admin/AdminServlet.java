@@ -9,7 +9,7 @@ import javax.servlet.ServletConfig;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 
-public class AdminServlet extends HttpServlet {
+public abstract class AdminServlet extends HttpServlet {
 
     protected AdminService service;
 
@@ -18,10 +18,9 @@ public class AdminServlet extends HttpServlet {
         super.init(config);
 
         try {
-            InitialContext context = new InitialContext();
-            service = (AdminService) context.lookup(Consts.ADMIN_SERVICE_NAME);
+            service = (AdminService) new InitialContext().lookup(Consts.ADMIN_SERVICE_NAME);
         } catch (NamingException e) {
-            e.printStackTrace();
+            throw new ServletException(e);
         }
     }
 }

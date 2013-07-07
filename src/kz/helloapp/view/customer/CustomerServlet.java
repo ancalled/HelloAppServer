@@ -19,10 +19,9 @@ public abstract class CustomerServlet extends HttpServlet {
         super.init(config);
 
         try {
-            InitialContext context = new InitialContext();
-            service = (CustomerService) context.lookup(Consts.CUSTOMER_SERVICE_NAME);
+            service = (CustomerService) new InitialContext().lookup(Consts.CUSTOMER_SERVICE_NAME);
         } catch (NamingException e) {
-            e.printStackTrace();
+            throw new ServletException(e);
         }
     }
 }

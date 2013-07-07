@@ -19,10 +19,9 @@ public  abstract class PartnerServlet extends HttpServlet{
         super.init(config);
 
         try {
-            InitialContext context = new InitialContext();
-            service = (PartnerService) context.lookup(Consts.PARTNER_SERVICE_NAME);
+            service = (PartnerService) new InitialContext().lookup(Consts.PARTNER_SERVICE_NAME);
         } catch (NamingException e) {
-            e.printStackTrace();
+            throw new ServletException(e);
         }
     }
 }
