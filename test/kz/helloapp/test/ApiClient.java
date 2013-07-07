@@ -1,7 +1,6 @@
 package kz.helloapp.test;
 
 
-import org.apache.commons.codec.binary.Base64;
 import org.apache.http.HttpResponse;
 import org.apache.http.client.methods.HttpGet;
 import org.apache.http.client.methods.HttpPost;
@@ -75,7 +74,6 @@ public class ApiClient {
     }
 
 
-
     public static class RequestBuilder {
 
         private static final Map<String, String> params = new TreeMap<>();
@@ -94,7 +92,6 @@ public class ApiClient {
         }
 
 
-
         public RequestBuilder param(String name, String value) {
             params.put(name, value);
             return this;
@@ -103,7 +100,7 @@ public class ApiClient {
         public String build() {
             StringBuilder paramBuf = new StringBuilder();
             int i = 0;
-            for (String key: params.keySet()) {
+            for (String key : params.keySet()) {
                 paramBuf.append(key).append("=").append(params.get(key));
                 if (++i < params.size()) {
                     paramBuf.append("&");
@@ -113,8 +110,14 @@ public class ApiClient {
 
             StringBuilder urlBuf = new StringBuilder();
             urlBuf.append(url).append("?");
-            String hash = buildHash(params);
-            urlBuf.append(params).append("&h=").append(hash);
+            urlBuf.append(params);
+
+            if (token != null) {
+                String hash = buildHash(params, token);
+                urlBuf.append("&h=").append(hash);
+
+            }
+
             return urlBuf.toString();
         }
 
@@ -127,7 +130,7 @@ public class ApiClient {
             return null;
         }
 
-        private String buildHash(String params) {
+        private static String buildHash(String params, String token) {
             try {
                 String data = params + "&token=" + token;
                 return calcHash(data);
@@ -138,7 +141,9 @@ public class ApiClient {
             return null;
         }
 
-        private String calcHash(String data) throws NoSuchAlgorithmException, UnsupportedEncodingException {
+        private static String calcHash(String data)
+                throws NoSuchAlgorithmException, UnsupportedEncodingException {
+
             MessageDigest md = MessageDigest.getInstance("MD5");
             byte[] bytes = data.getBytes("UTF-8");
             byte[] digest = md.digest(bytes);
@@ -146,11 +151,11 @@ public class ApiClient {
 //            return Base64.encodeBase64String(digest);
         }
 
-        public String toHex(String arg) {
+        public static String toHex(String arg) {
             return toHex(arg.getBytes());
         }
 
-        public String toHex(byte[] bytes) {
+        public static String toHex(byte[] bytes) {
             return String.format("%040x", new BigInteger(bytes));
         }
 
@@ -160,6 +165,10 @@ public class ApiClient {
 
         public static RequestBuilder create(String url, String token) {
             return new RequestBuilder(url, token);
+        }
+
+        public static RequestBuilder create(String url) {
+            return new RequestBuilder(url, null);
         }
     }
 }

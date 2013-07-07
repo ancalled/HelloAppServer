@@ -101,6 +101,12 @@
         <servlet-name>qrCodeServlet</servlet-name>
         <servlet-class>kz.helloapp.view.partner.QRCodeServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>checkSignServlet</servlet-name>
+        <servlet-class>kz.helloapp.view.partner.CheckSignServlet</servlet-class>
+    </servlet>
+
+
 
 
     <filter-mapping>
@@ -125,6 +131,11 @@
         <servlet-name>qrCodeServlet</servlet-name>
         <url-pattern>/partner/qrcode</url-pattern>
     </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>checkSignServlet</servlet-name>
+        <url-pattern>/partner/action/check-sign</url-pattern>
+    </servlet-mapping>
+
 
     <!-- ====================== Customer ====================== -->
 
@@ -183,7 +194,7 @@
 
     <servlet-mapping>
         <servlet-name>authServlet</servlet-name>
-        <url-pattern>/customer/api/auth</url-pattern>
+        <url-pattern>/customer/api-auth</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>customerCampaignsServlet</servlet-name>

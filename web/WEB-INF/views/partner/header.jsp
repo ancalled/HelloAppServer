@@ -24,6 +24,9 @@
                     <li class="${param.current == 'confirmers' ? 'active' : ''}">
                         <a href="./confirmers">Подтверждатели</a>
                     </li>
+                    <li class="${param.current == 'check-sign' ? 'active' : ''}">
+                        <a href="./check-sign">Проверка кода</a>
+                    </li>
                     <li class="">
                         <%--<form action="logout" method="post">--%>
                         <%--<button type="submit" class="btn btn-navbar">Выйти</button>--%>

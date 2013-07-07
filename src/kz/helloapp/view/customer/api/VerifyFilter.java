@@ -60,6 +60,9 @@ public class VerifyFilter implements Filter {
             return;
         }
 
+
+
+
         if (uidStr != null) {
             long uid = Long.parseLong(uidStr);
             CustomerUser user = service.getUser(uid);

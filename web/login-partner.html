@@ -1,10 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
 
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
     <title>Вход в кабинет</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
     <style type="text/css">
         body {
             padding-top: 40px;
@@ -38,33 +43,38 @@
         }
 
     </style>
-    <!-- Bootstrap -->
-    <link href="partner/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="ico/favicon.png">
 </head>
+
 <body>
 
 <div class="container">
 
-    <form class="form-signin" action="partner-auth" method="post">
-        <h2 class="form-signin-heading">Пожалуйста, представьтесь!</h2>
-        <input type="text" name="e" class="input-block-level" placeholder="Е-меил">
+    <form class="form-signin" method="post" action="partner-auth">
+        <h3 class="form-signin-heading">Пожалуйста, представьтесь!</h3>
+
+        <input type="text" name="e" class="input-block-level" placeholder="Логин">
         <input type="password" name="p" class="input-block-level" placeholder="Пароль">
-        <label class="checkbox">
-            <input type="checkbox" value="remember-me"> Запомнить меня
-        </label>
+        <!--<label class="checkbox">-->
+            <!--<input type="checkbox" value="remember-me"> Remember me-->
+        <!--</label>-->
         <button class="btn btn-large btn-primary" type="submit">Войти</button>
     </form>
 
+</div> <!-- /container -->
 
-    <hr/>
-
-    <footer>
-        <p>© Hello.kz 2013</p>
-    </footer>
-</div>
+<!-- Le javascript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
 
 
-<script src="http://code.jquery.com/jquery.js"></script>
-<script src="partner/js/bootstrap.min.js"></script>
 </body>
 </html>

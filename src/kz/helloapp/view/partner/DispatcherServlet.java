@@ -40,6 +40,12 @@ public class DispatcherServlet extends PartnerServlet {
         public static Action getAction(HttpServletRequest req, PartnerService service) {
             String pth = req.getPathInfo();
 
+            final PartnerUser user = (PartnerUser) req.getSession().getAttribute("user");
+            if (user == null || user.getCompany() == null) {
+                return null;
+            }
+
+
             switch (pth) {
                 case "/reports":
                     return new Action(service) {
@@ -100,20 +106,13 @@ public class DispatcherServlet extends PartnerServlet {
                         @Override
                         public String execute(HttpServletRequest req, HttpServletResponse resp) {
 
-                            PartnerUser user = (PartnerUser) req.getSession().getAttribute("user");
-
-                            if (user != null && user.getCompany() != null) {
-
-                                Long confId = Long.parseLong(req.getParameter("cid"));
-                                PartnerConfirmer confirmer = service.getConfirmer(confId);
-
-                                if (confirmer != null) {
-
-                                }
-
+//                            Long confId = Long.parseLong(req.getParameter("cid"));
+//                            PartnerConfirmer confirmer = service.getConfirmer(confId);
+//
+//                            if (confirmer != null) {
 //                                req.setAttribute("confirmers", confirmers);
-                            }
-
+//
+//                            }
                             return "confirmers";
                         }
                     };
@@ -124,6 +123,19 @@ public class DispatcherServlet extends PartnerServlet {
                         @Override
                         public String execute(HttpServletRequest req, HttpServletResponse resp) {
                             return "new-campaign";
+                        }
+                    };
+
+                case "/check-sign":
+                    return new Action(service) {
+
+                        @Override
+                        public String execute(HttpServletRequest req, HttpServletResponse resp) {
+
+                            List<Campaign> campaigns = service.getCampaignsByCompany(user.getCompany().getId());
+                            req.setAttribute("campaigns", campaigns);
+
+                            return "check-sign";
                         }
                     };
             }

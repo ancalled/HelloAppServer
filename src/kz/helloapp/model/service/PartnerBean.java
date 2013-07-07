@@ -79,8 +79,25 @@ public class PartnerBean implements PartnerService {
     }
 
     @Override
+    public CustomerUser getCustomerUser(String login) {
+        try {
+            return (CustomerUser) em.createQuery("select u from CustomerUser u where u.name = :login")
+                    .setParameter("login", login)
+                    .getSingleResult();
+        } catch (NoResultException e) {
+            return null;
+        }
+    }
+
+    @Override
     public PartnerCompany getPartnerCompany(long id) {
         return em.find(PartnerCompany.class, id);
+    }
+
+
+    @Override
+    public Campaign getCampaign(long id) {
+        return em.find(Campaign.class, id);
     }
 
     @Override

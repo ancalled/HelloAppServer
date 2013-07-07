@@ -48,15 +48,15 @@ public class AuthServlet extends HttpServlet {
             if (pass.equals(user.getPass())) {
                 AuthToken authToken = user.getAuthToken();
                 if (authToken != null) {
-                    res = new Result(Status.OK, authToken.getToken());
+                    res = new Result(Status.OK, user.getName(), user.getId(), authToken.getToken());
                 } else {
-                    res = new Result(Status.FAIL, null);
+                    res = new Result(Status.FAIL);
                 }
             } else {
-                res = new Result(Status.FAIL, null);
+                res = new Result(Status.FAIL);
             }
         } else {
-            res = new Result(Status.FAIL, null);
+            res = new Result(Status.FAIL);
         }
 
         Gson gson = new Gson();
@@ -69,11 +69,23 @@ public class AuthServlet extends HttpServlet {
     public static enum Status {NONE, OK, FAIL}
 
     public static class Result {
+
         private final Status status;
+        private final String login;
+        private final Long userId;
         private final String token;
 
-        public Result(Status status, String token) {
+        public Result(Status status) {
             this.status = status;
+            login = null;
+            userId = null;
+            token = null;
+        }
+
+        public Result(Status status, String login, long userId, String token) {
+            this.status = status;
+            this.login = login;
+            this.userId = userId;
             this.token = token;
         }
 
@@ -81,10 +93,17 @@ public class AuthServlet extends HttpServlet {
             return status;
         }
 
+        public String getLogin() {
+            return login;
+        }
+
+        public Long getUserId() {
+            return userId;
+        }
+
         public String getToken() {
             return token;
         }
-
     }
 
 }

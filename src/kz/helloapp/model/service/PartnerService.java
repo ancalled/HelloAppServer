@@ -22,7 +22,11 @@ public interface PartnerService {
 
     PartnerUser getPartnerUser(String email);
 
+    CustomerUser getCustomerUser(String login);
+
     PartnerCompany getPartnerCompany(long id);
+
+    Campaign getCampaign(long id);
 
     Campaign removeCampaign(long id);
 

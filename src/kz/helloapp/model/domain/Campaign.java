@@ -16,7 +16,9 @@ public class Campaign implements Serializable {
     private Integer rate;
     private Date startFrom;
     private Date goodThrough;
+
     private boolean needConfirm;
+    private boolean needSign;
 
     @ManyToOne
     private PartnerCompany company;
@@ -86,5 +88,13 @@ public class Campaign implements Serializable {
 
     public void setNeedConfirm(boolean needConfirm) {
         this.needConfirm = needConfirm;
+    }
+
+    public boolean isNeedSign() {
+        return needSign;
+    }
+
+    public void setNeedSign(boolean needSign) {
+        this.needSign = needSign;
     }
 }

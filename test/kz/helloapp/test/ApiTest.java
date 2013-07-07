@@ -5,6 +5,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import kz.helloapp.model.domain.Campaign;
+import kz.helloapp.view.customer.api.AuthServlet;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -34,14 +35,47 @@ public class ApiTest {
     @Before
     public void init() {
         gson = new GsonBuilder().setDateFormat("yyyy-MM-dd").create();
-        userId = 2;
-        userToken = "test_token2";
+
+//        userId = 2;
+//        userToken = "test_token2";
+
+        String login = "user1";
+        String pass = "12345";
+
+        AuthServlet.Result res = auth(login, pass);
+
+        assertEquals(AuthServlet.Status.OK, res.getStatus());
+        assertNotNull(res.getLogin());
+        assertNotNull(res.getUserId());
+        assertNotNull(res.getToken());
+        assertEquals(login, res.getLogin());
+
+        userId = res.getUserId();
+        userToken = res.getToken();
+
+        System.out.println("userId = " + userId);
+        System.out.println("userToken = " + userToken);
     }
+
 
     @Test
     public void testApiCall() {
+
         testGetCampaigns();
         testActivateDiscount();
+    }
+
+
+    private  AuthServlet.Result auth(String login, String pass) {
+
+        String url = ApiClient.RequestBuilder.create(API_URL + "-auth")
+                .param("l", login)
+                .param("p", pass)
+                .build();
+
+        String json = ApiClient.doPost(url);
+
+        return gson.fromJson(json, AuthServlet.Result.class);
     }
 
 
@@ -64,7 +98,8 @@ public class ApiTest {
         List<Campaign> campaigns = gson.fromJson(json, type);
 
         assertNotNull(campaigns);
-        assertEquals(6, campaigns.size());
+        assertEquals(2, campaigns.size());
+//        assertEquals(6, campaigns.size());
 
         Campaign first = campaigns.get(0);
         assertEquals(1L, first.getId().longValue());
@@ -75,7 +110,7 @@ public class ApiTest {
     private void testActivateDiscount() {
         System.out.println("Activating discount...");
 
-        long userId = 2L;
+
         long campaignId = 2L;
         String confirmerCode = "1002";
 
