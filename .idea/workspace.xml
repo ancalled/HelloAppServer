@@ -49,6 +49,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="cf00688a-9598-4ca4-ade7-c3e5b364264f" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/kz/helloapp/test/ApiTest.java" afterPath="$PROJECT_DIR$/test/kz/helloapp/test/ApiTest.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/kz/helloapp/view/customer/api/VerifyFilter.java" afterPath="$PROJECT_DIR$/src/kz/helloapp/view/customer/api/VerifyFilter.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/web/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -75,7 +77,7 @@
     <file path="/PlaceEventsServlet.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1363890794238" ignored="false" />
     <file path="/index.html" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367406536827" ignored="false" />
     <file path="/widget.js" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1364017606481" ignored="false" />
-    <file path="/Dummy.txt" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1373216389546" ignored="false" />
+    <file path="/Dummy.txt" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1373217047489" ignored="false" />
     <file path="$PROJECT_DIR$/../BGM/data/research/index.html" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1363939833501" ignored="false" />
     <file path="$PROJECT_DIR$/../BGM/src/kz/bgm/research/sony/SonyParser.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1364229473000" ignored="false" />
     <file path="$PROJECT_DIR$/../BGM/data/research/users.js" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1363939833502" ignored="false" />
@@ -176,7 +178,7 @@
     <file path="/partners.jsp" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367406692138" ignored="false" />
     <file path="/CustomerUser.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369548916312" ignored="false" />
     <file path="/build.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368182246039" ignored="false" />
-    <file path="$PROJECT_DIR$/../HelloAppAndroid/.idea/workspace.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1373217007067" ignored="false" />
+    <file path="$PROJECT_DIR$/../HelloAppAndroid/.idea/workspace.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1373217369448" ignored="false" />
     <file path="$PROJECT_DIR$/../adt-bundle-mac-x86_64/sdk/tools/ant/build.xml" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1365325633299" ignored="false" />
     <file path="$PROJECT_DIR$/../HelloAppAndroid/src/com/example/AndroidTest/HelloClient.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1365345620013" ignored="false" />
     <file path="/new-campaign.jsp" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1367406661711" ignored="false" />
@@ -253,7 +255,7 @@
     <file path="$PROJECT_DIR$/../HelloAppAndroid/src/net/microcosmus/helloapp/FakeScannerActivity.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368182188161" ignored="false" />
     <file path="$PROJECT_DIR$/../HelloAppAndroid/src/net/microcosmus/helloapp/QRScannerActivity.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368182199025" ignored="false" />
     <file path="$PROJECT_DIR$/../HelloAppAndroid/src/net/microcosmus/helloapp/domain/DiscountApplyResult.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368192107841" ignored="false" />
-    <file path="/VerifyFilter.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1373216426319" ignored="false" />
+    <file path="/VerifyFilter.java" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1373217457955" ignored="false" />
     <file path="/queries.sql" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368947408280" ignored="false" />
     <file path="db-console:/89446b08/5a112371-ec62-433a-a61b-f6ef82fb253a/" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1369100725827" ignored="false" />
     <file path="/BGM Datasource" changelist="cf00688a-9598-4ca4-ade7-c3e5b364264f" time="1368947302826" ignored="false" />
@@ -508,7 +510,7 @@
       <file leaf-file-name="ApiTest.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test/kz/helloapp/test/ApiTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="27" column="74" selection-start="874" selection-end="874" vertical-scroll-proportion="0.0">
+            <state line="103" column="21" selection-start="2983" selection-end="2983" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -535,7 +537,7 @@
       <file leaf-file-name="web.xml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="180" column="25" selection-start="5856" selection-end="6017" vertical-scroll-proportion="0.71005917">
+            <state line="152" column="14" selection-start="4828" selection-end="4981" vertical-scroll-proportion="0.088757396">
               <folding />
             </state>
           </provider>
@@ -553,7 +555,7 @@
       <file leaf-file-name="VerifyFilter.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/api/VerifyFilter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="84" selection-start="928" selection-end="928" vertical-scroll-proportion="0.0">
+            <state line="71" column="47" selection-start="2185" selection-end="2185" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -611,10 +613,10 @@
         <option value="$PROJECT_DIR$/web/login-partner.html" />
         <option value="$PROJECT_DIR$/src/kz/helloapp/view/customer/api/CampaignsServlet.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/views/partner/check-sign.jsp" />
-        <option value="$PROJECT_DIR$/test/kz/helloapp/test/ApiTest.java" />
         <option value="$PROJECT_DIR$/src/kz/helloapp/view/customer/CustomerServlet.java" />
         <option value="$PROJECT_DIR$/src/kz/helloapp/view/partner/PartnerServlet.java" />
         <option value="$PROJECT_DIR$/src/kz/helloapp/view/admin/AdminServlet.java" />
+        <option value="$PROJECT_DIR$/test/kz/helloapp/test/ApiTest.java" />
         <option value="$PROJECT_DIR$/src/kz/helloapp/view/customer/api/VerifyFilter.java" />
         <option value="$PROJECT_DIR$/web/WEB-INF/web.xml" />
       </list>
@@ -1360,7 +1362,7 @@
       <recent name="$PROJECT_DIR$/src/kz/helloapp/view/customer" />
     </key>
   </component>
-  <component name="RunManager" selected="JBoss Server.JBoss 7.1.1.Final">
+  <component name="RunManager" selected="JUnit.ApiTest">
     <configuration default="false" name="ImageToBaseTool" type="Application" factoryName="Application" temporary="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1868,7 +1870,11 @@
       <created>1373216391537</created>
       <updated>1373216391537</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="запсустись 2!">
+      <created>1373217051279</created>
+      <updated>1373217051279</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -1953,7 +1959,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="запсустись!" />
+    <option name="LAST_COMMIT_MESSAGE" value="запсустись 2!" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -1967,7 +1973,6 @@
     <option name="UPDATE_FILTER_BY_SCOPE" value="false" />
     <option name="SHOW_FILE_HISTORY_AS_TREE" value="false" />
     <option name="FILE_HISTORY_SPLITTER_PROPORTION" value="0.6" />
-    <MESSAGE value="build.xml" />
     <MESSAGE value="Поправки на клиента" />
     <MESSAGE value="поменял структуру проекта, собрал обратно все в один модуль: слишком много проблем с взаимодействием" />
     <MESSAGE value="подправил build.xml" />
@@ -1992,6 +1997,7 @@
     <MESSAGE value="jboss-библиотеки" />
     <MESSAGE value="commons-библиотеки" />
     <MESSAGE value="запсустись!" />
+    <MESSAGE value="запсустись 2!" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -2060,13 +2066,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test/kz/helloapp/test/ApiTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="27" column="74" selection-start="874" selection-end="874" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/partner/PartnerServlet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="20" column="13" selection-start="530" selection-end="530" vertical-scroll-proportion="0.27738264">
@@ -2095,15 +2094,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/api/VerifyFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="84" selection-start="928" selection-end="928" vertical-scroll-proportion="0.0">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/META-INF/persistence.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
@@ -2118,9 +2108,25 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/test/kz/helloapp/test/ApiTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="103" column="21" selection-start="2983" selection-end="2983" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/kz/helloapp/view/customer/api/VerifyFilter.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="71" column="47" selection-start="2185" selection-end="2185" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/web/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="180" column="25" selection-start="5856" selection-end="6017" vertical-scroll-proportion="0.71005917">
+        <state line="152" column="14" selection-start="4828" selection-end="4981" vertical-scroll-proportion="0.088757396">
           <folding />
         </state>
       </provider>

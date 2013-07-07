@@ -99,8 +99,8 @@ public class ApiTest {
         List<Campaign> campaigns = gson.fromJson(json, type);
 
         assertNotNull(campaigns);
-        assertEquals(2, campaigns.size());
-//        assertEquals(6, campaigns.size());
+//        assertEquals(2, campaigns.size());
+        assertEquals(6, campaigns.size());
 
         Campaign first = campaigns.get(0);
         assertEquals(1L, first.getId().longValue());

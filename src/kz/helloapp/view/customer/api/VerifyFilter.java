@@ -26,11 +26,11 @@ public class VerifyFilter implements Filter {
 
     @Override
     public void init(FilterConfig filterConfig) throws ServletException {
-        try {
-            service = (CustomerService) new InitialContext().lookup(Consts.CUSTOMER_SERVICE_NAME);
-        } catch (NamingException e) {
-            throw new ServletException(e);
-        }
+//        try {
+//            service = (CustomerService) new InitialContext().lookup(Consts.CUSTOMER_SERVICE_NAME);
+//        } catch (NamingException e) {
+//            throw new ServletException(e);
+//        }
 
         try {
             md = MessageDigest.getInstance("MD5");
@@ -38,6 +38,17 @@ public class VerifyFilter implements Filter {
             throw new ServletException(e);
         }
 
+    }
+
+    private CustomerService getService() {
+        if (service == null) {
+            try {
+                service = (CustomerService) new InitialContext().lookup(Consts.CUSTOMER_SERVICE_NAME);
+            } catch (NamingException e) {
+                e.printStackTrace();
+            }
+        }
+        return service;
     }
 
     @Override
@@ -58,7 +69,7 @@ public class VerifyFilter implements Filter {
             return;
         }
 
-
+        CustomerService service = getService();
 
 
         if (uidStr != null) {
