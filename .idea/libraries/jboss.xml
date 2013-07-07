@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="jboss">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/jboss/jboss-ejb-api_3.1_spec-1.0.1.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jboss/jboss-jsp-api_2.2_spec-1.0.0.Final.jar!/" />
+      <root url="jar://$PROJECT_DIR$/lib/jboss/jboss-servlet-api_3.0_spec-1.0.0.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
