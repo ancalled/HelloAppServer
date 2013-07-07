@@ -24,7 +24,8 @@ import static org.junit.Assert.assertNotNull;
 public class ApiTest {
 
 
-    public static final String API_URL = "http://localhost:8080/helloapp/customer/api";
+//    public static final String API_URL = "http://localhost:8080/helloapp/customer/api";
+    public static final String API_URL = "http://helloapp.microcosmus.net//helloapp/customer/api";
     public static final DateFormat TIMESTAMP_FORMAT = new SimpleDateFormat("yyyyMMddhhmmss");
 
     private Gson gson;
