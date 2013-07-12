@@ -122,6 +122,8 @@ public class ApiTest {
 //        String url = String.format("%s/apply-campaign?userId=%d&campaignId=%d&confirmerCode=%s",
 //                API_URL, userId, campaignId, confirmerCode);
 
+
+
         String url = ApiClient.RequestBuilder.create(API_URL + "/apply-campaign", userToken)
                 .param("uid", Long.toString(userId))
                 .param("campaignId", Long.toString(campaignId))
