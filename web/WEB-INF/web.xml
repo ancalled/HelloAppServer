@@ -165,8 +165,12 @@
         <servlet-class>kz.helloapp.view.customer.RegisterServlet</servlet-class>
     </servlet>
     <servlet>
-        <servlet-name>authServlet</servlet-name>
+        <servlet-name>apiAuthServlet</servlet-name>
         <servlet-class>kz.helloapp.view.customer.api.AuthServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>apiRegisterServlet</servlet-name>
+        <servlet-class>kz.helloapp.view.customer.api.RegisterAndAuthServlet</servlet-class>
     </servlet>
     <servlet>
         <servlet-name>logoutServlet</servlet-name>
@@ -193,8 +197,12 @@
 
 
     <servlet-mapping>
-        <servlet-name>authServlet</servlet-name>
+        <servlet-name>apiAuthServlet</servlet-name>
         <url-pattern>/customer/api-auth</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>apiRegisterServlet</servlet-name>
+        <url-pattern>/customer/api-register</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>customerCampaignsServlet</servlet-name>
