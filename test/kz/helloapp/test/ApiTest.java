@@ -6,6 +6,7 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import kz.helloapp.model.domain.Campaign;
 import kz.helloapp.view.customer.api.AuthServlet;
+import kz.helloapp.view.customer.api.RegisterAndAuthServlet;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -24,8 +25,8 @@ import static org.junit.Assert.assertNotNull;
 public class ApiTest {
 
 
-//    public static final String API_URL = "http://localhost:8080/helloapp/customer/api";
-    public static final String API_URL = "http://helloapp.microcosmus.net//helloapp/customer/api";
+    public static final String API_URL = "http://localhost:8080/helloapp/customer/api";
+    //    public static final String API_URL = "http://helloapp.microcosmus.net//helloapp/customer/api";
     public static final DateFormat TIMESTAMP_FORMAT = new SimpleDateFormat("yyyyMMddhhmmss");
 
     private Gson gson;
@@ -61,13 +62,32 @@ public class ApiTest {
 
     @Test
     public void testApiCall() {
-
         testGetCampaigns();
         testActivateDiscount();
     }
 
+    @Test
+    public void testRegister() {
+        String login = "new-user";
+        String pass = "pass3423";
+        RegisterAndAuthServlet.Result res = register(login, pass);
 
-    private  AuthServlet.Result auth(String login, String pass) {
+        System.out.println("res = " + res);
+    }
+
+    private RegisterAndAuthServlet.Result register(String login, String pass) {
+
+        String url = ApiClient.RequestBuilder.create(API_URL + "-register")
+                .param("l", login)
+                .param("p", pass)
+                .build();
+
+        String json = ApiClient.doPost(url);
+
+        return gson.fromJson(json, RegisterAndAuthServlet.Result.class);
+    }
+
+    private AuthServlet.Result auth(String login, String pass) {
 
         String url = ApiClient.RequestBuilder.create(API_URL + "-auth")
                 .param("l", login)
@@ -121,7 +141,6 @@ public class ApiTest {
 
 //        String url = String.format("%s/apply-campaign?userId=%d&campaignId=%d&confirmerCode=%s",
 //                API_URL, userId, campaignId, confirmerCode);
-
 
 
         String url = ApiClient.RequestBuilder.create(API_URL + "/apply-campaign", userToken)
