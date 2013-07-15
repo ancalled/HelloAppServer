@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import kz.helloapp.model.domain.AuthToken;
 import kz.helloapp.model.domain.CustomerUser;
 import kz.helloapp.model.service.CustomerService;
+import org.apache.log4j.Logger;
 
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
@@ -16,6 +17,9 @@ import java.io.IOException;
 import java.io.PrintWriter;
 
 public class AuthServlet extends HttpServlet {
+
+    private static final Logger log = Logger.getLogger(AuthServlet.class);
+
 
     private CustomerService service;
 
@@ -34,8 +38,11 @@ public class AuthServlet extends HttpServlet {
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
 
+
         String login = req.getParameter("l");
         String pass = req.getParameter("p");
+
+        log.info("Authorizing user " + login);
 
         resp.setContentType("application/json");
         resp.setCharacterEncoding("UTF-8");
@@ -46,6 +53,7 @@ public class AuthServlet extends HttpServlet {
         Result res;
         if (user != null) {
             if (pass.equals(user.getPass())) {
+                log.info("Authorized.");
                 AuthToken authToken = user.getAuthToken();
                 if (authToken != null) {
                     res = new Result(Status.OK, user.getName(), user.getId(), authToken.getToken());
@@ -53,9 +61,11 @@ public class AuthServlet extends HttpServlet {
                     res = new Result(Status.FAIL);
                 }
             } else {
+                log.info("Wrong pass!");
                 res = new Result(Status.FAIL);
             }
         } else {
+            log.info("User not found!");
             res = new Result(Status.FAIL);
         }
 

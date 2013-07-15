@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import kz.helloapp.model.domain.Campaign;
 import kz.helloapp.view.customer.CustomerServlet;
+import org.apache.log4j.Logger;
 
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
@@ -14,11 +15,14 @@ import java.util.List;
 
 public class CampaignsServlet extends CustomerServlet {
 
+    private static final Logger log = Logger.getLogger(CampaignsServlet.class);
+
+
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp)
             throws ServletException, IOException {
 
-        System.out.println("CampaignsServlet.doGet");
+        log.info("Requesting list of campaigns...");
 
         List<Campaign> campaigns = service.getAllCampaigns();
 

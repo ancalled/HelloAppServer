@@ -31,9 +31,9 @@ INSERT INTO campaigns(id, title, company_id, rate, startFrom, goodThrough, needC
 # #------------------------------------------------------------------------------------------------------------------------
 #
 #
-INSERT into auth_tokens(id, token, whenGenerated) values (1, 'test_token1', '2013-05-18 12:34:00');
-INSERT into auth_tokens(id, token, whenGenerated) values (2, 'test_token2', '2013-05-18 12:35:00');
-INSERT into auth_tokens(id, token, whenGenerated) values (3, 'test_token3', '2013-05-18 12:36:00');
+INSERT into auth_tokens(token, whenGenerated) values ('test_token1', '2013-05-18 12:34:00');
+INSERT into auth_tokens(token, whenGenerated) values ('test_token2', '2013-05-18 12:35:00');
+INSERT into auth_tokens(token, whenGenerated) values ('test_token3', '2013-05-18 12:36:00');
 
 INSERT INTO customer_users(name, pass, authToken_id) VALUES ('user1', '12345', 1);
 INSERT INTO customer_users(name, pass, authToken_id) VALUES ('user2', '12345', 2);

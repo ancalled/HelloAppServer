@@ -2,6 +2,7 @@ package kz.helloapp.model.domain;
 
 import javax.persistence.*;
 import java.io.Serializable;
+import java.util.Date;
 
 @Entity
 @Table(name = "customer_users")
@@ -15,11 +16,13 @@ public class CustomerUser implements Serializable {
 
     private String email;
     private String phoneNumber;
+    private String imei;
     private String realName;
 
     private String pass;
+    private Date registered;
 
-    @OneToOne
+    @OneToOne(cascade = {CascadeType.PERSIST}, fetch = FetchType.EAGER)
     private AuthToken authToken;
 
     public String getName() {
@@ -44,6 +47,14 @@ public class CustomerUser implements Serializable {
 
     public void setPass(String passs) {
         this.pass = passs;
+    }
+
+    public Date getRegistered() {
+        return registered;
+    }
+
+    public void setRegistered(Date registered) {
+        this.registered = registered;
     }
 
     public AuthToken getAuthToken() {
@@ -76,5 +87,13 @@ public class CustomerUser implements Serializable {
 
     public void setRealName(String realName) {
         this.realName = realName;
+    }
+
+    public String getImei() {
+        return imei;
+    }
+
+    public void setImei(String imei) {
+        this.imei = imei;
     }
 }
